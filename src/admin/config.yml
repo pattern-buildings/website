@@ -2,8 +2,11 @@ backend:
   name: github
   repo: pattern-buildings/website
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: patternbuildings
+    api_key: 146329144562262
 
 collections:
   - name: "posts"
