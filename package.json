@@ -11,7 +11,9 @@
     "@gridsome/transformer-remark": "^0.6.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
-    "netlify-cms": "^2.10.50"
+    "netlify-cms": "^2.10.50",
+    "typeface-open-sans": "0.0.75",
+    "typeface-quantico": "0.0.71"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.48"

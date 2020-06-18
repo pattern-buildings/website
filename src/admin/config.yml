@@ -2,6 +2,8 @@ backend:
   name: github
   repo: pattern-buildings/website
 
+site_url: https://patternbuildings.com
+
 media_library:
   name: cloudinary
   config:
@@ -11,6 +13,7 @@ media_library:
 collections:
   - name: "posts"
     label: "Posts"
+    label_singular: 'Post'
     folder: "posts"
     create: true
     slug: "{{slug}}"
@@ -19,3 +22,22 @@ collections:
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'home-settings'
+        label: 'Home settings'
+        file: '_data/home-settings.yml'
+        description: 'Setup fields for home page'
+        fields:
+          - name: features
+            label: Features
+            label_singular: 'Feature'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string', hint: 'Keep it short' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
