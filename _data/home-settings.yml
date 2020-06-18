@@ -1,0 +1,5 @@
+features:
+  - name: Feature name 1
+    description: Feature description
+  - name: Feature 2
+    description: Another description
