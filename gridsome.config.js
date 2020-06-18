@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Pattern Buildings',
+  siteDescription: 'An open-source industrial building system for mass-customizable buildings',
+  siteUrl: 'https://patternbuildings.com',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -14,7 +16,8 @@ module.exports = {
       plugins: [
         // ...global plugins
       ]
-    }
+    },
+    netlify:{},
   },
   plugins: [
     {
@@ -22,6 +25,18 @@ module.exports = {
       options: {
         path: 'posts/**/*.md',
         typeName: 'Post',
+        remark: {
+          plugins: [
+            // ...local plugins
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_data/home-settings.yml',
+        typeName: 'Settings',
         remark: {
           plugins: [
             // ...local plugins
