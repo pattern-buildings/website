@@ -3,7 +3,13 @@ module.exports = {
       './src/**/*.html',
       './src/**/*.vue',
     ],
-    theme: {},
+    theme: {
+      extend: {
+        screens: {
+          xs: {'min': '479px'},
+        },
+      },
+    },
     variants: {},
     plugins: [],
   }

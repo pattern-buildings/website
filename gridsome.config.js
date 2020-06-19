@@ -23,7 +23,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'posts/**/*.md',
+        path: '_data/posts/**/*.md',
         typeName: 'Post',
         remark: {
           plugins: [
@@ -35,7 +35,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: '_data/home-settings.yml',
+        path: '_data/settings/home-settings.yml',
         typeName: 'Settings',
         remark: {
           plugins: [

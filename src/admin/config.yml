@@ -2,8 +2,14 @@ backend:
   name: github
   repo: pattern-buildings/website
 
-site_url: https://patternbuildings.com
+local_backend: true
 
+site_url: https://patternbuildings.com
+display_url: patternbuildings.com
+logo_url: https://
+show_preview_links: false
+
+media_folder: "_data/uploads"
 media_library:
   name: cloudinary
   config:
@@ -14,14 +20,20 @@ collections:
   - name: "posts"
     label: "Posts"
     label_singular: 'Post'
-    folder: "posts"
+    folder: "_data/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{order}}-{{slug}}"
+    summary: '{{title}} -- #{{order}}'
+    sortableFields: ['title', 'order']
+    editor:
+     preview: false
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Manual PDF", name: "manual_pdf", widget: "file"}
+      - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
 
   - name: 'settings'
     label: 'Settings'
@@ -31,13 +43,16 @@ collections:
     files:
       - name: 'home-settings'
         label: 'Home settings'
-        file: '_data/home-settings.yml'
+        file: '_data/settings/home-settings.yml'
         description: 'Setup fields for home page'
         fields:
           - name: features
             label: Features
             label_singular: 'Feature'
             widget: list
+            collapsed: true
+            minimize_collapsed: false
+            summary: '{{fields.name}} - {{fields.description}}'
             fields:
-              - { label: 'Name', name: 'name', widget: 'string', hint: 'Keep it short' }
-              - { label: 'Description', name: 'description', widget: 'markdown' }
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Description', name: 'description', widget: 'markdown', minimal: true, buttons: [], editorComponents: [] }

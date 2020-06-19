@@ -48,4 +48,29 @@ button {
 .layout {
   @apply max-w-4xl mx-auto p-8;
 }
+
+.embedded-video {
+  width: 100%;
+  height: 224px;
+  @screen xs {
+    width: 400px;
+  }
+  @screen sm {
+    width: 560px;
+    height: 316px;
+  }
+  @screen md {
+    width: 690px;
+    height: 389px;
+  }
+  @screen lg {
+    width: 820px;
+    height: 462px;
+  }
+}
+.embedded-video iframe {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 </style>
