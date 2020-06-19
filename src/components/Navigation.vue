@@ -8,7 +8,7 @@
       </div>
       <div>
         <span class="text-xl mr-2">❤</span>
-        <g-link to="/#rinciples">Principles</g-link>
+        <g-link to="/#principles">Principles</g-link>
       </div>
       <div>
         <span class="text-xl mr-2">❤</span>

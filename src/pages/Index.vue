@@ -26,21 +26,8 @@
         class="xs:rounded-lg xs:shadow-lg absolute w-full h-full"
       />
     </div>
-    <p class="max-w-md mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque
-      omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum
-      odit fugit assumenda rem dolores inventore iste reprehenderit maxime!
-      Iusto.
-    </p>
 
-    <hr />
-    <h2 id="about" class="py-8 text-center">About</h2>
-    <p class="max-w-sm mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque
-      omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum
-      odit fugit assumenda rem dolores inventore iste reprehenderit maxime!
-      Iusto.
-    </p>
+    <hr id="principles" />
 
     <div class="flex flex-col items-center mx-auto mt-4 mb-16">
       <div
@@ -57,6 +44,18 @@
         />
       </div>
     </div>
+
+    <hr />
+
+    <section class="my-16">
+      <h2 id="projects" class="pb-8 text-center">Projects</h2>
+      <p class="max-w-sm mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+        doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
+        rerum illum odit fugit assumenda rem dolores inventore iste
+        reprehenderit maxime! Iusto.
+      </p>
+    </section>
 
     <hr />
 
