@@ -34,8 +34,16 @@ h1 {
 h2 {
   @apply text-3xl;
 }
-h2 {
+h3 {
   @apply text-2xl;
+}
+
+a {
+  @apply no-underline;
+}
+a:hover,
+a:focus {
+  @apply underline font-bold outline-none;
 }
 
 input {
@@ -51,7 +59,7 @@ button {
 
 .embedded-video {
   width: 100%;
-  height: 224px;
+  height: 226px;
   @screen xs {
     width: 400px;
   }

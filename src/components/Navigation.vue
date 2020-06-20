@@ -1,84 +1,110 @@
 <template>
-  <div class="flex justify-center items-stretch my-16">
-    <div class="navigation-column text-red-500">
-      <h3>Discover</h3>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/#about">About</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/#principles">Principles</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/#projects">Projects</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/#faq">FAQ</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/#sponsors">Sponsors</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/#contributors">Contributors</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/#license">License</g-link>
+  <nav class="nav-container">
+    <div class="nav-column text-red-500">
+      <h3 class="nav-head">Discover</h3>
+      <div v-for="(item, i) in discover" :key="i" class="nav-item">
+        <Icon :path="item.icon" />
+        <g-link :to="item.url">{{ item.title }}</g-link>
       </div>
     </div>
-    <div class="navigation-column text-green-500">
-      <h3>Learn</h3>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/concept">Concept</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/design">Design</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/docs">Docs</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/wiki">Wiki</g-link>
+
+    <div class="nav-column text-green-500">
+      <h3 class="nav-head">Learn</h3>
+      <div v-for="(item, i) in learn" :key="i" class="nav-item">
+        <Icon :path="item.icon" />
+        <g-link :to="item.url">{{ item.title }}</g-link>
       </div>
     </div>
-    <div class="navigation-column text-blue-500">
-      <h3>Engage</h3>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/Downloads">Downloads</g-link>
-      </div>
-      <div>
-        <span class="text-xl mr-2">❤</span>
-        <g-link to="/contuct-us">Contact us</g-link>
+
+    <div class="nav-column text-blue-500">
+      <h3 class="nav-head">Engage</h3>
+      <div v-for="(item, i) in engage" :key="i" class="nav-item">
+        <Icon :path="item.icon" />
+        <g-link :to="item.url">{{ item.title }}</g-link>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
-export default {};
+import Icon from "@/components/Icon";
+import {
+  mdiInformationOutline,
+  mdiCardsVariant,
+  mdiCommentQuestionOutline,
+  mdiWarehouse,
+  mdiAccountSupervisorOutline,
+  mdiLicense,
+  mdiCubeOutline,
+  mdiDrawing,
+  mdiFileDocumentOutline,
+  mdiDownloadOutline,
+  mdiEmailOutline
+} from "@mdi/js";
+
+export default {
+  components: {
+    Icon
+  },
+  data() {
+    return {
+      discover: [
+        { title: "Idea", url: "#idea", icon: mdiInformationOutline },
+        { title: "Projects", url: "#projects", icon: mdiCardsVariant },
+        { title: "Supproters", url: "#supporters", icon: mdiWarehouse },
+        { title: "Team", url: "#team", icon: mdiAccountSupervisorOutline },
+        { title: "License", url: "#license", icon: mdiLicense },
+        { title: "FAQ", url: "#faq", icon: mdiCommentQuestionOutline }
+      ],
+
+      learn: [
+        { title: "Concept", url: "/concept", icon: mdiCubeOutline },
+        { title: "Design", url: "/design", icon: mdiDrawing },
+        {
+          title: "Documentation",
+          url: "/documentation",
+          icon: mdiFileDocumentOutline
+        }
+      ],
+
+      engage: [
+        { title: "Downloads", url: "/downloads", icon: mdiDownloadOutline },
+        { title: "Get in touch", url: "/contact", icon: mdiEmailOutline }
+      ]
+    };
+  }
+};
 </script>
 
 <style>
-.navigation-column {
-  @apply w-full m-4 py-2 px-4;
+.nav-container {
+  @apply flex flex-col justify-center items-stretch my-16;
+  @screen sm {
+    @apply flex-row;
+  }
 }
-.navigation-column h3 {
-  @apply text-3xl border-b-4 border-current mb-2 pb-2;
+.nav-column {
+  @apply w-full my-6;
+  @screen sm {
+    @apply mx-6;
+  }
 }
-.navigation-column a {
-  @apply text-lg leading-10;
+.nav-column:focus {
+  @apply shadow-lg;
 }
-.navigation-column a:hover {
-  @apply underline;
+.nav-head {
+  @apply border-b-4 border-current text-3xl mb-2 pb-2;
+}
+.nav-item {
+  @apply flex my-3;
+  @screen sm {
+    @apply my-4;
+  }
+}
+.nav-item .icon {
+  @apply mr-4 w-6 h-6 inline-block;
+}
+.nav-item a {
+  @apply text-lg;
 }
 </style>
