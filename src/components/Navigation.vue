@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Icon from "@/components/Icon";
+import Icon from '@/components/Icon';
 import {
   mdiInformationOutline,
   mdiCardsVariant,
@@ -39,40 +39,40 @@ import {
   mdiDrawing,
   mdiFileDocumentOutline,
   mdiDownloadOutline,
-  mdiEmailOutline
-} from "@mdi/js";
+  mdiEmailOutline,
+} from '@mdi/js';
 
 export default {
   components: {
-    Icon
+    Icon,
   },
   data() {
     return {
       discover: [
-        { title: "Idea", url: "#idea", icon: mdiInformationOutline },
-        { title: "Projects", url: "#projects", icon: mdiCardsVariant },
-        { title: "Supproters", url: "#supporters", icon: mdiWarehouse },
-        { title: "Team", url: "#team", icon: mdiAccountSupervisorOutline },
-        { title: "License", url: "#license", icon: mdiLicense },
-        { title: "FAQ", url: "#faq", icon: mdiCommentQuestionOutline }
+        { title: 'Idea', url: '#idea', icon: mdiInformationOutline },
+        { title: 'Projects', url: '#projects', icon: mdiCardsVariant },
+        { title: 'Supproters', url: '#supporters', icon: mdiWarehouse },
+        { title: 'Team', url: '#team', icon: mdiAccountSupervisorOutline },
+        { title: 'License', url: '#license', icon: mdiLicense },
+        { title: 'FAQ', url: '#faq', icon: mdiCommentQuestionOutline },
       ],
 
       learn: [
-        { title: "Concept", url: "/concept", icon: mdiCubeOutline },
-        { title: "Design", url: "/design", icon: mdiDrawing },
+        { title: 'Concept', url: '/concept', icon: mdiCubeOutline },
+        { title: 'Design', url: '/design', icon: mdiDrawing },
         {
-          title: "Documentation",
-          url: "/documentation",
-          icon: mdiFileDocumentOutline
-        }
+          title: 'Documentation',
+          url: '/documentation',
+          icon: mdiFileDocumentOutline,
+        },
       ],
 
       engage: [
-        { title: "Downloads", url: "/downloads", icon: mdiDownloadOutline },
-        { title: "Get in touch", url: "/contact", icon: mdiEmailOutline }
-      ]
+        { title: 'Downloads', url: '/downloads', icon: mdiDownloadOutline },
+        { title: 'Get in touch', url: '/contact', icon: mdiEmailOutline },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -86,7 +86,7 @@ export default {
 .nav-column {
   @apply w-full my-6;
   @screen sm {
-    @apply mx-6;
+    @apply mx-6 my-0;
   }
 }
 .nav-column:focus {

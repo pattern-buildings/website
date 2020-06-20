@@ -1,21 +1,42 @@
 <template>
   <div class="layout">
+    <div class="flex justify-between fixed top-0 left-0 w-full p-4 z-10">
+      <div
+        class="w-12 h-12 bg-gray-300 mr-4 rounded-full cursor-pointer shadow-lg hover:shadow-none"
+        @click="goHome()"
+      />
+    </div>
     <slot />
   </div>
 </template>
 
 <static-query>
-query {
-  metadata {
-    siteName
+  query {
+    metadata {
+      siteName
+    }
   }
-}
 </static-query>
+
+<script>
+export default {
+  methods: {
+    goHome() {
+      console.log('sctt');
+      if (this.$route.path === '/') {
+        window.scrollTo(0, 0);
+      } else {
+        this.$router.push('/');
+      }
+    },
+  },
+};
+</script>
 
 <style>
 body {
-  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* prettier-ignore */
+  font-family: Open Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   @apply m-0 p-0 leading-normal;
 }
 
@@ -54,14 +75,18 @@ button {
 }
 
 .layout {
-  @apply max-w-4xl mx-auto p-8;
+  @apply max-w-4xl mx-auto p-4 pt-20;
+  @screen sm {
+    @apply px-8;
+  }
 }
 
 .embedded-video {
   width: 100%;
-  height: 226px;
+  height: 244px;
   @screen xs {
     width: 400px;
+    height: 226px;
   }
   @screen sm {
     width: 560px;

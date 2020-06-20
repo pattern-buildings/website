@@ -6,7 +6,8 @@
 
 module.exports = {
   siteName: 'Pattern Buildings',
-  siteDescription: 'An open-source industrial building system for mass-customizable buildings',
+  siteDescription:
+    'An open-source industrial building system for mass-customizable buildings',
   siteUrl: 'https://patternbuildings.com',
   transformers: {
     remark: {
@@ -15,9 +16,9 @@ module.exports = {
       anchorClassName: 'icon icon-link',
       plugins: [
         // ...global plugins
-      ]
+      ],
     },
-    netlify:{},
+    netlify: {},
   },
   plugins: [
     {
@@ -28,9 +29,9 @@ module.exports = {
         remark: {
           plugins: [
             // ...local plugins
-          ]
-        }
-      }
+          ],
+        },
+      },
     },
     {
       use: '@gridsome/source-filesystem',
@@ -40,18 +41,18 @@ module.exports = {
         remark: {
           plugins: [
             // ...local plugins
-          ]
-        }
-      }
+          ],
+        },
+      },
     },
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        publicPath: `/admin`
-      }
+        publicPath: `/admin`,
+      },
     },
     {
       use: 'gridsome-plugin-tailwindcss',
-    }
-  ]
-}
+    },
+  ],
+};
