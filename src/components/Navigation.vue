@@ -2,6 +2,10 @@
   <nav class="nav-container">
     <div class="nav-column text-red-500">
       <h3 class="nav-head">Discover</h3>
+      <div v-if="$route.fullPath !== '/'" class="nav-item">
+        <Icon :path="mdiHomeOutline" />
+        <g-link to="/">Home</g-link>
+      </div>
       <div v-for="(item, i) in discover" :key="i" class="nav-item">
         <Icon :path="item.icon" />
         <g-link :to="item.url">{{ item.title }}</g-link>
@@ -26,21 +30,38 @@
   </nav>
 </template>
 
+<static-query>
+  query {
+    navigation: allNavigation {
+      edges {
+        node {
+          discover {
+            title
+            url
+            icon
+            hidden
+          }
+          learn {
+            title
+            url
+            icon
+            hidden
+          }
+          engage {
+            title
+            url
+            icon
+            hidden
+          }
+        }
+      }
+    }
+  }
+</static-query>
+
 <script>
 import Icon from '@/components/Icon';
-import {
-  mdiInformationOutline,
-  mdiCardsVariant,
-  mdiCommentQuestionOutline,
-  mdiWarehouse,
-  mdiAccountSupervisorOutline,
-  mdiLicense,
-  mdiCubeOutline,
-  mdiDrawing,
-  mdiFileDocumentOutline,
-  mdiDownloadOutline,
-  mdiEmailOutline,
-} from '@mdi/js';
+import { mdiHomeOutline } from '@mdi/js';
 
 export default {
   components: {
@@ -48,30 +69,37 @@ export default {
   },
   data() {
     return {
-      discover: [
-        { title: 'Idea', url: '#idea', icon: mdiInformationOutline },
-        { title: 'Projects', url: '#projects', icon: mdiCardsVariant },
-        { title: 'Supproters', url: '#supporters', icon: mdiWarehouse },
-        { title: 'Team', url: '#team', icon: mdiAccountSupervisorOutline },
-        { title: 'License', url: '#license', icon: mdiLicense },
-        { title: 'FAQ', url: '#faq', icon: mdiCommentQuestionOutline },
-      ],
-
-      learn: [
-        { title: 'Concept', url: '/concept', icon: mdiCubeOutline },
-        { title: 'Design', url: '/design', icon: mdiDrawing },
-        {
-          title: 'Documentation',
-          url: '/documentation',
-          icon: mdiFileDocumentOutline,
-        },
-      ],
-
-      engage: [
-        { title: 'Downloads', url: '/downloads', icon: mdiDownloadOutline },
-        { title: 'Get in touch', url: '/contact', icon: mdiEmailOutline },
-      ],
+      discover: [],
+      learn: [],
+      engage: [],
+      mdiHomeOutline,
     };
+  },
+  created() {
+    this.$static.navigation.edges[0].node.discover.forEach(
+      async ({ title, url, icon, hidden }) => {
+        const fetchedIcon = await this.getIcon(icon);
+        if (!hidden) this.discover.push({ title, url, icon: fetchedIcon });
+      }
+    );
+    this.$static.navigation.edges[0].node.learn.forEach(
+      async ({ title, url, icon, hidden }) => {
+        const fetchedIcon = await this.getIcon(icon);
+        if (!hidden) this.learn.push({ title, url, icon: fetchedIcon });
+      }
+    );
+    this.$static.navigation.edges[0].node.engage.forEach(
+      async ({ title, url, icon, hidden }) => {
+        const fetchedIcon = await this.getIcon(icon);
+        if (!hidden) this.engage.push({ title, url, icon: fetchedIcon });
+      }
+    );
+  },
+  methods: {
+    async getIcon(handle) {
+      const { [handle]: fetchedIcon } = await import(`@mdi/js`);
+      return fetchedIcon;
+    },
   },
 };
 </script>

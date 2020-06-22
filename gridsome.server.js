@@ -12,7 +12,51 @@ module.exports = function (api) {
   });
 
   // eslint-disable-next-line no-unused-vars
-  api.createPages(({ createPage }) => {
+  api.createPages(async ({ graphql, createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
+    const { data } = await graphql(`
+      {
+        allProjects {
+          edges {
+            node {
+              id
+              title
+              subtitle
+              cover
+              facts {
+                value
+                key
+              }
+              content
+              downloads {
+                name
+                type
+                file
+              }
+              fileInfo {
+                name
+              }
+            }
+          }
+        }
+      }
+    `);
+
+    if (!data) return;
+
+    data.allProjects.edges.forEach(({ node }) => {
+      createPage({
+        path: `/projects/${node.fileInfo.name}`,
+        component: './src/templates/ProjectPage.vue',
+        context: {
+          title: node.title,
+          subtitle: node.subtitle,
+          cover: node.cover,
+          facts: node.facts,
+          content: node.content,
+          downloads: node.downloads,
+        },
+      });
+    });
   });
 };

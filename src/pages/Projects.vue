@@ -1,0 +1,61 @@
+<template>
+  <Layout>
+    <section id="projects" class="py-8">
+      <h2 class="pb-8 text-center">Projects</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+        doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
+        rerum illum odit fugit assumenda rem dolores inventore iste
+        reprehenderit maxime! Iusto.
+      </p>
+      <div>
+        <g-link
+          v-for="project in $page.projects.edges"
+          :key="project.node.id"
+          :to="`/projects/${project.node.fileInfo.name}`"
+          class="w-full block my-16"
+        >
+          <ProjectCard
+            :title="project.node.title"
+            :subtitle="project.node.subtitle"
+            :description="project.node.description"
+            :cover="project.node.cover"
+          />
+        </g-link>
+      </div>
+      <hr class="mt-16" />
+    </section>
+    <Navigation />
+  </Layout>
+</template>
+
+<page-query>
+  query {
+    projects: allProjects(sortBy: "order", order: ASC) {
+      edges {
+        node {
+          id
+          title
+          subtitle
+          description
+          cover
+          fileInfo {
+            name
+          }
+        }
+      }
+    }
+  }
+</page-query>
+
+<script>
+import Navigation from '@/components/Navigation.vue';
+import ProjectCard from '@/components/ProjectCard.vue';
+
+export default {
+  components: { Navigation, ProjectCard },
+  metaInfo: {
+    title: 'Projects',
+  },
+};
+</script>

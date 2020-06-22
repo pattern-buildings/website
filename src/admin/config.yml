@@ -17,23 +17,48 @@ media_library:
     api_key: 146329144562262
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    label_singular: 'Post'
-    folder: "_data/posts"
+
+  - name: "projects"
+    label: "Projects"
+    label_singular: 'Project'
+    folder: "_data/projects"
     create: true
-    slug: "{{order}}-{{slug}}"
-    summary: '{{title}} -- #{{order}}'
+    slug: "{{title}}"
+    summary: '#{{order}} - {{title}}'
     sortableFields: ['title', 'order']
     editor:
-     preview: false
+      preview: false
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Manual PDF", name: "manual_pdf", widget: "file"}
+      - {label: "Cover image", name: "cover", widget: "image"}
+      - {label: "Title", name: "title", widget: "string", hint: "Also used as a slug"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Short description", name: "description", widget: "string", required: false}
       - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
+      - {label: "Featured on home page", name: "featured", widget: "boolean", default: false}
+      - name: facts
+        label: Facts
+        label_singular: item
+        widget: list
+        fields:
+          - {label: Key, name: key, widget: string}
+          - {label: Value, name: value, widget: string}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - name: downloads
+        label: Downloads
+        label_singular: 'Download'
+        widget: list
+        collapsed: true
+        minimize_collapsed: false
+        summary: '{{name}} - {{type}}'
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - {label: "File", name: "file", widget: "file"}
+          - label: "Type"
+            name: "type"
+            widget: "select"
+            options: ["pdf", "cad", 'other']
+
+  # ============================================================================
 
   - name: 'settings'
     label: 'Settings'
@@ -41,11 +66,20 @@ collections:
     editor:
       preview: false
     files:
+
       - name: 'home-settings'
         label: 'Home settings'
         file: '_data/settings/home-settings.yml'
         description: 'Setup fields for home page'
         fields:
+          - {label: "Idea", name: "idea", widget: "markdown"}
+          - name: facts
+            label: Facts
+            label_singular: item
+            widget: list
+            fields:
+              - {label: Key, name: key, widget: string}
+              - {label: Value, name: value, widget: string}
           - name: features
             label: Features
             label_singular: 'Feature'
@@ -56,3 +90,40 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Description', name: 'description', widget: 'markdown', minimal: true, buttons: [], editorComponents: [] }
+
+      - name: 'navigation'
+        label: 'Navigation'
+        file: '_data/settings/navigation.yml'
+        description: 'Configure the navigation panel'
+        fields:
+          - name: discover
+            label: Discover
+            label_singular: 'item'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'url', name: 'url', widget: 'string' }
+              - { label: 'icon', name: 'icon', widget: 'string', hint: 'name of the MDI icon in camel case, for example mdiInformationOutline, you can find all available icons here: https://iconify.design/icon-sets/mdi/' }
+              - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
+          
+          - name: learn
+            label: Learn
+            label_singular: 'item'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'url', name: 'url', widget: 'string' }
+              - { label: 'icon', name: 'icon', widget: 'string', hint: 'name of the MDI icon in camel case, for example mdiInformationOutline, you can find all available icons here: https://iconify.design/icon-sets/mdi/' }
+              - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
+          
+          - name: engage
+            label: Engage
+            label_singular: 'item'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'url', name: 'url', widget: 'string' }
+              - { label: 'icon', name: 'icon', widget: 'string', hint: 'name of the MDI icon in camel case, for example mdiInformationOutline, you can find all available icons here: https://iconify.design/icon-sets/mdi/' }
+              - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
+
+  # ============================================================================

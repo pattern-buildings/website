@@ -1,32 +1,32 @@
 <template>
   <div class="layout">
     <div class="flex justify-between fixed top-0 left-0 w-full p-4 z-10">
-      <div
-        class="w-12 h-12 bg-gray-300 mr-4 rounded-full cursor-pointer shadow-lg hover:shadow-none"
-        @click="goHome()"
-      />
+      <div class="flex items-center cursor-pointer logo" @click="goHome()">
+        <div
+          class="w-12 h-12 bg-center bg-cover"
+          style="
+            background-image: url(https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg);
+          "
+        />
+        <p
+          class="block leading-8 text-lg bg-white text-gray-600 px-8 py-2 align-middle logo-text"
+        >
+          Pattern Buildings
+        </p>
+      </div>
     </div>
     <slot />
   </div>
 </template>
 
-<static-query>
-  query {
-    metadata {
-      siteName
-    }
-  }
-</static-query>
-
 <script>
 export default {
   methods: {
     goHome() {
-      console.log('sctt');
-      if (this.$route.path === '/') {
+      if (this.$route.path === '/' && !this.$route.hash) {
         window.scrollTo(0, 0);
       } else {
-        this.$router.push('/');
+        this.$router.push({ path: '/', hash: '' });
       }
     },
   },
@@ -64,13 +64,14 @@ a {
 }
 a:hover,
 a:focus {
-  @apply underline font-bold outline-none;
+  /* @apply underline font-bold outline-none; */
 }
 
 input {
   @apply border-gray-300 border-2 my-2 w-full;
 }
-button {
+button,
+a.btn {
   @apply bg-blue-600 text-white px-4 py-2;
 }
 
@@ -105,5 +106,13 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo .logo-text {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.logo:hover .logo-text {
+  opacity: 1;
 }
 </style>

@@ -24,8 +24,20 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: '_data/posts/**/*.md',
+        path: '_data/posts/*.md',
         typeName: 'Post',
+        remark: {
+          plugins: [
+            // ...local plugins
+          ],
+        },
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_data/projects/*.md',
+        typeName: 'Projects',
         remark: {
           plugins: [
             // ...local plugins
@@ -38,11 +50,13 @@ module.exports = {
       options: {
         path: '_data/settings/home-settings.yml',
         typeName: 'Settings',
-        remark: {
-          plugins: [
-            // ...local plugins
-          ],
-        },
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_data/settings/navigation.yml',
+        typeName: 'Navigation',
       },
     },
     {

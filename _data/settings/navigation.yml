@@ -1,0 +1,47 @@
+discover:
+  - title: Idea
+    url: "#idea"
+    icon: mdiInformationOutline
+    hidden: false
+  - title: Projects
+    url: /projects
+    icon: mdiCardsVariant
+    hidden: false
+  - title: Supproters
+    url: "#supporters"
+    icon: mdiWarehouse
+    hidden: false
+  - title: Team
+    url: "#team"
+    icon: mdiAccountSupervisorOutline
+    hidden: false
+  - title: License
+    url: "#license"
+    icon: mdiLicense
+    hidden: false
+  - title: FAQ
+    url: "#faq"
+    icon: mdiCommentQuestionOutline
+    hidden: true
+learn:
+  - hidden: false
+    title: Concept
+    url: /concept
+    icon: mdiCubeOutline
+  - hidden: false
+    title: Design
+    url: /design
+    icon: mdiDrawing
+  - hidden: true
+    title: Documentation
+    url: /documentation
+    icon: mdiFileDocumentOutline
+engage:
+  - hidden: false
+    title: Downloads
+    url: /downloads
+    icon: mdiDownloadOutline
+  - hidden: false
+    title: Get in touch
+    url: /contact
+    icon: mdiEmailOutline

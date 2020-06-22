@@ -20,27 +20,15 @@
       <section id="idea" class="py-16">
         <h2 class="mb-16 text-center">Idea</h2>
 
-        <div class="flex flex-col sm:flex-row-reverse sm:items-start mb-16">
-          <p class="sm:w-3/5 sm:pl-16 sm mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-            doloremque omnis animi, eligendi magni a voluptatum, vitae,
-            consequuntur rerum illum odit fugit assumenda rem dolores inventore
-            iste reprehenderit maxime! Iusto.
+        <div class="mb-8">
+          <KeyValueList
+            :rows="$page.settings.edges[0].node.facts"
+            class="sm:float-right sm:ml-8 mb-8"
+          />
+          <p class="">
+            {{ $page.settings.edges[0].node.idea }}
           </p>
-          <ul class="sm:w-2/5 text-sm text-gray-600 px-4 border-2">
-            <li class="flex justify-between py-4 border-b border-gray-200">
-              <span>property one</span>
-              <span>value 1</span>
-            </li>
-            <li class="flex justify-between py-4 border-b border-gray-200">
-              <span>property two</span>
-              <span>value 2</span>
-            </li>
-            <li class="flex justify-between py-4">
-              <span>property three</span>
-              <span>value 3</span>
-            </li>
-          </ul>
+          <div class="clear-both" />
         </div>
 
         <div class="mx-auto mb-16 relative embedded-video">
@@ -72,24 +60,31 @@
 
       <hr />
 
-      <section id="projects" class="py-8">
+      <section id="projects" class="my-16">
         <h2 class="pb-8 text-center">Projects</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-          doloremque omnis animi, eligendi magni a voluptatum, vitae,
-          consequuntur rerum illum odit fugit assumenda rem dolores inventore
-          iste reprehenderit maxime! Iusto.
-        </p>
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <button class="block mx-auto">See all projects</button>
+        <div class="flex flex-wrap items-stretch">
+          <g-link
+            v-for="project in $page.projects.edges"
+            :key="project.node.id"
+            :to="`/projects/${project.node.fileInfo.name}`"
+            class="w-full block sm:w-1/2 md:w-1/3 px-2 py-8"
+          >
+            <ProjectCard
+              :title="project.node.title"
+              :subtitle="project.node.subtitle"
+              :description="project.node.description"
+              :cover="project.node.cover"
+            />
+          </g-link>
+        </div>
+        <div class="text-center">
+          <g-link to="/projects" class="btn">See all projects</g-link>
+        </div>
+        <hr class="mt-16" />
       </section>
 
-      <hr />
-
-      <section class="py-8">
-        <h2 class="text-center my-8">Get in touch</h2>
+      <section class="my-16">
+        <h2 class="text-center mb-8">Get in touch</h2>
 
         <div class="mx-auto w-48 mb-16">
           <form
@@ -139,12 +134,35 @@
 
 <page-query>
   query {
-    allSettings {
+    settings: allSettings {
       edges {
         node {
+          idea
+          facts {
+            key
+            value
+          }
           features {
             name
             description
+          }
+        }
+      }
+    }
+    projects: allProjects(
+      filter: { featured: { eq: true } }
+      sortBy: "order"
+      order: ASC
+    ) {
+      edges {
+        node {
+          title
+          subtitle
+          description
+          cover
+          featured
+          fileInfo {
+            name
           }
         }
       }
@@ -155,15 +173,16 @@
 <script>
 import Navigation from '@/components/Navigation.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
+import KeyValueList from '@/components/KeyValueList.vue';
 
 export default {
-  components: { Navigation, ProjectCard },
+  components: { Navigation, ProjectCard, KeyValueList },
   metaInfo: {
     title: 'Hello, world!',
   },
   computed: {
     features() {
-      return this.$page.allSettings.edges[0].node.features;
+      return this.$page.settings.edges[0].node.features;
     },
   },
   mounted() {
