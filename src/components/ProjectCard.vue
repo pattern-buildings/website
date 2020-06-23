@@ -6,11 +6,13 @@
       <g-image
         alt="pattern buildings"
         :src="cover"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-cover rounded-lg"
       />
       <h3 class="relative bg-white leading-tight px-2">{{ title }}</h3>
-      <p v-if="subtitle" class="relative bg-white text-sm text-gray-600 px-2">
-        {{ subtitle }}
+      <p v-if="subtitle" class="relative">
+        <span class="bg-white text-sm text-gray-600 px-2">
+          {{ subtitle }}
+        </span>
       </p>
     </div>
     <p v-if="description" class="text-center mt-2">{{ description }}</p>

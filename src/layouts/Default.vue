@@ -1,16 +1,16 @@
 <template>
   <div class="layout">
-    <div class="flex justify-between fixed top-0 left-0 w-full p-4 z-10">
+    <div
+      class="flex justify-between fixed bg-white md:bg-transparent top-0 left-0 w-full p-2 z-10"
+    >
       <div class="flex items-center cursor-pointer logo" @click="goHome()">
         <div
-          class="w-12 h-12 bg-center bg-cover"
+          class="w-16 h-16 bg-center bg-cover rounded-lg"
           style="
             background-image: url(https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg);
           "
         />
-        <p
-          class="block leading-8 text-lg bg-white text-gray-600 px-8 py-2 align-middle logo-text"
-        >
+        <p class="text-lg mg bg-white text-gray-600 ml-6 px-2 logo-text">
           Pattern Buildings
         </p>
       </div>

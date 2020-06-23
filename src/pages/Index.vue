@@ -62,7 +62,7 @@
 
       <section id="projects" class="my-16">
         <h2 class="pb-8 text-center">Projects</h2>
-        <div class="flex flex-wrap items-stretch">
+        <div class="flex flex-wrap justify-center items-stretch">
           <g-link
             v-for="project in $page.projects.edges"
             :key="project.node.id"
