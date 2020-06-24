@@ -8,12 +8,13 @@ featured: true
 facts:
   - key: Year
     value: "2020"
-  - key: Architects (original design)
+  - key: Authors (original design)
     value: Kadarik, Tüür. Architects
-  - key: Architects (re-design)
-    value: Lauri Läänelaid, Marianna Zvereva
+  - key: Authors (re-design)
+    value: Lauri Läänelaid, Marianna Zvereva, Renee Puusepp, Egle Vogt, Eero
+      Tuhkanen, Kristo Kalbe
 downloads:
-  - name: Example download file (PDF, 9.88MB)
+  - name: Example download file (PDF, 9.88MB) - NEEDS UPDATE
     file: https://res.cloudinary.com/patternbuildings/image/upload/v1592471977/Pattern_Buildings_Guide_gjvdkx.pdf
     type: pdf
 ---
