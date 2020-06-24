@@ -1,19 +1,17 @@
 ---
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1592909261/projects/office-building/Turu_21_fassad3_jcmnam.jpg
-title: Turu 21
+title: "Office "
 subtitle: A modular redesign of a concrete building
-description: Due to the use of prefabricated modules the new building is thinner
-  and higher than the original, but the overall layout has remained relatively
-  similar to the original.
+description: ""
 order: 1
 featured: true
 facts:
   - key: Year
     value: "2020"
-  - key: Author
-    value: Name
-  - key: Developer
-    value: Name
+  - key: Architects (original design)
+    value: Kadarik, Tüür. Architects
+  - key: Architects (re-design)
+    value: Lauri Läänelaid, Marianna Zvereva
 downloads:
   - name: Example download file (PDF, 9.88MB)
     file: https://res.cloudinary.com/patternbuildings/image/upload/v1592471977/Pattern_Buildings_Guide_gjvdkx.pdf
