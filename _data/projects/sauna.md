@@ -1,35 +1,28 @@
 ---
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1592910157/projects/sauna/2_xej9ev.jpg
 title: Sauna
-description: A few words about project
+subtitle: A modular leisure centre
+description: ""
 order: 2
 featured: true
 facts:
   - key: Year
     value: "2020"
-  - key: Author
-    value: Name
-  - key: Developer
-    value: Name
+  - key: Architects
+    value: Marianna Zvereva, Lauri Läänelaid
+  - key: Engineers
+    value: Egle Vogt, Eero Tuhkanen, Kristo Kalbe
 downloads:
-  - name: Example pdf file (PDF, 9.88MB)
-    file: https://res.cloudinary.com/patternbuildings/image/upload/v1592471977/Pattern_Buildings_Guide_gjvdkx.pdf
-    type: pdf
   - file: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
-    name: Example cad file (SKP, 12MB)
+    name: Example cad file (SKP, 12MB) - NEEDS UPDATE
     type: cad
-  - name: Example other file (JPEG, 924KB)
-    file: https://res.cloudinary.com/patternbuildings/image/upload/v1592909265/projects/office-building/Turu_21_mhvc6m.png
-    type: other
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
+The building is situated near Pirita Marina Hotel and SPA. It features a sauna, bar, conference rooms and guest accommodation rooms. 
 
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1592910155/projects/sauna/1_zgo5iv.jpg)
 
-
-
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1592910157/projects/sauna/3_uvbame.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.
+The main structure of the building is made of prefabricated LVL modules; the glass facade of the building is installed on-site. 
 
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1592910156/projects/sauna/4_elku2i.jpg)
