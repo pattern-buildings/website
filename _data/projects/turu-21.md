@@ -17,7 +17,7 @@ downloads:
     file: https://res.cloudinary.com/patternbuildings/image/upload/v1592471977/Pattern_Buildings_Guide_gjvdkx.pdf
     type: pdf
 ---
-The Turu 21 office building (hence- forth referred to as “The original building”) is originally designed by Kadarik Tüür Architects on Turu street 21 in Tartu Estonia.
+The Turu 21 office building was originally designed by Kadarik Tüür Architects on Turu street 21 in Tartu Estonia.
 
 The building is planned to have 5 storeys and have both office spaces and commercial spaces on the ground floor. There will be an underground parking garage and a rooftop terrace.
 
