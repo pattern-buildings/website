@@ -16,6 +16,8 @@ facts:
     value: 1-7 floors
   - key: Type
     value: housing, offices, hospitals etc
+  - key: Construction method
+    value: Offsite Modular
 features:
   - name: Informative
     description: The Pattern Building architecture must be informative. Its
