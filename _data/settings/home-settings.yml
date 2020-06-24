@@ -15,12 +15,12 @@ idea: >-
     modular
     ready to be produced, assembled, and transported in most European countries.
 facts:
-  - key: key1
-    value: value 1
-  - key: key2
-    value: value 2
-  - key: hello
-    value: world
+  - key: Material
+    value: Hybrid timber, LVL
+  - key: Size
+    value: 1-7 floors
+  - key: Type
+    value: housing, offices, hospitals etc
 features:
   - name: Informative
     description: The Pattern Building architecture must be informative. Its
