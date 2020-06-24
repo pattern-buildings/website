@@ -17,7 +17,7 @@ facts:
   - key: Type
     value: housing, offices, hospitals etc
   - key: Construction method
-    value: Offsite Modular
+    value: Offsite modular
 features:
   - name: Informative
     description: The Pattern Building architecture must be informative. Its
