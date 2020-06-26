@@ -22,7 +22,7 @@ discover:
   - title: FAQ
     url: "#faq"
     icon: mdiCommentQuestionOutline
-    hidden: true
+    hidden: false
 learn:
   - hidden: false
     title: Concept
