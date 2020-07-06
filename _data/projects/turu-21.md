@@ -14,9 +14,10 @@ facts:
     value: Lauri Läänelaid, Marianna Zvereva, Renee Puusepp, Egle Vogt, Eero
       Tuhkanen, Kristo Kalbe
 downloads:
-  - name: Example download file (PDF, 9.88MB) - NEEDS UPDATE
-    file: https://res.cloudinary.com/patternbuildings/image/upload/v1592471977/Pattern_Buildings_Guide_gjvdkx.pdf
+  - name: Example download file (PDF, 33MB)
+    file: ""
     type: pdf
+    url: https://drive.google.com/file/d/1ShkMCUPRQtX38DvV5cNJbRmvrMlHjlQQ/view?usp=sharing
 ---
 The Turu 21 office building was originally designed by Kadarik Tüür Architects on Turu street 21 in Tartu Estonia.
 

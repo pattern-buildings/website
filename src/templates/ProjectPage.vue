@@ -19,7 +19,7 @@
         <g-link
           v-for="(item, i) in $context.downloads"
           :key="i"
-          :to="item.file"
+          :to="item.file || item.url || '#'"
           class="flex items-center m-4 p-4 block border-2 border-gray-300 border-dotted"
         >
           <Icon :path="getIcon(item.type)" class="w-12 h-12 text-gray-600" />

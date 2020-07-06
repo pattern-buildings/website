@@ -32,6 +32,7 @@ module.exports = function (api) {
                 name
                 type
                 file
+                url
               }
               fileInfo {
                 name
