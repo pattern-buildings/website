@@ -1,26 +1,21 @@
 <template>
   <Layout>
     <section id="projects" class="py-8">
-      <h1 class="pb-8 text-center">Projects</h1>
+      <h1 class="pb-8 text-center">Documentation</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
         doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
         rerum illum odit fugit assumenda rem dolores inventore iste
         reprehenderit maxime! Iusto.
       </p>
-      <div>
+      <div class="flex flex-col justify-start items-center">
         <g-link
-          v-for="project in $page.projects.edges"
-          :key="project.node.id"
-          :to="`/projects/${project.node.fileInfo.name}`"
-          class="w-full block my-16"
+          v-for="doc in $page.docs.edges"
+          :key="doc.node.id"
+          :to="`/docs/${doc.node.fileInfo.name}`"
+          class="my-8"
         >
-          <ProjectCard
-            :title="project.node.title"
-            :subtitle="project.node.subtitle"
-            :description="project.node.description"
-            :cover="project.node.cover"
-          />
+          <p class="font-bold text-xl text-green-600">{{ doc.node.title }}</p>
         </g-link>
       </div>
       <hr class="mt-16" />
@@ -30,14 +25,11 @@
 
 <page-query>
   query {
-    projects: allProjects(sortBy: "order", order: ASC) {
+    docs: allDocs(sortBy: "order", order: ASC) {
       edges {
         node {
           id
           title
-          subtitle
-          description
-          cover
           fileInfo {
             name
           }
@@ -48,11 +40,7 @@
 </page-query>
 
 <script>
-import Navigation from '@/components/Navigation.vue';
-import ProjectCard from '@/components/ProjectCard.vue';
-
 export default {
-  components: { Navigation, ProjectCard },
   metaInfo: {
     title: 'Projects',
   },

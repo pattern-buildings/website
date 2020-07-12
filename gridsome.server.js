@@ -11,7 +11,6 @@ module.exports = function (api) {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   });
 
-  // eslint-disable-next-line no-unused-vars
   api.createPages(async ({ graphql, createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
     const { data } = await graphql(`
@@ -40,6 +39,19 @@ module.exports = function (api) {
             }
           }
         }
+
+        allDocs {
+          edges {
+            node {
+              id
+              title
+              content
+              fileInfo {
+                name
+              }
+            }
+          }
+        }
       }
     `);
 
@@ -56,6 +68,17 @@ module.exports = function (api) {
           facts: node.facts,
           content: node.content,
           downloads: node.downloads,
+        },
+      });
+    });
+
+    data.allDocs.edges.forEach(({ node }) => {
+      createPage({
+        path: `/docs/${node.fileInfo.name}`,
+        component: './src/templates/DocPage.vue',
+        context: {
+          title: node.title,
+          content: node.content,
         },
       });
     });

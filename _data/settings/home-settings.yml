@@ -48,3 +48,18 @@ features:
     description: Functional units of the building (for example, apartments in the
       case of an apartment building) should be independent of each other both in
       terms of access and in terms of utility systems.
+supporters:
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
+core_team:
+  - name: Core Team Name
+    responsibility: responsibility
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
+contributors:
+  - name: Contributor Name
+    responsibility: contributor responsibility
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
+license_description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+  molestias quis autem deleniti fugit quae doloremque incidunt soluta! Debitis
+  alias nostrum ad accusantium eum architecto harum dolore doloribus in
+  molestias.
+license_url: https://google.com

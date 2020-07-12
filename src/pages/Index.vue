@@ -14,9 +14,8 @@
 
     <Navigation />
 
+    <hr />
     <main>
-      <hr />
-
       <section id="idea" class="py-16">
         <h2 class="mb-16 text-center">Idea</h2>
 
@@ -43,7 +42,7 @@
 
         <div class="flex flex-col items-center mx-auto mt-4 mb-16">
           <div
-            v-for="(feature, i) in features"
+            v-for="(feature, i) in settings.features"
             :key="i"
             class="flex flex-col sm:flex-row w-full my-8"
           >
@@ -60,7 +59,7 @@
 
       <hr />
 
-      <section id="projects" class="my-16">
+      <section id="projects" class="py-16">
         <h2 class="pb-8 text-center">Projects</h2>
         <div class="flex flex-wrap justify-center items-stretch">
           <g-link
@@ -78,12 +77,89 @@
           </g-link>
         </div>
         <div class="text-center">
-          <g-link to="/projects" class="btn">See all projects</g-link>
+          <g-link to="/projects" class="btn bg-red-600"
+            >See all projects</g-link
+          >
         </div>
-        <hr class="mt-16" />
       </section>
 
-      <section class="my-16">
+      <hr />
+
+      <section id="supporters" class="py-16">
+        <h2 class="pb-8 text-center">Supporters</h2>
+        <div class="flex flex-wrap justify-center items-stretch">
+          <g-link
+            v-for="(supporter, i) in settings.supporters"
+            :key="i"
+            :to="`/`"
+            class="w-full block sm:w-1/2 md:w-1/3 px-2 py-8"
+          >
+            <g-image :src="supporter.logo" />
+          </g-link>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="team" class="py-16">
+        <h2 class="pb-8 text-center">Core team</h2>
+        <div class="flex flex-wrap justify-center items-stretch">
+          <g-link
+            v-for="(teamMember, i) in settings.core_team"
+            :key="i"
+            :to="`/`"
+            class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
+          >
+            <g-image
+              :alt="teamMember.name"
+              :src="teamMember.avatar"
+              class="w-20 h-20 rounded-full"
+            />
+            <b class="text-center">{{ teamMember.name }}</b>
+            <small class="text-gray-600">{{ teamMember.responsibility }}</small>
+          </g-link>
+        </div>
+        <h2 class="mt-16 mb-8 text-center">Contributors</h2>
+        <div class="flex flex-wrap justify-center items-stretch">
+          <g-link
+            v-for="(contributor, i) in settings.contributors"
+            :key="i"
+            :to="`/`"
+            class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
+          >
+            <g-image
+              :alt="contributor.name"
+              :src="contributor.avatar"
+              class="w-16 h-16 rounded-full"
+            />
+            <b class="text-center">{{ contributor.name }}</b>
+            <small class="text-gray-600">{{
+              contributor.responsibility
+            }}</small>
+          </g-link>
+        </div>
+        <div class="text-center mt-8">
+          <g-link to="/projects" class="btn bg-red-600"
+            >Become a contributor</g-link
+          >
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="license" class="py-16">
+        <h2 class="pb-8 text-center">License</h2>
+        <p>{{ settings.license_description }}</p>
+        <div class="text-center mt-8">
+          <g-link :to="settings.license_url" class="btn bg-red-600">
+            Open license
+          </g-link>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="py-16">
         <h2 class="text-center mb-8">Get in touch</h2>
 
         <div class="mx-auto w-48 mb-16">
@@ -101,7 +177,7 @@
               <label>Email <input type="email" name="email" /></label>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button type="submit" class="bg-red-600">Send</button>
             </p>
           </form>
         </div>
@@ -114,12 +190,6 @@
         >
       </section>
     </main>
-    <footer>
-      <Navigation />
-      <p class="text-sm text-center text-gray-600">
-        Pattern Buildings <span class="mx-2">|</span> 2020
-      </p>
-    </footer>
   </Layout>
 </template>
 
@@ -146,6 +216,21 @@
             name
             description
           }
+          supporters {
+            logo
+          }
+          core_team {
+            name
+            avatar
+            responsibility
+          }
+          contributors {
+            name
+            avatar
+            responsibility
+          }
+          license_description
+          license_url
         }
       }
     }
@@ -181,8 +266,8 @@ export default {
     title: 'Hello, world!',
   },
   computed: {
-    features() {
-      return this.$page.settings.edges[0].node.features;
+    settings() {
+      return this.$page.settings.edges[0].node;
     },
   },
   mounted() {

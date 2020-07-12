@@ -1,8 +1,6 @@
 <template>
   <div class="layout">
-    <div
-      class="flex justify-between fixed bg-white md:bg-transparent top-0 left-0 w-full p-2 z-10"
-    >
+    <div class="flex justify-between fixed top-0 left-0 w-full p-2 z-10">
       <div class="flex items-center cursor-pointer logo" @click="goHome()">
         <div
           class="w-16 h-16 bg-center bg-cover rounded-lg"
@@ -16,11 +14,20 @@
       </div>
     </div>
     <slot />
+    <footer class="mt-auto w-full">
+      <Navigation />
+      <p class="text-sm text-center text-gray-600">
+        Pattern Buildings <span class="mx-2">|</span> 2020
+      </p>
+    </footer>
   </div>
 </template>
 
 <script>
+import Navigation from '@/components/Navigation.vue';
+
 export default {
+  components: { Navigation },
   methods: {
     goHome() {
       if (this.$route.path === '/' && !this.$route.hash) {
@@ -72,11 +79,11 @@ input {
 }
 button,
 a.btn {
-  @apply bg-blue-600 text-white px-4 py-2;
+  @apply text-white px-4 py-2;
 }
 
 .layout {
-  @apply max-w-4xl mx-auto p-4 pt-20;
+  @apply max-w-4xl min-h-screen flex flex-col justify-start items-stretch mx-auto p-4 pt-20;
   @screen sm {
     @apply px-8;
   }

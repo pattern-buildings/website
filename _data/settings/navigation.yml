@@ -19,23 +19,23 @@ discover:
     url: "#license"
     icon: mdiLicense
     hidden: false
-  - title: FAQ
-    url: "#faq"
-    icon: mdiCommentQuestionOutline
-    hidden: false
 learn:
   - hidden: false
+    title: Documentation
+    url: /docs
+    icon: mdiFileDocumentOutline
+  - hidden: false
     title: Concept
-    url: /concept
+    url: /docs/concept
     icon: mdiCubeOutline
   - hidden: false
     title: Design
-    url: /design
+    url: /docs/design
     icon: mdiDrawing
-  - hidden: true
-    title: Documentation
-    url: /documentation
-    icon: mdiFileDocumentOutline
+  - hidden: false
+    title: FAQ
+    url: /docs/faq
+    icon: mdiCommentQuestionOutline
 engage:
   - hidden: false
     title: Downloads

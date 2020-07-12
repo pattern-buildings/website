@@ -5,11 +5,11 @@
       :subtitle="$context.subtitle"
       :cover="$context.cover"
     />
-    <KeyValueList
-      :rows="$context.facts"
-      class="sm:float-right mt-16 sm:ml-8 mb-8"
-    />
     <main>
+      <KeyValueList
+        :rows="$context.facts"
+        class="sm:float-right mt-16 sm:ml-8 mb-8"
+      />
       <ContentBlock :content="$context.content" />
     </main>
     <hr />
@@ -29,17 +29,13 @@
       <hr class="mt-16" />
     </section>
     <section class="my-16 text-center">
-      <g-link to="/projects" class="btn">See all projects</g-link>
+      <g-link to="/projects" class="btn bg-red-600">See all projects</g-link>
       <hr class="mt-16" />
     </section>
-    <footer>
-      <Navigation />
-    </footer>
   </Layout>
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue';
 import ContentBlock from '@/components/ContentBlock.vue';
 import ProjectHeader from '@/components/ProjectHeader.vue';
 import KeyValueList from '@/components/KeyValueList.vue';
@@ -47,7 +43,7 @@ import Icon from '@/components/Icon.vue';
 import { mdiFilePdf, mdiFileCad, mdiFileDownload } from '@mdi/js';
 
 export default {
-  components: { Navigation, ContentBlock, ProjectHeader, KeyValueList, Icon },
+  components: { ContentBlock, ProjectHeader, KeyValueList, Icon },
   metaInfo() {
     return { title: this.$context.title };
   },
