@@ -4,7 +4,7 @@
       <h3 class="nav-head">Discover</h3>
       <div v-if="$route.fullPath !== '/'" class="nav-item">
         <Icon :path="mdiHomeOutline" />
-        <g-link to="/">Home</g-link>
+        <g-link to="/">Homepage</g-link>
       </div>
       <div v-for="(item, i) in discover" :key="i" class="nav-item">
         <Icon :path="item.icon" />

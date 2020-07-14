@@ -28,7 +28,7 @@ module.exports = function (api) {
               }
               content
               downloads {
-                name
+                title
                 type
                 file
                 url

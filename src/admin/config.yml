@@ -51,7 +51,7 @@ collections:
         minimize_collapsed: false
         summary: '{{name}} - {{type}}'
         fields:
-          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string' }
           - {label: "File", name: "file", widget: "file", required: false}
           - {label: "URL", name: "url", widget: "string", required: false}
           - label: "Type"
@@ -78,6 +78,28 @@ collections:
 
   # ============================================================================
 
+  - name: "downloads"
+    label: "Downloads"
+    label_singular: 'Download'
+    folder: "_data/downloads"
+    create: true
+    slug: "{{title}}"
+    summary: '#{{order}} - {{title}}'
+    sortableFields: ['title', 'order']
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string", hint: "Also used as a slug"}
+      - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: ["pdf", "cad", 'other']
+      - {label: "File", name: "file", widget: "file", required: false}
+      - {label: "URL", name: "url", widget: "string", required: false}
+
+  # ============================================================================
+
   - name: 'settings'
     label: 'Settings'
     delete: false
@@ -85,9 +107,9 @@ collections:
       preview: false
     files:
 
-      - name: 'home-settings'
-        label: 'Home settings'
-        file: '_data/settings/home-settings.yml'
+      - name: 'discover-settings'
+        label: 'Discover settings'
+        file: '_data/settings/discover-settings.yml'
         description: 'Setup fields for home page'
         fields:
           - {label: "Idea", name: "idea", widget: "markdown"}
@@ -139,6 +161,20 @@ collections:
           - { label: "License desctiption", name: "license_description", widget: "markdown"}
           - { label: 'License URL', name: 'license_url', widget: 'string' }
 
+      - name: 'learn-settings'
+        label: 'Learn settings'
+        file: '_data/settings/learn-settings.yml'
+        description: 'Setup fields for docs'
+        fields:
+          - {label: "Intro for docs", name: "intro_docs", widget: "markdown"}
+          
+      - name: 'engage-settings'
+        label: 'Engage settings'
+        file: '_data/settings/engage-settings.yml'
+        description: 'Setup fields for engage section'
+        fields:
+          - {label: "Intro for downloads", name: "intro_downloads", widget: "markdown"}
+          
       - name: 'navigation'
         label: 'Navigation'
         file: '_data/settings/navigation.yml'

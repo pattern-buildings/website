@@ -14,7 +14,7 @@ facts:
     value: Lauri Läänelaid, Marianna Zvereva, Renee Puusepp, Egle Vogt, Eero
       Tuhkanen, Kristo Kalbe
 downloads:
-  - name: Example download file (PDF, 33MB)
+  - title: Example download file (PDF, 33MB)
     file: ""
     type: pdf
     url: https://drive.google.com/file/d/1ShkMCUPRQtX38DvV5cNJbRmvrMlHjlQQ/view?usp=sharing

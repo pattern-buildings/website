@@ -14,7 +14,7 @@ facts:
     value: Egle Vogt, Eero Tuhkanen, Kristo Kalbe
 downloads:
   - file: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
-    name: Example cad file (SKP, 12MB) - NEEDS UPDATE
+    title: Example cad file (SKP, 12MB) - NEEDS UPDATE
     type: cad
 ---
 The building is situated near Pirita Marina Hotel and SPA. It features a sauna, bar, conference rooms and guest accommodation rooms. 

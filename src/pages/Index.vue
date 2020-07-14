@@ -149,10 +149,10 @@
 
       <section id="license" class="py-16">
         <h2 class="pb-8 text-center">License</h2>
-        <p>{{ settings.license_description }}</p>
+        <p v-html="settings.license_description" />
         <div class="text-center mt-8">
           <g-link :to="settings.license_url" class="btn bg-red-600">
-            Open license
+            View license
           </g-link>
         </div>
       </section>
@@ -204,7 +204,7 @@
 
 <page-query>
   query {
-    settings: allSettings {
+    settings: allDiscoverSettings {
       edges {
         node {
           idea

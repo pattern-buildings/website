@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "dev": "npx netlify-cms-proxy-server & gridsome develop",
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint"
   },

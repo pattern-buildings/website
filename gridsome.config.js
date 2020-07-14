@@ -48,8 +48,34 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: '_data/settings/home-settings.yml',
-        typeName: 'Settings',
+        path: '_data/downloads/*.md',
+        typeName: 'Downloads',
+        remark: {
+          plugins: [
+            // ...local plugins
+          ],
+        },
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_data/settings/discover-settings.yml',
+        typeName: 'DiscoverSettings',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_data/settings/learn-settings.yml',
+        typeName: 'LearnSettings',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: '_data/settings/engage-settings.yml',
+        typeName: 'EngageSettings',
       },
     },
     {

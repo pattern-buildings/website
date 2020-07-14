@@ -9,11 +9,11 @@ discover:
     hidden: false
   - title: Supproters
     url: "#supporters"
-    icon: mdiWarehouse
+    icon: mdiHeartOutline
     hidden: false
   - title: Team
     url: "#team"
-    icon: mdiAccountSupervisorOutline
+    icon: mdiAccountMultipleOutline
     hidden: false
   - title: License
     url: "#license"
@@ -38,10 +38,18 @@ learn:
     icon: mdiCommentQuestionOutline
 engage:
   - hidden: false
+    title: Become a supporter
+    url: /become-supporter
+    icon: mdiHeartPlusOutline
+  - hidden: false
+    title: Become a contributor
+    url: /become-contributor
+    icon: mdiAccountPlusOutline
+  - hidden: false
+    title: Contact the team
+    url: /contact-team
+    icon: mdiEmailOutline
+  - hidden: false
     title: Downloads
     url: /downloads
     icon: mdiDownloadOutline
-  - hidden: false
-    title: Get in touch
-    url: /contact
-    icon: mdiEmailOutline

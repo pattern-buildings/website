@@ -2,12 +2,7 @@
   <Layout>
     <section id="projects" class="py-8">
       <h1 class="pb-8 text-center">Documentation</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-        doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
-        rerum illum odit fugit assumenda rem dolores inventore iste
-        reprehenderit maxime! Iusto.
-      </p>
+      <p>{{ $page.settings.edges[0].node.intro_docs }}</p>
       <div class="flex flex-col justify-start items-center">
         <g-link
           v-for="doc in $page.docs.edges"
@@ -33,6 +28,13 @@
           fileInfo {
             name
           }
+        }
+      }
+    }
+    settings: allLearnSettings {
+      edges {
+        node {
+          intro_docs
         }
       }
     }
