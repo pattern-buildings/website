@@ -49,15 +49,22 @@ features:
       case of an apartment building) should be independent of each other both in
       terms of access and in terms of utility systems.
 supporters:
-  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.svg
+    url: https://www.artun.ee/en/home/
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.png
+    url: https://www.artun.ee/en/home/
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.png
+    url: https://www.artun.ee/en/home/
 core_team:
   - name: Core Team Name
     responsibility: responsibility
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
+    url: https://google.com
 contributors:
   - name: Contributor Name
     responsibility: contributor responsibility
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
+    url: https://google.com
 license_description: Pattern Buildings by Renee Puusepp, Egle Vogt, Lauri
   Läänelaid, Marianna Zvereva, Eero Tuhkanen, Kristo Kalbe is licensed under CC
   BY 4.0

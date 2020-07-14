@@ -91,10 +91,10 @@
           <g-link
             v-for="(supporter, i) in settings.supporters"
             :key="i"
-            :to="`/`"
-            class="w-full block sm:w-1/2 md:w-1/3 px-2 py-8"
+            :to="supporter.url"
+            class="w-full block sm:w-1/3 md:w-1/4 px-2 py-8"
           >
-            <g-image :src="supporter.logo" />
+            <g-image :src="supporter.logo" class="w-full" />
           </g-link>
         </div>
       </section>
@@ -107,7 +107,7 @@
           <g-link
             v-for="(teamMember, i) in settings.core_team"
             :key="i"
-            :to="`/`"
+            :to="teamMember.url"
             class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
           >
             <g-image
@@ -124,7 +124,7 @@
           <g-link
             v-for="(contributor, i) in settings.contributors"
             :key="i"
-            :to="`/`"
+            :to="contributor.url"
             class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
           >
             <g-image
@@ -158,37 +158,6 @@
       </section>
 
       <hr />
-
-      <section class="py-16">
-        <h2 class="text-center mb-8">Get in touch</h2>
-
-        <div class="mx-auto w-48 mb-16">
-          <form
-            name="test-form"
-            method="POST"
-            data-netlify="true"
-            action="/about"
-          >
-            <input type="hidden" name="form-name" value="test-form" />
-            <p>
-              <label>Name <input type="text" name="name" /></label>
-            </p>
-            <p>
-              <label>Email <input type="email" name="email" /></label>
-            </p>
-            <p>
-              <button type="submit" class="bg-red-600">Send</button>
-            </p>
-          </form>
-        </div>
-
-        <a
-          href="https://res.cloudinary.com/patternbuildings/image/upload/v1592471977/Pattern_Buildings_Guide_gjvdkx.pdf"
-          target="_blank"
-          class="text-blue-600 w-full block text-center"
-          >Download guide (PDF, 9.88 MB)</a
-        >
-      </section>
     </main>
   </Layout>
 </template>
@@ -218,16 +187,19 @@
           }
           supporters {
             logo
+            url
           }
           core_team {
             name
             avatar
             responsibility
+            url
           }
           contributors {
             name
             avatar
             responsibility
+            url
           }
           license_description
           license_url

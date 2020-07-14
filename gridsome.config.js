@@ -94,5 +94,31 @@ module.exports = {
     {
       use: 'gridsome-plugin-tailwindcss',
     },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        exclude: ['/success'],
+      },
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-XXXXXXXXX-X',
+      },
+    },
+    {
+      use: 'gridsome-plugin-manifest',
+      options: {
+        background_color: '#000000',
+        icon_path: './src/favicon.png',
+        name: 'Pattern Building',
+        short_name: 'Pattern Building',
+        theme_color: '#FFFFFF',
+        lang: 'en',
+      },
+    },
   ],
 };
