@@ -61,7 +61,39 @@
 
 <script>
 import Icon from '@/components/Icon';
-import { mdiHomeOutline } from '@mdi/js';
+import {
+  mdiHomeOutline,
+  mdiInformationOutline,
+  mdiCardsVariant,
+  mdiHeartOutline,
+  mdiAccountMultipleOutline,
+  mdiLicense,
+  mdiFileDocumentOutline,
+  mdiCubeOutline,
+  mdiDrawing,
+  mdiCommentQuestionOutline,
+  mdiHeartPlusOutline,
+  mdiAccountPlusOutline,
+  mdiEmailOutline,
+  mdiDownloadOutline,
+} from '@mdi/js';
+
+const iconList = {
+  mdiHomeOutline,
+  mdiInformationOutline,
+  mdiCardsVariant,
+  mdiHeartOutline,
+  mdiAccountMultipleOutline,
+  mdiLicense,
+  mdiFileDocumentOutline,
+  mdiCubeOutline,
+  mdiDrawing,
+  mdiCommentQuestionOutline,
+  mdiHeartPlusOutline,
+  mdiAccountPlusOutline,
+  mdiEmailOutline,
+  mdiDownloadOutline,
+};
 
 export default {
   components: {
@@ -97,8 +129,11 @@ export default {
   },
   methods: {
     async getIcon(handle) {
-      const { [handle]: fetchedIcon } = await import(`@mdi/js`);
-      return fetchedIcon;
+      // const { [handle]: fetchedIcon } = await import(
+      //   /* webpackChunkName: "mdi" */ `@mdi/js`
+      // );
+      // return fetchedIcon;
+      return iconList[handle];
     },
   },
 };

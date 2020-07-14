@@ -120,5 +120,14 @@ module.exports = {
         lang: 'en',
       },
     },
+    {
+      use: 'gridsome-plugin-bundle-analyzer',
+      options: {
+        onlyProduction: true, // only production bundle will be analyzed by default
+        analyzerOptions: {
+          analyzerMode: 'static',
+        }, // see https://github.com/webpack-contrib/webpack-bundle-analyzer
+      },
+    },
   ],
 };
