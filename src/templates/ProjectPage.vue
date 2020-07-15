@@ -42,7 +42,17 @@ export default {
     DownloadsBlock,
   },
   metaInfo() {
-    return { title: this.$context.title };
+    return {
+      title: `${this.$context.title} | Pattern Buildings`,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content:
+            'A Pattern Buildings project - an open-source industrial building system for mass-customizable buildings',
+        },
+      ],
+    };
   },
 };
 </script>

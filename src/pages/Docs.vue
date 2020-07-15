@@ -44,7 +44,15 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Projects',
+    title: 'Documentation | Pattern Buildings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content:
+          'Documentation for Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
+      },
+    ],
   },
 };
 </script>

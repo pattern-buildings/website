@@ -7,7 +7,14 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Success',
+    title: 'Success | Pattern Buildings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Form submission for Pattern Buildings',
+      },
+    ],
   },
 };
 </script>

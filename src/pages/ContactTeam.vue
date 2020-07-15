@@ -26,7 +26,14 @@ Become a sponsor
 <script>
 export default {
   metaInfo: {
-    title: 'Contact the team',
+    title: 'Contact the team | Pattern Buildings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Contact Pattern Buildings team form',
+      },
+    ],
   },
 };
 </script>

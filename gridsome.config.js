@@ -9,6 +9,7 @@ module.exports = {
   siteDescription:
     'An open-source industrial building system for mass-customizable buildings',
   siteUrl: 'https://patternbuildings.com',
+  titleTemplate: '%s',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',

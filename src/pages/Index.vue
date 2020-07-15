@@ -6,7 +6,7 @@
         <p class="text-gray-600 mt-4">{{ $static.metadata.siteDescription }}</p>
       </div>
       <g-image
-        alt="pattern building logo"
+        alt="Pattern Buildings logo"
         src="~/assets/images/pattern-buildings-features.jpg"
         class="w-full sm:w-1/2 max-w-xs lg:max-w-sm"
       />
@@ -234,9 +234,6 @@ import KeyValueList from '@/components/KeyValueList.vue';
 
 export default {
   components: { Navigation, ProjectCard, KeyValueList },
-  metaInfo: {
-    title: 'Hello, world!',
-  },
   computed: {
     settings() {
       return this.$page.settings.edges[0].node;

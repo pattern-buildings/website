@@ -48,13 +48,19 @@
 </page-query>
 
 <script>
-import Navigation from '@/components/Navigation.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 
 export default {
-  components: { Navigation, ProjectCard },
+  components: { ProjectCard },
   metaInfo: {
-    title: 'Projects',
+    title: 'Projects | Pattern Buildings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'List of Pattern Buildings projects',
+      },
+    ],
   },
 };
 </script>

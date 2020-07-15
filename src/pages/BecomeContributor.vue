@@ -26,7 +26,14 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Become a contributor',
+    title: 'Become a contributor | Pattern Buildings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Become a Pattern Buildings contributor',
+      },
+    ],
   },
 };
 </script>

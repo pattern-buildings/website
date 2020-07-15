@@ -43,7 +43,14 @@ export default {
     DownloadsBlock,
   },
   metaInfo: {
-    title: 'Downloads',
+    title: 'Downloads | Pattern Buildings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'List of files to download from Pattern Buildings',
+      },
+    ],
   },
   computed: {
     downloads() {

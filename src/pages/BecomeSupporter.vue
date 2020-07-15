@@ -26,7 +26,14 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Become a supporter',
+    title: 'Become a supporter | Pattern Buildings',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Become a supproter of Pettrn Buildings',
+      },
+    ],
   },
 };
 </script>
