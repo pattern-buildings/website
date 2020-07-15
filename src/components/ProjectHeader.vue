@@ -3,7 +3,7 @@
     class="relative flex flex-col justify-end items-start h-64 p-8 overflow-hidden"
   >
     <g-image
-      alt="pattern buildings"
+      alt="Pattern Buildings"
       :src="cover"
       class="absolute inset-0 w-full h-full object-cover"
     />

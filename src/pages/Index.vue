@@ -94,7 +94,11 @@
             :to="supporter.url"
             class="w-full block sm:w-1/3 md:w-1/4 px-2 py-8"
           >
-            <g-image :src="supporter.logo" class="w-full" />
+            <g-image
+              :src="supporter.logo"
+              alt="Pattern Buildings supporter"
+              class="w-full"
+            />
           </g-link>
         </div>
       </section>
@@ -111,7 +115,7 @@
             class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
           >
             <g-image
-              :alt="teamMember.name"
+              :alt="`${teamMember.name} - Pattern Buildings team member`"
               :src="teamMember.avatar"
               class="w-20 h-20 rounded-full"
             />
@@ -128,7 +132,7 @@
             class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
           >
             <g-image
-              :alt="contributor.name"
+              :alt="`${contributor.name} - Pattern Buildings contributor`"
               :src="contributor.avatar"
               class="w-16 h-16 rounded-full"
             />

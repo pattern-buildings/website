@@ -4,7 +4,7 @@
       class="relative flex flex-col justify-end items-start h-64 p-4 overflow-hidden"
     >
       <g-image
-        alt="pattern buildings"
+        :alt="title ? `${title} - ${subtitle}` : 'Pattern Buildings'"
         :src="cover"
         class="absolute inset-0 w-full h-full object-cover rounded-lg"
       />
