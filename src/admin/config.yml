@@ -130,6 +130,7 @@ collections:
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Description', name: 'description', widget: 'markdown', minimal: true, buttons: [], editorComponents: [] }
+          - {label: "Intro for projects", name: "intro_projects", widget: "markdown"}
           - name: supporters
             label: Supporters
             label_singular: 'Supporter'

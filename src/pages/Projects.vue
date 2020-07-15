@@ -2,12 +2,7 @@
   <Layout>
     <section id="projects" class="py-8">
       <h1 class="pb-8 text-center">Projects</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-        doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
-        rerum illum odit fugit assumenda rem dolores inventore iste
-        reprehenderit maxime! Iusto.
-      </p>
+      <p>{{ $page.settings.edges[0].node.intro_projects }}</p>
       <div>
         <g-link
           v-for="project in $page.projects.edges"
@@ -41,6 +36,13 @@
           fileInfo {
             name
           }
+        }
+      }
+    }
+    settings: allDiscoverSettings {
+      edges {
+        node {
+          intro_projects
         }
       }
     }
