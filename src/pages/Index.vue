@@ -8,6 +8,7 @@
       <g-image
         alt="Pattern Buildings logo"
         src="~/assets/images/pattern-buildings-features.jpg"
+        immediate="true"
         class="w-full sm:w-1/2 max-w-xs lg:max-w-sm"
       />
     </header>
@@ -98,6 +99,15 @@
             />
           </g-link>
         </div>
+        <div class="text-center text-sm text-gray-600">
+          Fill this
+          <g-link
+            to="/become-supporter"
+            class="text-blue-600 underline font-bold"
+            >form</g-link
+          >
+          if you want to support the project.
+        </div>
       </section>
 
       <hr />
@@ -140,7 +150,7 @@
           </g-link>
         </div>
         <div class="text-center mt-8">
-          <g-link to="/become-contributor/" class="btn bg-red-600"
+          <g-link to="/become-contributor/" class="btn bg-blue-600"
             >Become a contributor</g-link
           >
         </div>
