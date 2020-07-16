@@ -2,7 +2,8 @@
   <Layout>
     <section id="projects" class="py-8">
       <h1 class="pb-8 text-center">Documentation</h1>
-      <p>{{ $page.settings.edges[0].node.intro_docs }}</p>
+      <Markdown :raw="$page.settings.edges[0].node.intro_docs" />
+
       <div class="flex flex-col justify-start items-center">
         <g-link
           v-for="doc in $page.docs.edges"
@@ -42,7 +43,10 @@
 </page-query>
 
 <script>
+import Markdown from '@/components/Markdown.vue';
+
 export default {
+  components: { Markdown },
   metaInfo() {
     return {
       title: 'Documentation | Pattern Buildings',
@@ -51,11 +55,13 @@ export default {
           key: 'description',
           name: 'description',
           content:
-            this.$page.settings.edges[0].node.intro_docs.substring(0, 150).concat('...') ||
+            this.$page.settings.edges[0].node.intro_docs
+              .substring(0, 150)
+              .concat('...') ||
             'Documentation for Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
         },
       ],
-    }
+    };
   },
 };
 </script>

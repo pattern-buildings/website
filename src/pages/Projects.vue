@@ -2,7 +2,7 @@
   <Layout>
     <section id="projects" class="py-8">
       <h1 class="pb-8 text-center">Projects</h1>
-      <p>{{ $page.settings.edges[0].node.intro_projects }}</p>
+      <Markdown :raw="$page.settings.edges[0].node.intro_projects" />
       <div>
         <g-link
           v-for="project in $page.projects.edges"
@@ -49,13 +49,14 @@
 
 <script>
 import ProjectCard from '@/components/ProjectCard.vue';
+import Markdown from '@/components/Markdown.vue';
 
 export default {
-  components: { ProjectCard },
+  components: { ProjectCard, Markdown },
   computed: {
     q() {
       return 'q';
-    }
+    },
   },
   metaInfo() {
     return {
@@ -64,11 +65,13 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: this?.$page?.settings?.edges[0]?.node?.intro_projects.substring(0, 150).concat('...') ||
-          'List of Pattern Buildings projects',
+          content:
+            this?.$page?.settings?.edges[0]?.node?.intro_projects
+              .substring(0, 150)
+              .concat('...') || 'List of Pattern Buildings projects',
         },
       ],
-    }
+    };
   },
 };
 </script>

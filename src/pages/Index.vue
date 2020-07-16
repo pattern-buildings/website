@@ -24,9 +24,7 @@
             :rows="$page.settings.edges[0].node.facts"
             class="sm:float-right sm:ml-8 mb-8"
           />
-          <p class="">
-            {{ $page.settings.edges[0].node.idea }}
-          </p>
+          <Markdown :raw="$page.settings.edges[0].node.idea" />
           <div class="clear-both" />
         </div>
 
@@ -152,7 +150,7 @@
 
       <section id="license" class="py-16">
         <h2 class="pb-8 text-center">License</h2>
-        <p v-html="settings.license_description" />
+        <Markdown :raw="settings.license_description" />
         <div class="text-center mt-8">
           <g-link :to="settings.license_url" class="btn bg-red-600">
             View license
@@ -233,9 +231,10 @@
 import Navigation from '@/components/Navigation.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import KeyValueList from '@/components/KeyValueList.vue';
+import Markdown from '@/components/Markdown.vue';
 
 export default {
-  components: { Navigation, ProjectCard, KeyValueList },
+  components: { Navigation, ProjectCard, KeyValueList, Markdown },
   computed: {
     settings() {
       return this.$page.settings.edges[0].node;

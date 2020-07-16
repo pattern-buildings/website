@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
+    "markdown-it": "^11.0.0",
     "netlify-cms": "^2.10.50",
     "typeface-open-sans": "0.0.75",
     "typeface-quantico": "0.0.71"

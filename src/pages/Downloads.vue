@@ -2,7 +2,8 @@
   <Layout>
     <section id="projects" class="py-8">
       <h1 class="pb-8 text-center">Downloads</h1>
-      <p>{{ $page.settings.edges[0].node.intro_downloads }}</p>
+      <Markdown :raw="$page.settings.edges[0].node.intro_downloads" />
+
       <DownloadsBlock
         :downloads="downloads"
         class="flex flex-wrap justify-center my-16"
@@ -37,10 +38,12 @@
 
 <script>
 import DownloadsBlock from '@/components/DownloadsBlock.vue';
+import Markdown from '@/components/Markdown.vue';
 
 export default {
   components: {
     DownloadsBlock,
+    Markdown,
   },
   metaInfo() {
     return {
@@ -49,11 +52,14 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: this.$page.settings.edges[0].node.intro_downloads.substring(0, 150).concat('...') ||
-          'List of files to download from Pattern Buildings',
+          content:
+            this.$page.settings.edges[0].node.intro_downloads
+              .substring(0, 150)
+              .concat('...') ||
+            'List of files to download from Pattern Buildings',
         },
       ],
-    }
+    };
   },
   computed: {
     downloads() {

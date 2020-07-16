@@ -1,14 +1,23 @@
 idea: >-
-  Pattern Building is an industrial construction system based on modular design
-  for creating up to 7 floor buildings of different typology and appearance. It
-  is fit for designing and constructing buildings with clear span of up to 8.5
-  m. A Pattern building  can be a house, office, school, kindergarten, hospital
-  etc. 
+  Pattern Building is an **industrial construction system** based on **modular
+  design** for creating up to **7** floor buildings of different typology and
+  appearance. It is fit for designing and constructing buildings with clear span
+  of up to 8.5 m. A Pattern building can be a **house, office, school,
+  kindergarten, hospital** etc. 
 
 
-  Every Pattern Building is: mass-customisable; environmentally friendly; made primarily of wood; 
+  Every Pattern Building is: 
 
-  modular and prefabricated; ready to be produced, assembled, and transported in most European countries.
+
+  * mass-customisable; 
+
+  * environmentally friendly;
+
+  * made primarily of wood; 
+
+  * modular and prefabricated;
+
+  * ready to be produced, assembled, and transported in most European countries;
 facts:
   - key: Material
     value: Hybrid timber, LVL
@@ -48,11 +57,11 @@ features:
     description: Functional units of the building (for example, apartments in the
       case of an apartment building) should be independent of each other both in
       terms of access and in terms of utility systems.
-intro_projects: "List of projects that use Pattern Buildings open-source system.
-  A Pattern building can be a house, office, school, kindergarten, hospital etc.
-  Every Pattern Building is: mass-customisable; environmentally friendly; made
-  primarily of wood; modular and prefabricated; ready to be produced, assembled,
-  and transported in most European countries."
+intro_projects: "List of projects that use **Pattern Buildings** open-source
+  system. A Pattern building can be a house, office, school, kindergarten,
+  hospital etc. Every Pattern Building is: mass-customisable; environmentally
+  friendly; made primarily of wood; modular and prefabricated; ready to be
+  produced, assembled, and transported in most European countries."
 supporters:
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.svg
     url: https://www.artun.ee/en/home/
@@ -71,6 +80,6 @@ contributors:
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
     url: https://google.com
 license_description: Pattern Buildings by Renee Puusepp, Egle Vogt, Lauri
-  Läänelaid, Marianna Zvereva, Eero Tuhkanen, Kristo Kalbe is licensed under CC
-  BY 4.0
+  Läänelaid, Marianna Zvereva, Eero Tuhkanen, Kristo Kalbe is licensed under
+  **CC BY 4.0**
 license_url: https://creativecommons.org/licenses/by/4.0/
