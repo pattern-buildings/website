@@ -4,7 +4,7 @@ discover:
     icon: mdiInformationOutline
     hidden: false
   - title: Projects
-    url: /projects
+    url: /projects/
     icon: mdiCardsVariant
     hidden: false
   - title: Supproters
@@ -22,34 +22,34 @@ discover:
 learn:
   - hidden: false
     title: Documentation
-    url: /docs
+    url: /docs/
     icon: mdiFileDocumentOutline
   - hidden: false
     title: Concept
-    url: /docs/concept
+    url: /docs/concept/
     icon: mdiCubeOutline
   - hidden: false
     title: Design
-    url: /docs/design
+    url: /docs/design/
     icon: mdiDrawing
   - hidden: false
     title: FAQ
-    url: /docs/faq
+    url: /docs/faq/
     icon: mdiCommentQuestionOutline
 engage:
   - hidden: false
     title: Become a supporter
-    url: /become-supporter
+    url: /become-supporter/
     icon: mdiHeartPlusOutline
   - hidden: false
     title: Become a contributor
-    url: /become-contributor
+    url: /become-contributor/
     icon: mdiAccountPlusOutline
   - hidden: false
     title: Contact the team
-    url: /contact-team
+    url: /contact-team/
     icon: mdiEmailOutline
   - hidden: false
     title: Downloads
-    url: /downloads
+    url: /downloads/
     icon: mdiDownloadOutline

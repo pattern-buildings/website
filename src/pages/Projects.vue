@@ -7,7 +7,7 @@
         <g-link
           v-for="project in $page.projects.edges"
           :key="project.node.id"
-          :to="`/projects/${project.node.fileInfo.name}`"
+          :to="`/projects/${project.node.fileInfo.name}/`"
           class="w-full block my-16"
         >
           <ProjectCard

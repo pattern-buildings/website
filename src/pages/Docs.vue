@@ -8,7 +8,7 @@
         <g-link
           v-for="doc in $page.docs.edges"
           :key="doc.node.id"
-          :to="`/docs/${doc.node.fileInfo.name}`"
+          :to="`/docs/${doc.node.fileInfo.name}/`"
           class="my-8"
         >
           <p class="font-bold text-xl text-green-600">{{ doc.node.title }}</p>

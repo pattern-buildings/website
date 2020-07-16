@@ -22,7 +22,7 @@
       <hr class="mt-16" />
     </section>
     <section class="my-16 text-center">
-      <g-link to="/projects" class="btn bg-red-600">See all projects</g-link>
+      <g-link to="/projects/" class="btn bg-red-600">See all projects</g-link>
       <hr class="mt-16" />
     </section>
   </Layout>

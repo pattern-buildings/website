@@ -63,7 +63,7 @@
           <g-link
             v-for="project in $page.projects.edges"
             :key="project.node.id"
-            :to="`/projects/${project.node.fileInfo.name}`"
+            :to="`/projects/${project.node.fileInfo.name}/`"
             class="w-full block sm:w-1/2 md:w-1/3 px-2 py-8"
           >
             <ProjectCard
@@ -74,7 +74,7 @@
           </g-link>
         </div>
         <div class="text-center">
-          <g-link to="/projects" class="btn bg-red-600"
+          <g-link to="/projects/" class="btn bg-red-600"
             >See all projects</g-link
           >
         </div>
@@ -140,7 +140,7 @@
           </g-link>
         </div>
         <div class="text-center mt-8">
-          <g-link to="/projects" class="btn bg-red-600"
+          <g-link to="/become-contributor/" class="btn bg-red-600"
             >Become a contributor</g-link
           >
         </div>
