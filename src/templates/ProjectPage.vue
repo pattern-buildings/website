@@ -49,7 +49,8 @@ export default {
           key: 'description',
           name: 'description',
           content:
-            'A Pattern Buildings project - an open-source industrial building system for mass-customizable buildings',
+            this.$context.excerpt ||
+            `${this.$context.title} - a Pattern Buildings project`,
         },
       ],
     };

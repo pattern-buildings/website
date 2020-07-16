@@ -13,7 +13,6 @@
           <ProjectCard
             :title="project.node.title"
             :subtitle="project.node.subtitle"
-            :description="project.node.description"
             :cover="project.node.cover"
           />
         </g-link>
@@ -31,7 +30,6 @@
           id
           title
           subtitle
-          description
           cover
           fileInfo {
             name
@@ -54,15 +52,23 @@ import ProjectCard from '@/components/ProjectCard.vue';
 
 export default {
   components: { ProjectCard },
-  metaInfo: {
-    title: 'Projects | Pattern Buildings',
-    meta: [
-      {
-        key: 'description',
-        name: 'description',
-        content: 'List of Pattern Buildings projects',
-      },
-    ],
+  computed: {
+    q() {
+      return 'q';
+    }
+  },
+  metaInfo() {
+    return {
+      title: 'Projects | Pattern Buildings',
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this?.$page?.settings?.edges[0]?.node?.intro_projects.substring(0, 150).concat('...') ||
+          'List of Pattern Buildings projects',
+        },
+      ],
+    }
   },
 };
 </script>

@@ -15,7 +15,6 @@
         </span>
       </p>
     </div>
-    <p v-if="description" class="text-center mt-2">{{ description }}</p>
   </div>
 </template>
 
@@ -27,11 +26,6 @@ export default {
       required: true,
     },
     subtitle: {
-      type: String,
-      required: false,
-      default: '',
-    },
-    description: {
       type: String,
       required: false,
       default: '',

@@ -32,7 +32,6 @@ collections:
       - {label: "Cover image", name: "cover", widget: "image"}
       - {label: "Title", name: "title", widget: "string", hint: "Also used as a slug"}
       - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Short description", name: "description", widget: "string", required: false}
       - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
       - {label: "Featured on home page", name: "featured", widget: "boolean", default: false}
       - name: facts

@@ -8,8 +8,10 @@
       class="absolute inset-0 w-full h-full object-cover"
     />
     <h1 class="relative bg-white leading-tight px-2">{{ title }}</h1>
-    <p v-if="subtitle" class="relative bg-white text-sm text-gray-600 px-2">
-      {{ subtitle }}
+    <p v-if="subtitle" class="relative">
+      <span class="bg-white text-sm text-gray-600 px-2">
+        {{ subtitle }}
+      </span>
     </p>
   </header>
 </template>

@@ -71,7 +71,6 @@
             <ProjectCard
               :title="project.node.title"
               :subtitle="project.node.subtitle"
-              :description="project.node.description"
               :cover="project.node.cover"
             />
           </g-link>
@@ -219,7 +218,6 @@
         node {
           title
           subtitle
-          description
           cover
           featured
           fileInfo {

@@ -27,6 +27,7 @@ module.exports = function (api) {
                 key
               }
               content
+              excerpt
               downloads {
                 title
                 type
@@ -67,6 +68,7 @@ module.exports = function (api) {
           cover: node.cover,
           facts: node.facts,
           content: node.content,
+          excerpt: node.excerpt,
           downloads: node.downloads,
         },
       });

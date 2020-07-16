@@ -2,7 +2,15 @@
   <ul v-if="rows.length" class="key-value-list">
     <li v-for="(row, i) in rows" :key="i" class="key-value-list-item">
       <span style="min-width: 25%;">{{ row.key }}</span>
-      <b class="ml-4 text-right">{{ row.value }}</b>
+      <div>
+        <span
+          v-for="(item, j) in rowOfValues(row.value)"
+          :key="j"
+          class="ml-4 text-right block font-bold"
+        >
+          {{ item }}
+        </span>
+      </div>
     </li>
   </ul>
 </template>
@@ -15,6 +23,11 @@ export default {
       required: true,
     },
   },
+  methods: {
+    rowOfValues(rawString) {
+      return rawString.split(',').map(s => s.trim());
+    }
+  }
 };
 </script>
 

@@ -2,7 +2,6 @@
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1592910157/projects/sauna/2_xej9ev.jpg
 title: Sauna
 subtitle: A modular leisure centre
-description: ""
 order: 2
 featured: true
 facts:

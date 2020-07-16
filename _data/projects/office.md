@@ -1,8 +1,7 @@
 ---
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1592909261/projects/office-building/Turu_21_fassad3_jcmnam.jpg
-title: "Office "
+title: "Office"
 subtitle: A modular redesign of a concrete building
-description: ""
 order: 1
 featured: true
 facts:

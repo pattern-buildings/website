@@ -43,16 +43,19 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Documentation | Pattern Buildings',
-    meta: [
-      {
-        key: 'description',
-        name: 'description',
-        content:
-          'Documentation for Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
-      },
-    ],
+  metaInfo() {
+    return {
+      title: 'Documentation | Pattern Buildings',
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content:
+            this.$page.settings.edges[0].node.intro_docs.substring(0, 150).concat('...') ||
+            'Documentation for Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
+        },
+      ],
+    }
   },
 };
 </script>

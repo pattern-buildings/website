@@ -103,6 +103,14 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-robots-txt',
+      options: {
+        policy: [
+          {
+            userAgent: '*',
+            disallow: '/success',
+          },
+        ],
+      },
     },
     {
       use: '@gridsome/plugin-google-analytics',

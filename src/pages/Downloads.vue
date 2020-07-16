@@ -42,15 +42,18 @@ export default {
   components: {
     DownloadsBlock,
   },
-  metaInfo: {
-    title: 'Downloads | Pattern Buildings',
-    meta: [
-      {
-        key: 'description',
-        name: 'description',
-        content: 'List of files to download from Pattern Buildings',
-      },
-    ],
+  metaInfo() {
+    return {
+      title: 'Downloads | Pattern Buildings',
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$page.settings.edges[0].node.intro_downloads.substring(0, 150).concat('...') ||
+          'List of files to download from Pattern Buildings',
+        },
+      ],
+    }
   },
   computed: {
     downloads() {
