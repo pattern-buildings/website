@@ -66,8 +66,12 @@ input {
   @apply border-gray-300 border-2 my-2 w-full;
 }
 button,
-a.btn {
-  @apply text-white px-4 py-2;
+a.btn-fill {
+  @apply px-4 py-2 rounded border-2 border-transparent text-white;
+}
+button.btn-outline,
+a.btn-outline {
+  @apply px-4 py-2 rounded bg-transparent border-current border-2 box-border;
 }
 
 article p {

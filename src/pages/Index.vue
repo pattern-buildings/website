@@ -4,6 +4,14 @@
       <div class="text-center mb-8 sm:mb-0 sm:mx-12">
         <h1>{{ $static.metadata.siteName }}</h1>
         <p class="text-gray-600 mt-4">{{ $static.metadata.siteDescription }}</p>
+        <div class="mt-8 flex flex-wrap justify-center">
+          <g-link to="/docs/" class="btn-fill bg-green-600 m-4">
+            Documentation
+          </g-link>
+          <g-link to="/contact-team/" class="btn-outline text-blue-600 m-4">
+            Contact the team
+          </g-link>
+        </div>
       </div>
       <g-image
         alt="Pattern Buildings logo"
@@ -13,7 +21,7 @@
       />
     </header>
 
-    <Navigation />
+    <!-- <Navigation /> -->
 
     <hr />
     <main>
@@ -75,9 +83,9 @@
           </g-link>
         </div>
         <div class="text-center">
-          <g-link to="/projects/" class="btn bg-red-600"
-            >See all projects</g-link
-          >
+          <g-link to="/projects/" class="btn-fill bg-red-600">
+            See all projects
+          </g-link>
         </div>
       </section>
 
@@ -150,9 +158,9 @@
           </g-link>
         </div>
         <div class="text-center mt-8">
-          <g-link to="/become-contributor/" class="btn bg-blue-600"
-            >Become a contributor</g-link
-          >
+          <g-link to="/become-contributor/" class="btn-fill bg-blue-600">
+            Become a contributor
+          </g-link>
         </div>
       </section>
 
@@ -162,7 +170,7 @@
         <h2 class="pb-8 text-center">License</h2>
         <Markdown :raw="settings.license_description" />
         <div class="text-center mt-8">
-          <g-link :to="settings.license_url" class="btn bg-red-600">
+          <g-link :to="settings.license_url" class="btn-fill bg-red-600">
             View license
           </g-link>
         </div>

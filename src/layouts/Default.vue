@@ -1,8 +1,7 @@
 <template>
   <div class="layout">
-    <div class="flex justify-between fixed top-0 left-0 w-full p-2 z-10">
+    <!-- <div class="flex justify-between fixed top-0 left-0 w-full p-2 z-10">
       <div class="flex items-center cursor-pointer logo" @click="goHome()">
-        <!-- prettier-ignore -->
         <div
           class="w-16 h-16 bg-center bg-cover rounded-lg"
           style="background-image: url(https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg)"
@@ -11,7 +10,10 @@
           Pattern Buildings
         </p>
       </div>
-    </div>
+    </div> -->
+    <MenuOverlay>
+      <Navigation />
+    </MenuOverlay>
     <slot />
     <footer class="mt-auto w-full">
       <Navigation />
@@ -24,9 +26,10 @@
 
 <script>
 import Navigation from '@/components/Navigation.vue';
+import MenuOverlay from '@/components/MenuOverlay.vue';
 
 export default {
-  components: { Navigation },
+  components: { Navigation, MenuOverlay },
   methods: {
     goHome() {
       if (this.$route.path === '/' && !this.$route.hash) {

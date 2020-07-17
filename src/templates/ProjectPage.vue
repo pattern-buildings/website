@@ -21,10 +21,12 @@
       />
       <hr class="mt-16" />
     </section>
-    <section class="my-16 text-center">
-      <g-link to="/projects/" class="btn bg-red-600">See all projects</g-link>
-      <hr class="mt-16" />
-    </section>
+    <div class="flex flex-wrap justify-center">
+      <g-link to="/projects/" class="btn-outline text-red-600"
+        >See all projects</g-link
+      >
+    </div>
+    <hr class="mt-16" />
   </Layout>
 </template>
 
