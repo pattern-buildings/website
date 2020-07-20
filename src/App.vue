@@ -91,6 +91,13 @@ article blockquote {
   @apply border-l-4 border-gray-300 text-gray-600 pl-4 italic;
 }
 
+article a {
+  @apply text-gray-600 font-bold underline;
+}
+article a:hover {
+  @apply no-underline;
+}
+
 .layout {
   @apply max-w-4xl min-h-screen flex flex-col justify-start items-stretch mx-auto p-4 pt-20;
   @screen sm {

@@ -6,7 +6,7 @@
       :cover="$context.cover"
     />
     <main>
-      <div class="sm:float-right mt-16 sm:ml-8 mb-8">
+      <div class="sm:float-right mt-16 mx-auto sm:ml-8 mb-8 max-w-xs">
         <KeyValueList :rows="$context.facts" class="w-full" />
         <g-link
           v-if="$context.cta && $context.cta.url && $context.cta.label"

@@ -2,13 +2,16 @@
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1595232969/projects/musterhaus/rendering_6_j2y4pb.jpg
 title: Musterhaus
 subtitle: A Single family mass-customized concept house for the German market
-order: 2
+order: 1
 featured: true
 facts:
   - key: Year
     value: "2020"
   - key: Architect
     value: "Nomad Architects: , Florian Betat, Marija Katrina Dambe"
+cta:
+  url: https://configurator.creatomus.com/project/musterhaus?tab=index
+  label: Configure your own Musterhaus
 downloads:
   - type: pdf
     url: https://drive.google.com/file/d/1gNh3RRjSgXuPtBnu4fdkzSQt6TXcTNYm/view?usp=sharing

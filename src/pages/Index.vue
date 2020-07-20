@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <header class="flex flex-col sm:flex-row items-center sm:mt-8">
+    <header class="flex flex-col sm:flex-row items-center sm:mb-8">
       <div class="text-center mb-8 sm:mb-0 sm:mx-12">
         <h1>{{ $static.metadata.siteName }}</h1>
         <p class="text-gray-600 mt-4">{{ $static.metadata.siteDescription }}</p>

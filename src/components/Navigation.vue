@@ -165,7 +165,7 @@ export default {
   }
 }
 .nav-item .icon {
-  @apply mr-4 w-6 h-6 inline-block;
+  @apply mr-4 w-6 h-6 inline-block flex-shrink-0;
 }
 .nav-item a {
   @apply text-lg;
