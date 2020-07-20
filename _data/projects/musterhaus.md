@@ -9,9 +9,6 @@ facts:
     value: "2020"
   - key: Architect
     value: "Nomad Architects: , Florian Betat, Marija Katrina Dambe"
-cta:
-  url: https://configurator.creatomus.com/project/musterhaus?tab=index
-  label: Configure your own Musterhaus
 downloads:
   - type: pdf
     url: https://drive.google.com/file/d/1gNh3RRjSgXuPtBnu4fdkzSQt6TXcTNYm/view?usp=sharing
