@@ -25,18 +25,15 @@ export default {
   },
   methods: {
     rowOfValues(rawString) {
-      return rawString.split(',').map(s => s.trim());
-    }
-  }
+      return rawString.split(',').map((s) => s.trim());
+    },
+  },
 };
 </script>
 
 <style>
 .key-value-list {
   @apply text-sm text-gray-600 px-4 border-2;
-  @screen sm {
-    @apply w-2/5;
-  }
 }
 .key-value-list-item {
   @apply flex justify-between py-4;

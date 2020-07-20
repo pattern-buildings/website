@@ -6,25 +6,31 @@
       :cover="$context.cover"
     />
     <main>
-      <KeyValueList
-        :rows="$context.facts"
-        class="sm:float-right mt-16 sm:ml-8 mb-8"
-      />
+      <div class="sm:float-right mt-16 sm:ml-8 mb-8">
+        <KeyValueList :rows="$context.facts" class="w-full" />
+        <g-link
+          v-if="$context.cta && $context.cta.url && $context.cta.label"
+          :to="$context.cta.url"
+          class="btn-fill block text-center bg-red-600 mt-8"
+        >
+          {{ $context.cta.label }}
+        </g-link>
+      </div>
       <ContentBlock :content="$context.content" />
     </main>
-    <hr />
+    <hr v-if="$context.downloads.length" />
     <section v-if="$context.downloads.length" class="my-16">
       <h2 class="text-center mb-8">Downloads</h2>
       <DownloadsBlock
         :downloads="$context.downloads"
         class="flex flex-wrap justify-center"
       />
-      <hr class="mt-16" />
     </section>
+    <hr class="my-16" />
     <div class="flex flex-wrap justify-center">
-      <g-link to="/projects/" class="btn-outline text-red-600"
-        >See all projects</g-link
-      >
+      <g-link to="/projects/" class="btn-outline text-red-600">
+        See all projects
+      </g-link>
     </div>
     <hr class="mt-16" />
   </Layout>

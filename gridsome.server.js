@@ -26,6 +26,10 @@ module.exports = function (api) {
                 value
                 key
               }
+              cta {
+                label
+                url
+              }
               content
               excerpt
               downloads {
@@ -66,6 +70,7 @@ module.exports = function (api) {
           title: node.title,
           subtitle: node.subtitle,
           cover: node.cover,
+          cta: node.cta,
           facts: node.facts,
           content: node.content,
           excerpt: node.excerpt,
