@@ -2,7 +2,7 @@
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1595232969/projects/musterhaus/rendering_6_j2y4pb.jpg
 title: Musterhaus
 subtitle: A Single family mass-customized concept house for the German market
-order: 1
+order: 2
 featured: true
 facts:
   - key: Year
