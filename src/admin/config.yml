@@ -2,11 +2,11 @@ backend:
   name: github
   repo: pattern-buildings/website
 
+publish_mode: editorial_workflow
 local_backend: true
 
 site_url: https://patternbuildings.com
 display_url: patternbuildings.com
-logo_url: https://
 show_preview_links: false
 
 media_folder: "_data/uploads"
