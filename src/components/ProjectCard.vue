@@ -5,8 +5,8 @@
     >
       <g-image
         :alt="title ? `${title} - ${subtitle}` : 'Pattern Buildings'"
-        :src="cover"
-        class="absolute inset-0 w-full h-full object-cover rounded-lg"
+        :src="loaded ? cover : ''"
+        class="absolute inset-0 w-full h-full object-cover rounded-lg bg-gray-300"
       />
       <h3 class="relative bg-white leading-tight px-2">{{ title }}</h3>
       <p v-if="subtitle" class="relative">
@@ -35,6 +35,14 @@ export default {
       required: true,
       default: '',
     },
+  },
+  data() {
+    return {
+      loaded: false,
+    };
+  },
+  mounted() {
+    this.loaded = true;
   },
 };
 </script>

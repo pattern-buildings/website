@@ -4,11 +4,14 @@
       <div class="text-center mb-8 sm:mb-0 sm:mx-12">
         <h1>{{ $static.metadata.siteName }}</h1>
         <p class="text-gray-600 mt-4">{{ $static.metadata.siteDescription }}</p>
-        <div class="mt-8 flex flex-wrap justify-center">
-          <g-link to="/docs/" class="btn-fill bg-green-600 m-4">
+        <div class="my-8 flex flex-wrap justify-center">
+          <g-link to="/docs/" class="btn-fill bg-green-600 m-2 flex-grow">
             Documentation
           </g-link>
-          <g-link to="/contact-team/" class="btn-outline text-blue-600 m-4">
+          <g-link
+            to="/contact-team/"
+            class="btn-outline text-blue-600 m-2 flex-grow"
+          >
             Contact the team
           </g-link>
         </div>
@@ -17,7 +20,7 @@
         alt="Pattern Buildings logo"
         src="~/assets/images/pattern-buildings-features.jpg"
         immediate="true"
-        class="w-full sm:w-1/2 max-w-xs lg:max-w-sm"
+        class="w-full sm:w-1/2 max-w-xs"
       />
     </header>
 
@@ -37,7 +40,7 @@
           <div class="clear-both" />
         </div>
 
-        <div class="mx-auto mb-16 relative embedded-video">
+        <div v-if="loaded" class="mx-auto mb-16 relative embedded-video">
           <iframe
             src="https://player.cloudinary.com/embed/?public_id=Harmet_v2_compressed_uaig6k&cloud_name=patternbuildings&player%5Bcontrols%5D=true&player%5Bskin%5D=light&player%5Bwidth%5D=640&player%5Bcolors%5D%5Baccent%5D=%23e53333&player%5Bcolors%5D%5Btext%5D=%23666666&player%5Bfloating_when_not_visible%5D=false&player%5Bposter_options%5D%5Btransformation%5D%5Bstart_offset%5D=49&source%5Bsource_types%5D%5B0%5D=mp4"
             allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
@@ -101,9 +104,9 @@
             class="w-full block sm:w-1/3 md:w-1/4 px-2 py-8"
           >
             <g-image
-              :src="supporter.logo"
+              :src="loaded ? supporter.logo : ''"
               alt="Pattern Buildings supporter"
-              class="w-full"
+              class="w-full bg-gray-300"
             />
           </g-link>
         </div>
@@ -131,8 +134,8 @@
           >
             <g-image
               :alt="`${teamMember.name} - Pattern Buildings team member`"
-              :src="teamMember.avatar"
-              class="w-20 h-20 rounded-full"
+              :src="loaded ? teamMember.avatar : ''"
+              class="w-20 h-20 rounded-full bg-gray-300"
             />
             <b class="text-center">{{ teamMember.name }}</b>
             <small class="text-gray-600">{{ teamMember.responsibility }}</small>
@@ -148,8 +151,8 @@
           >
             <g-image
               :alt="`${contributor.name} - Pattern Buildings contributor`"
-              :src="contributor.avatar"
-              class="w-16 h-16 rounded-full"
+              :src="loaded ? contributor.avatar : ''"
+              class="w-16 h-16 rounded-full bg-gray-300"
             />
             <b class="text-center">{{ contributor.name }}</b>
             <small class="text-gray-600">{{
@@ -246,13 +249,17 @@
 </page-query>
 
 <script>
-import Navigation from '@/components/Navigation.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
 import KeyValueList from '@/components/KeyValueList.vue';
 import Markdown from '@/components/Markdown.vue';
 
 export default {
-  components: { Navigation, ProjectCard, KeyValueList, Markdown },
+  components: { ProjectCard, KeyValueList, Markdown },
+  data() {
+    return {
+      loaded: false,
+    };
+  },
   computed: {
     settings() {
       return this.$page.settings.edges[0].node;
@@ -260,6 +267,7 @@ export default {
   },
   mounted() {
     this.scrollToHash();
+    this.loaded = true;
   },
   methods: {
     scrollToHash() {
