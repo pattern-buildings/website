@@ -134,7 +134,7 @@ module.exports = {
       options: {
         onlyProduction: true, // only production bundle will be analyzed by default
         analyzerOptions: {
-          analyzerMode: 'static',
+          analyzerMode: 'disabled',
         }, // see https://github.com/webpack-contrib/webpack-bundle-analyzer
       },
     },

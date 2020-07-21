@@ -11,6 +11,9 @@ facts:
     value: Marianna Zvereva, Lauri Läänelaid
   - key: Engineers
     value: Egle Vogt, Eero Tuhkanen, Kristo Kalbe
+cta: 
+  url: ""
+  label: ""
 downloads:
   - file: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
     title: Example cad file (SKP, 12MB) - NEEDS UPDATE

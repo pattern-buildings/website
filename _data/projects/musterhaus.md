@@ -9,16 +9,14 @@ facts:
     value: "2020"
   - key: Architect
     value: "Nomad Architects: , Florian Betat, Marija Katrina Dambe"
-cta:
-  url: https://configurator.creatomus.com/project/musterhaus?tab=index
-  label: Configure your own Musterhaus
+cta: 
+  url: ""
+  label: ""
 downloads:
   - type: pdf
     url: https://drive.google.com/file/d/1gNh3RRjSgXuPtBnu4fdkzSQt6TXcTNYm/view?usp=sharing
     title: Musterhaus study report by Nomad Architects
 ---
-[Configure your own Musterhaus](https://configurator.creatomus.com/project/musterhaus)
-
 The aim of the study is to help to implement a prefabricated, modular and customizable housing product, which uses the 369 industrial system in the German market, especially in the regions Brandenburg and Saxony. The research points out several design guidelines and marketing strategies which can raise the chances for a successful implementation of the product in the target market.
 
 Firstly, a clear system has been developed, following the typical options offered by other modular housing manufacturers in Germany. As a starting point, the client chooses the desired house size. Upon the chosen size further customization can be made such as room layout choices, roof shape and facade options.
