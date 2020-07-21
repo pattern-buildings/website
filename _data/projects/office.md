@@ -12,14 +12,15 @@ facts:
   - key: Authors (re-design)
     value: Lauri Läänelaid, Marianna Zvereva, Renee Puusepp, Egle Vogt, Eero
       Tuhkanen, Kristo Kalbe
-cta: 
-  url: ""
-  label: ""
+  - key: An calculated fact
+    value: 5 times lighter than the original
+cta:
+  label: A competition entry to Hybrid City (PDF / 34,4MB)
+  url: https://drive.google.com/file/d/1ShkMCUPRQtX38DvV5cNJbRmvrMlHjlQQ/view?usp=sharing
 downloads:
-  - title: Example download file (PDF, 33MB)
-    file: ""
-    type: pdf
+  - type: pdf
     url: https://drive.google.com/file/d/1ShkMCUPRQtX38DvV5cNJbRmvrMlHjlQQ/view?usp=sharing
+    title: A competition entry to Hybrid City (PDF / 34,4MB)
 ---
 The Turu 21 office building was originally designed by Kadarik Tüür Architects on Turu street 21 in Tartu Estonia.
 
