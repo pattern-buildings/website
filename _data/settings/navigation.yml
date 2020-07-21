@@ -1,5 +1,5 @@
 discover:
-  - title: ----
+  - title: About
     url: "#idea"
     icon: mdiInformationOutline
     hidden: false
