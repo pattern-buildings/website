@@ -12,3 +12,5 @@ Room modules are connected to one another on-site. The ceiling elements are conn
 * Rigid walls running on parallel axles do not need to be side-by-side;
 * The distance between parallel rigid walls must not exceed 9 m
 * The minimum thickness of the share wall is 100mm and the length in plan is 3 m
+
+![](https://res.cloudinary.com/patternbuildings/image/upload/v1595347252/docs/PatternBuildings_Joints_ietx1y.jpg)
