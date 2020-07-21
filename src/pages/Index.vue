@@ -5,14 +5,17 @@
         <h1>{{ $static.metadata.siteName }}</h1>
         <p class="text-gray-600 mt-4">{{ $static.metadata.siteDescription }}</p>
         <div class="my-8 flex flex-wrap justify-center">
-          <g-link to="/docs/" class="btn-fill bg-green-600 m-2 flex-grow">
-            Documentation
+          <g-link
+            to="/docs/"
+            class="btn-fill bg-green-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-no-wrap"
+          >
+            Read Docs
           </g-link>
           <g-link
-            to="/contact-team/"
-            class="btn-outline text-blue-600 m-2 flex-grow"
+            to="/projects/"
+            class="btn-outline text-red-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-no-wrap"
           >
-            Contact the team
+            Explore Projects
           </g-link>
         </div>
       </div>
@@ -30,9 +33,7 @@
 
     <hr />
     <main>
-      <section id="idea" class="py-16">
-        <h2 class="mb-16 text-center">Idea</h2>
-
+      <section id="idea" class="pt-8 pb-16">
         <div class="mb-8">
           <KeyValueList
             :rows="$page.settings.edges[0].node.facts"
@@ -44,15 +45,18 @@
 
         <div v-if="loaded" class="mx-auto mb-16 relative embedded-video">
           <iframe
-            src="https://player.cloudinary.com/embed/?public_id=Harmet_v2_compressed_uaig6k&cloud_name=patternbuildings&player%5Bcontrols%5D=true&player%5Bskin%5D=light&player%5Bwidth%5D=640&player%5Bcolors%5D%5Baccent%5D=%23e53333&player%5Bcolors%5D%5Btext%5D=%23666666&player%5Bfloating_when_not_visible%5D=false&player%5Bposter_options%5D%5Btransformation%5D%5Bstart_offset%5D=49&source%5Bsource_types%5D%5B0%5D=mp4"
-            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-            allowfullscreen
+            src="https://player.vimeo.com/video/440289145"
             frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
             class="xs:rounded-lg xs:shadow-lg absolute w-full h-full"
-          />
+          ></iframe>
         </div>
 
-        <div class="flex flex-col items-center mx-auto mt-4 mb-16">
+        <div class="flex flex-col items-center mx-auto mt-4">
+          <h2 class="my-8 text-center">Features</h2>
+          <hr class="mb-8 w-full" />
+
           <div
             v-for="(feature, i) in settings.features"
             :key="i"
@@ -87,7 +91,7 @@
             />
           </g-link>
         </div>
-        <div class="text-center">
+        <div class="flex justify-center mt-8">
           <g-link to="/projects/" class="btn-fill bg-red-600">
             See all projects
           </g-link>

@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Pattern Buildings',
   siteDescription:
-    'An open-source industrial building system for mass-customizable buildings',
+    'An open-source industrial building system for mass-customizable wooden buildings',
   siteUrl: 'https://patternbuildings.com',
   titleTemplate: '%s',
   transformers: {

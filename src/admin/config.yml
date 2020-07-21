@@ -196,7 +196,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'url', name: 'url', widget: 'string' }
-              - { label: 'icon', name: 'icon', widget: 'string', hint: 'name of the MDI icon in camel case, for example mdiInformationOutline, you can find all available icons here: https://iconify.design/icon-sets/mdi/' }
+              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline ] }
               - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
           
           - name: learn
