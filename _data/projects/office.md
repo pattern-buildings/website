@@ -12,6 +12,9 @@ facts:
   - key: Authors (re-design)
     value: Lauri Läänelaid, Marianna Zvereva, Renee Puusepp, Egle Vogt, Eero
       Tuhkanen, Kristo Kalbe
+cta: 
+  url: ""
+  label: ""
 downloads:
   - title: Example download file (PDF, 33MB)
     file: ""

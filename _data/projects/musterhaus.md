@@ -9,6 +9,9 @@ facts:
     value: "2020"
   - key: Architect
     value: "Nomad Architects: , Florian Betat, Marija Katrina Dambe"
+cta: 
+  url: ""
+  label: ""
 downloads:
   - type: pdf
     url: https://drive.google.com/file/d/1gNh3RRjSgXuPtBnu4fdkzSQt6TXcTNYm/view?usp=sharing
