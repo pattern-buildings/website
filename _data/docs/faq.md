@@ -1,6 +1,6 @@
 ---
 title: FAQ
-order: 13
+order: 21
 ---
 > **Why is it better than other industrial construction systems?**
 
