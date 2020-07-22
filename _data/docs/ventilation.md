@@ -1,6 +1,7 @@
 ---
 title: Ventilation
 order: 10
+is_subcarticle: true
 ---
 The Pattern Building concept does not directly require the use of specific ventilation units, but there are three possible design solutions:
 

@@ -1,6 +1,7 @@
 ---
 title: Acoustics
 order: 19
+is_subcarticle: true
 ---
 To reduce the spread of noise from one functional unit of the Pattern Building (e.g. an apartment) to another, it is recommended not to design different units in the same module. In other words, each unit should consist only of separate room modules.
 

@@ -1,6 +1,7 @@
 ---
 title: Skin
 order: 6
+is_subcarticle: true
 ---
 The skin is the layer protecting the body of the Pattern Building from outside, consisting offacade and roof elements. The skin is the most obvious tool for mass customisation of the Pattern Building as it allows the same body to have very different appearances. The facade and the roof of the building can be installed on site and therefore it is important to consider their transport already in the early design phase.
 

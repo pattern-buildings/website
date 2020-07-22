@@ -1,6 +1,7 @@
 ---
 title: Water and sewerage
 order: 12
+is_subcarticle: true
 ---
 Since the beams on the longer side of the module are moved towards the centre of the module, there is a dedicated space for drain stacks between the two modules with a width of 350 mm.
 

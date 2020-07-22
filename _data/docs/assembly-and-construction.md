@@ -1,6 +1,7 @@
 ---
 title: Assembly and construction
 order: 15
+is_subcarticle: false
 ---
 Before starting the installation of the modules, it is mandatory to check the existence and validity of documentation, approvals and quality and safety certificates. 
 

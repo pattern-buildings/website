@@ -1,6 +1,11 @@
 <template>
   <Layout>
-    <h1 class="text-center mt-auto">Thanks!</h1>
+    <small class="text-blue-600 text-center mb-4 text-sm mt-auto">
+      <g-link to="/" class="underline hover:no-underline">
+        Pattern Buildings
+      </g-link>
+    </small>
+    <h1 class="text-center">Thanks!</h1>
     <p class="text-center mt-8">
       Your form was successfully sumbitted and we will be in touch soon.
     </p>

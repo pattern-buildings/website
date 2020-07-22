@@ -1,6 +1,7 @@
 ---
 title: Energy efficiency
 order: 17
+is_subcarticle: true
 ---
 One of the main principles of the Pattern Building is environment-friendly approach, which means, among other things, that the active energy consumption of the building is (very) low (at a minimum level of nearly zero-energy building) and that the building’s structures are long-lasting. This can be achieved by ensuring good insulation appropriate to the local climate and long-term air-insulating building envelope. 
 

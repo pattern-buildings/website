@@ -1,6 +1,7 @@
 ---
 title: Production and transport
 order: 14
+is_subcarticle: false
 ---
 The Pattern Building modules are made up of standard details, making their production and handling feasible for most factories. This in turn makes it possible to take assembly of the modules to the logistically most suitable location (e.g. transport hubs and near ports). The factories producing the module elements must be high-tech to today’s standards, have corresponding quality certificates and test capability.'
 

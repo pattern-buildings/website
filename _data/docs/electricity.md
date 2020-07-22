@@ -1,6 +1,7 @@
 ---
 title: Electricity
 order: 13
+is_subcarticle: true
 ---
 The electricity cabling runs along the bottom edge of the walls in the in-wall cable channel, allowing to change the position of the plugs and switches according to the layout of the rooms.
 

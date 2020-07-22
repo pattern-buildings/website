@@ -1,6 +1,7 @@
 ---
 title: Heating and cooling
 order: 11
+is_subcarticle: true
 ---
 There are two basic options for heating the house: water heating and electric heating.
 

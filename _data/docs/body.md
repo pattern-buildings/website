@@ -1,6 +1,7 @@
 ---
 title: Body
 order: 4
+is_subcarticle: true
 ---
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1595346456/docs/Pattern-Buildings_Skin_gmfxt3.jpg)
 

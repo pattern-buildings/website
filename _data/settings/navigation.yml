@@ -1,6 +1,6 @@
 discover:
   - title: About
-    url: "/#idea"
+    url: /#idea
     icon: mdiInformationOutline
     hidden: false
   - title: Projects
@@ -8,15 +8,15 @@ discover:
     icon: mdiCardsVariant
     hidden: false
   - title: Supproters
-    url: "/#supporters"
+    url: /#supporters
     icon: mdiHeartOutline
     hidden: false
   - title: Team
-    url: "/#team"
+    url: /#team
     icon: mdiAccountMultipleOutline
     hidden: false
   - title: License
-    url: "/#license"
+    url: /#license
     icon: mdiLicense
     hidden: false
 learn:
@@ -25,13 +25,13 @@ learn:
     url: /docs/
     icon: mdiFileDocumentOutline
   - hidden: false
-    title: Concept
-    url: /docs/concept/
-    icon: mdiCubeOutline
-  - hidden: false
     title: Design
     url: /docs/design/
     icon: mdiDrawing
+  - hidden: false
+    title: Parts
+    url: /docs/parts/
+    icon: mdiCubeOutline
   - hidden: false
     title: FAQ
     url: /docs/faq/

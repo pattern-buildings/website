@@ -1,6 +1,7 @@
 ---
 title: Room module
 order: 3
+is_subcarticle: true
 ---
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1595345865/docs/Room-module_yxp3i9.jpg)
 

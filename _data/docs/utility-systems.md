@@ -1,6 +1,7 @@
 ---
 title: Utility systems
 order: 9
+is_subcarticle: false
 ---
 The Pattern Building’s utility systems ensure the day-to-day operation of the building. The utility systems are divided as follows: ventilation, heating and cooling, water and sewerage, electricity, automation.
 

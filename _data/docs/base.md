@@ -1,6 +1,7 @@
 ---
 title: Base
 order: 7
+is_subcarticle: true
 ---
 The base of the building is the lowest part of the building in contact with the ground. It supports the body of wooden modules built on top.  
 

@@ -86,6 +86,7 @@ module.exports = function (api) {
         context: {
           title: node.title,
           content: node.content,
+          fileInfo: node.fileInfo,
         },
       });
     });

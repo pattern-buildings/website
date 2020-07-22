@@ -1,5 +1,14 @@
 <template>
   <Layout>
+    <small class="text-red-600 text-center mb-4 text-sm">
+      <g-link to="/" class="underline hover:no-underline">
+        Pattern Buildings
+      </g-link>
+      <span class="mx-2">/</span>
+      <g-link to="/projects/" class="underline hover:no-underline">
+        Projects
+      </g-link>
+    </small>
     <ProjectHeader
       :title="$context.title"
       :subtitle="$context.subtitle"

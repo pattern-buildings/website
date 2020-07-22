@@ -10,7 +10,7 @@
         v-for="(item, i) in discover"
         :key="i"
         class="nav-item"
-        :class="item.url === $route.fullPath ? 'text-gray-600' : 'text-red-600'"
+        :class="item.url === $route.fullPath ? 'text-red-300' : 'text-red-600'"
       >
         <Icon :path="item.icon" />
         <g-link :to="item.url" @click.native="$emit('change')">
@@ -26,7 +26,7 @@
         :key="i"
         class="nav-item"
         :class="
-          item.url === $route.fullPath ? 'text-gray-600' : 'text-green-600'
+          item.url === $route.fullPath ? 'text-green-300' : 'text-green-600'
         "
       >
         <Icon :path="item.icon" />
@@ -41,7 +41,7 @@
         :key="i"
         class="nav-item"
         :class="
-          item.url === $route.fullPath ? 'text-gray-600' : 'text-blue-600'
+          item.url === $route.fullPath ? 'text-blue-300' : 'text-blue-600'
         "
       >
         <Icon :path="item.icon" />

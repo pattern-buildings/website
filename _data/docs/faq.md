@@ -1,6 +1,7 @@
 ---
 title: FAQ
 order: 21
+is_subcarticle: false
 ---
 > **Why is it better than other industrial construction systems?**
 

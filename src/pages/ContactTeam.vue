@@ -1,5 +1,10 @@
 <template>
   <Layout>
+    <small class="text-blue-600 text-center mb-4 text-sm">
+      <g-link to="/" class="underline hover:no-underline">
+        Pattern Buildings
+      </g-link>
+    </small>
     <h1 class="text-center">Contact the team</h1>
     <Markdown
       :raw="$page.settings.edges[0].node.intro_team"

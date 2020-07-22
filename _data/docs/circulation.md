@@ -1,6 +1,7 @@
 ---
 title: Circulation
 order: 8
+is_subcarticle: true
 ---
 Circulation is a functional part of the Pattern Building, which includes the building’s stairways, lifts, corridors and other access points. Circulation is a system that makes all parts of the Pattern Building accessible for the user. 
 

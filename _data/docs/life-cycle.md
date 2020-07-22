@@ -1,6 +1,7 @@
 ---
 title: Life cycle
 order: 20
+is_subcarticle: true
 ---
 The eco-friendliness of the house is ensured by modern methods of construction and factory-based production that make the Pattern Building energy efficient. 
 

@@ -1,6 +1,7 @@
 ---
 title: Skeleton
 order: 5
+is_subcarticle: true
 ---
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1595347081/docs/PatternBuilidings_Skeleton_wr8fsz.jpg)
 
