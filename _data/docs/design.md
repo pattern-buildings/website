@@ -1,7 +1,21 @@
 ---
-title: Design
+title: The Parts of Pattern Building
 order: 2
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. **Quam soluta minus**, quidem cupiditate ad sint inventore aut exercitationem necessitatibus recusandae est, alias voluptate et nam praesentium vero qui, 
+Pattern Building can be divided into following components:
 
-`fugiat aliquam!`
+* room module
+* body made up from the modules
+* skeleton
+* skin
+* base
+* circulation
+* utility systems
+
+  * Ventilation
+  * Heating and cooling
+  * Water and sewerage
+  * Electricity
+* (All should be links)
+
+![](https://res.cloudinary.com/patternbuildings/image/upload/v1595343141/docs/Parts-of-th-ebuilding_ltildl.jpg)
