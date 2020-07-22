@@ -1,15 +1,16 @@
 <template>
   <Layout>
-    <section id="projects" class="py-8">
-      <h1 class="pb-8 text-center">Downloads</h1>
-      <Markdown :raw="$page.settings.edges[0].node.intro_downloads" />
+    <h1 class="text-center">Downloads</h1>
+    <Markdown
+      :raw="$page.settings.edges[0].node.intro_downloads"
+      class="content-block"
+    />
 
-      <DownloadsBlock
-        :downloads="downloads"
-        class="flex flex-wrap justify-center my-16"
-      />
-      <hr />
-    </section>
+    <DownloadsBlock
+      :downloads="downloads"
+      class="flex flex-wrap justify-center my-16"
+    />
+    <hr />
   </Layout>
 </template>
 

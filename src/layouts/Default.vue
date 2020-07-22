@@ -1,18 +1,7 @@
 <template>
   <div class="layout">
-    <!-- <div class="flex justify-between fixed top-0 left-0 w-full p-2 z-10">
-      <div class="flex items-center cursor-pointer logo" @click="goHome()">
-        <div
-          class="w-16 h-16 bg-center bg-cover rounded-lg"
-          style="background-image: url(https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg)"
-        />
-        <p class="text-lg mg bg-white text-gray-600 ml-6 px-2 logo-text">
-          Pattern Buildings
-        </p>
-      </div>
-    </div> -->
-    <MenuOverlay>
-      <Navigation />
+    <MenuOverlay ref="overlay">
+      <Navigation @change="$refs.overlay.visible = false" />
     </MenuOverlay>
     <slot />
     <footer class="mt-auto w-full">

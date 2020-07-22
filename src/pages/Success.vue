@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <h1 class="text-center">Success</h1>
+    <h1 class="text-center mt-auto">Thanks!</h1>
+    <p class="text-center mt-8">
+      Your form was successfully sumbitted and we will be in touch soon.
+    </p>
   </Layout>
 </template>
 

@@ -2,19 +2,33 @@
   <nav class="nav-container">
     <div class="nav-column text-red-500">
       <h3 class="nav-head">Discover</h3>
-      <div v-if="$route.fullPath !== '/'" class="nav-item">
+      <div v-if="$route.fullPath !== '/'" class="nav-item text-red-600">
         <Icon :path="mdiHomeOutline" />
         <g-link to="/">Homepage</g-link>
       </div>
-      <div v-for="(item, i) in discover" :key="i" class="nav-item">
+      <div
+        v-for="(item, i) in discover"
+        :key="i"
+        class="nav-item"
+        :class="item.url === $route.fullPath ? 'text-gray-600' : 'text-red-600'"
+      >
         <Icon :path="item.icon" />
-        <g-link :to="item.url">{{ item.title }}</g-link>
+        <g-link :to="item.url" @click.native="$emit('change')">
+          {{ item.title }}
+        </g-link>
       </div>
     </div>
 
     <div class="nav-column text-green-500">
       <h3 class="nav-head">Learn</h3>
-      <div v-for="(item, i) in learn" :key="i" class="nav-item">
+      <div
+        v-for="(item, i) in learn"
+        :key="i"
+        class="nav-item"
+        :class="
+          item.url === $route.fullPath ? 'text-gray-600' : 'text-green-600'
+        "
+      >
         <Icon :path="item.icon" />
         <g-link :to="item.url">{{ item.title }}</g-link>
       </div>
@@ -22,7 +36,14 @@
 
     <div class="nav-column text-blue-500">
       <h3 class="nav-head">Engage</h3>
-      <div v-for="(item, i) in engage" :key="i" class="nav-item">
+      <div
+        v-for="(item, i) in engage"
+        :key="i"
+        class="nav-item"
+        :class="
+          item.url === $route.fullPath ? 'text-gray-600' : 'text-blue-600'
+        "
+      >
         <Icon :path="item.icon" />
         <g-link :to="item.url">{{ item.title }}</g-link>
       </div>

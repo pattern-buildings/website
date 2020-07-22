@@ -62,8 +62,9 @@ a:focus {
   /* @apply underline font-bold outline-none; */
 }
 
-input {
-  @apply border-gray-300 border-2 my-2 w-full;
+input,
+textarea {
+  @apply border-gray-300 border-2 my-2 p-2 w-full text-black text-base font-bold;
 }
 button,
 a.btn-fill {
@@ -72,6 +73,9 @@ a.btn-fill {
 button.btn-outline,
 a.btn-outline {
   @apply px-4 py-2 rounded bg-transparent border-current border-2 box-border;
+}
+label {
+  @apply text-sm text-gray-600;
 }
 
 article p {
@@ -99,7 +103,7 @@ article a:hover {
 }
 
 .layout {
-  @apply max-w-4xl min-h-screen flex flex-col justify-start items-stretch mx-auto p-4 pt-20;
+  @apply max-w-4xl min-h-screen flex flex-col justify-start items-stretch mx-auto p-4 pt-24;
   @screen sm {
     @apply px-8;
   }
@@ -137,5 +141,23 @@ article a:hover {
 }
 .logo:hover .logo-text {
   opacity: 1;
+}
+
+.content-block {
+  @apply my-8 leading-loose;
+}
+.content-block p {
+  @apply my-8;
+}
+.content-block h1,
+.content-block h2,
+.content-block h3,
+.content-block h4,
+.content-block h5,
+.content-block h6 {
+  @apply mt-16;
+}
+.content-block img {
+  @apply w-full max-w-xl mx-auto;
 }
 </style>

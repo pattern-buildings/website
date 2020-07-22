@@ -1,21 +1,22 @@
 <template>
   <Layout>
-    <section id="projects" class="py-8">
-      <h1 class="pb-8 text-center">Documentation</h1>
-      <Markdown :raw="$page.settings.edges[0].node.intro_docs" />
+    <h1 class="text-center">User manual</h1>
+    <Markdown
+      :raw="$page.settings.edges[0].node.intro_docs"
+      class="content-block"
+    />
 
-      <div class="flex flex-col justify-start items-center">
-        <g-link
-          v-for="doc in $page.docs.edges"
-          :key="doc.node.id"
-          :to="`/docs/${doc.node.fileInfo.name}/`"
-          class="my-8"
-        >
-          <p class="font-bold text-xl text-green-600">{{ doc.node.title }}</p>
-        </g-link>
-      </div>
-      <hr class="mt-16" />
-    </section>
+    <div class="flex flex-col justify-start items-center">
+      <g-link
+        v-for="doc in $page.docs.edges"
+        :key="doc.node.id"
+        :to="`/docs/${doc.node.fileInfo.name}/`"
+        class="my-8"
+      >
+        <p class="font-bold text-xl text-green-600">{{ doc.node.title }}</p>
+      </g-link>
+    </div>
+    <hr class="mt-16" />
   </Layout>
 </template>
 

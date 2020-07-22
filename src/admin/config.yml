@@ -182,6 +182,9 @@ collections:
         file: '_data/settings/engage-settings.yml'
         description: 'Setup fields for engage section'
         fields:
+          - {label: "Intro for Become a supporter", name: "intro_supporter", widget: "markdown"}
+          - {label: "Intro for Become a contributor", name: "intro_contributor", widget: "markdown"}
+          - {label: "Intro for Contact the team", name: "intro_team", widget: "markdown"}
           - {label: "Intro for downloads", name: "intro_downloads", widget: "markdown"}
           
       - name: 'navigation'

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="text-center mb-8">{{ $context.title }}</h1>
+    <h1 class="text-center">{{ $context.title }}</h1>
     <ContentBlock :content="$context.content" />
     <hr class="mb-16" />
     <div class="flex flex-wrap justify-center">

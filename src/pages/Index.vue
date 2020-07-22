@@ -9,7 +9,7 @@
             to="/docs/"
             class="btn-fill bg-green-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-no-wrap"
           >
-            Read Docs
+            Explore the System
           </g-link>
           <g-link
             to="/projects/"
@@ -33,7 +33,7 @@
 
     <hr />
     <main>
-      <section id="idea" class="pt-8 pb-16">
+      <section id="idea" class="py-16">
         <div class="mb-8">
           <KeyValueList
             :rows="$page.settings.edges[0].node.facts"

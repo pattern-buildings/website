@@ -4,9 +4,6 @@
       class="fixed top-0 left-0 m-4 z-30 bg-white text-black border-2 border-gray-300 rounded-lg"
       @click="visible = !visible"
     >
-      <!-- <span class="bg-red-600 block w-6 h-1 my-1" />
-      <span class="bg-green-600 block w-6 h-1 my-1 ml-1" />
-      <span class="bg-blue-600 block w-6 h-1 my-1 ml-2" /> -->
       <Icon :path="visible ? mdiClose : mdiMenu" class="w-8 h-8" />
     </button>
     <transition name="menu-fade">
