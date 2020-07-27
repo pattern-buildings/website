@@ -9,13 +9,13 @@
             to="/docs/"
             class="btn-fill bg-green-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-no-wrap"
           >
-            Explore the System
+            User Manual
           </g-link>
           <g-link
             to="/projects/"
             class="btn-outline text-red-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-no-wrap"
           >
-            Explore Projects
+            Projects
           </g-link>
         </div>
       </div>
@@ -50,6 +50,7 @@
             allow="autoplay; fullscreen"
             allowfullscreen
             class="xs:rounded-lg xs:shadow-lg absolute w-full h-full"
+            title="Video about Pattern Buildings"
           ></iframe>
         </div>
 
@@ -117,13 +118,11 @@
           </g-link>
         </div>
         <div class="text-center text-sm text-gray-600">
-          Fill this
           <g-link
             to="/become-supporter"
             class="text-blue-600 underline font-bold"
-            >form</g-link
+            >Fill this form if you want to support the project</g-link
           >
-          if you want to support the project.
         </div>
       </section>
 

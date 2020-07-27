@@ -2,6 +2,7 @@
   <div>
     <button
       class="fixed top-0 left-0 m-4 z-30 bg-white text-black border-2 border-gray-300 rounded-lg"
+      name="Menu"
       @click="visible = !visible"
     >
       <Icon :path="visible ? mdiClose : mdiMenu" class="w-8 h-8" />

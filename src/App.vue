@@ -68,11 +68,11 @@ textarea {
 }
 button,
 a.btn-fill {
-  @apply px-4 py-2 rounded border-2 border-transparent text-white;
+  @apply px-4 py-2 rounded border-2 border-transparent text-white font-bold;
 }
 button.btn-outline,
 a.btn-outline {
-  @apply px-4 py-2 rounded bg-transparent border-current border-2 box-border;
+  @apply px-4 py-2 rounded bg-transparent font-bold border-current border-2 box-border;
 }
 label {
   @apply text-sm text-gray-600;
