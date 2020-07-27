@@ -3,7 +3,7 @@ title: FAQ
 order: 21
 is_subcarticle: false
 ---
-> **Why is it better than other industrial construction systems?**
+> ### **Why is it better than other industrial construction systems?**
 
 For a start, Pattern Buildings are to a large extent made of timber products, and timber is good for reducing CO2 emissions of the construction sector. 
 
@@ -13,10 +13,10 @@ One technical thing that is exceptional in the system is it's capacity to build 
 
 And finally, Pattern Building is an open source system, unlike many systems that are merging in the construction industry. 
 
-> **Why is the LVL chosen as the main structural material?**
+> ### **Why is the LVL chosen as the main structural material?**
 
 Because its strength , lightness, look & feel, manufacturability. 
 
->  **with CLT? and Gluelam products?**
+> ###  **with CLT? and Gluelam products?**
 
 Potentially. But we have not designed or calculated it. You are welcome to redesign the system or parts of it. Or you can ask the authors of the system to add the feature.
