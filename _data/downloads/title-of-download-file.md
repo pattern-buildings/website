@@ -1,7 +1,7 @@
 ---
-title: title of download file
+title: User Manual / Pattern Buildings Beta (10,4 MB)
 order: 1
 type: pdf
-file: https://res.cloudinary.com/patternbuildings/image/upload/v1592471977/Pattern_Buildings_Guide_gjvdkx.pdf
-url: ""
+file: ""
+url: https://drive.google.com/file/d/1i9PSPOLDwxSW3d2ksSBDcno_JIvx5LyK/view?usp=sharing
 ---
