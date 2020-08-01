@@ -12,7 +12,7 @@
         v-if="visible"
         class="fixed inset-0 z-20 p-2 shadow-xl bg-white overflow-x-auto flex flex-col items-center"
       >
-        <div class="my-auto">
+        <div class="my-auto w-full max-w-4xl">
           <slot />
         </div>
       </div>
