@@ -65,20 +65,52 @@ intro_projects: "List of projects that use **Pattern Buildings** open-source
 supporters:
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.svg
     url: https://www.artun.ee/en/home/
-  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.png
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246230/supporters/logo_harmet_lumhbx.svg
+    url: https://www.harmet.ee/?lang=en
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246379/supporters/Creatomus_white_back_zjizcf.png
     url: https://www.artun.ee/en/home/
-  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.png
-    url: https://www.artun.ee/en/home/
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246686/supporters/ThornEngineering_rfghad.png
 core_team:
-  - name: Core Team Name
-    responsibility: responsibility
-    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
+  - name: Renee Puusepp
+    responsibility: Lead architect
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247022/core%20team/Renee_2019_1_wvpazo.png
     url: https://google.com
+  - name: Egle Vogt
+    responsibility: Lead system engineer
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247223/core%20team/EgleVogt_keazaa.jpg
+  - name: Eero Tuhkanen
+    responsibility: Structural engineer
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247369/core%20team/EeroTuhkanen_lyigrs.jpg
+  - name: Kristo Kalbe
+    responsibility: HVAC and energy engineer
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247372/core%20team/KristoKalbe_gj02ok.jpg
+  - name: Lauri Läänelaid
+    responsibility: Architect
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247792/core%20team/Lauri_La%CC%88a%CC%88nelaid_bdxalq.png
+  - name: Marianna Zvereva
+    responsibility: Architect
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
 contributors:
-  - name: Contributor Name
-    responsibility: contributor responsibility
-    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1592836328/pb-logo_v1vqwj.jpg
-    url: https://google.com
+  - name: Johanne Madis Aasmäe
+    responsibility: Architect
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247796/core%20team/Johannes_Aasma%CC%88e_exuzwz.png
+    url: ""
+  - name: Taavi Lõoke
+    responsibility: Architect
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597248171/core%20team/Taavi_Lo%CC%83oke_zgqnbi.jpg
+  - name: Inke Brett Eek
+    responsibility: Architect
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
+  - name: Ilya Vasiliev
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
+    responsibility: Web designer
+  - name: Vello Laanemaa
+    responsibility: Designer
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
+  - name: Nomad architects
+    responsibility: Architects
+    url: nomadarchitects.lv
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597248703/core%20team/Screen_Shot_2020-08-12_at_19.09.57_vn6zcv.png
 license_description: Pattern Buildings by Renee Puusepp, Egle Vogt, Lauri
   Läänelaid, Marianna Zvereva, Eero Tuhkanen, Kristo Kalbe is licensed under
   **CC BY 4.0**
