@@ -65,10 +65,11 @@ intro_projects: "List of projects that use **Pattern Buildings** open-source
 supporters:
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.svg
     url: https://www.artun.ee/en/home/
-  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.png
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246230/supporters/logo_harmet_lumhbx.svg
+    url: https://www.harmet.ee/?lang=en
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246379/supporters/Creatomus_white_back_zjizcf.png
     url: https://www.artun.ee/en/home/
-  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.png
-    url: https://www.artun.ee/en/home/
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246686/supporters/ThornEngineering_rfghad.png
 core_team:
   - name: Core Team Name
     responsibility: responsibility
