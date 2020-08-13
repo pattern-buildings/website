@@ -108,16 +108,21 @@
             v-for="(supporter, i) in settings.supporters"
             :key="i"
             :to="supporter.url"
-            class="w-full block sm:w-1/3 md:w-1/4 px-2 py-8"
+            class="w-full block flex flex-col sm:w-1/3 md:w-1/4 max-w-xs p-2 my-8"
+            :class="
+              supporter.url
+                ? 'hover:bg-gray-300'
+                : 'pointer-none cursor-default'
+            "
           >
             <g-image
               :src="loaded ? supporter.logo : ''"
               alt="Pattern Buildings supporter"
-              class="w-full bg-gray-300"
+              class="w-full my-auto"
             />
           </g-link>
         </div>
-        <div class="text-center text-sm text-gray-600">
+        <div class="text-center text-sm text-gray-600 mt-4">
           <g-link
             to="/become-supporter"
             class="text-blue-600 underline font-bold"
@@ -135,12 +140,17 @@
             v-for="(teamMember, i) in settings.core_team"
             :key="i"
             :to="teamMember.url"
-            class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
+            class="flex flex-col items-center px-4 py-4"
+            :class="
+              teamMember.url
+                ? 'hover:bg-gray-300'
+                : 'pointer-none cursor-default'
+            "
           >
             <g-image
               :alt="`${teamMember.name} - Pattern Buildings team member`"
               :src="loaded ? teamMember.avatar : ''"
-              class="w-20 h-20 rounded-full bg-gray-300"
+              class="w-20 h-20 rounded-full bg-gray-300 object-cover"
             />
             <b class="text-center">{{ teamMember.name }}</b>
             <small class="text-gray-600">{{ teamMember.responsibility }}</small>
@@ -152,12 +162,17 @@
             v-for="(contributor, i) in settings.contributors"
             :key="i"
             :to="contributor.url"
-            class="flex flex-col items-center px-4 py-4 hover:bg-gray-300"
+            class="flex flex-col items-center px-4 py-4"
+            :class="
+              contributor.url
+                ? 'hover:bg-gray-300'
+                : 'pointer-none cursor-default'
+            "
           >
             <g-image
               :alt="`${contributor.name} - Pattern Buildings contributor`"
               :src="loaded ? contributor.avatar : ''"
-              class="w-16 h-16 rounded-full bg-gray-300"
+              class="w-20 h-20 rounded-full bg-gray-300 object-cover"
             />
             <b class="text-center">{{ contributor.name }}</b>
             <small class="text-gray-600">{{

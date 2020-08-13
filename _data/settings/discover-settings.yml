@@ -65,11 +65,11 @@ intro_projects: "List of projects that use **Pattern Buildings** open-source
 supporters:
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.svg
     url: https://www.artun.ee/en/home/
-  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246230/supporters/logo_harmet_lumhbx.svg
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597311278/supporters/harnet_logo_fdkzc4.svg
     url: https://www.harmet.ee/?lang=en
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246379/supporters/Creatomus_white_back_zjizcf.png
-    url: https://www.artun.ee/en/home/
-  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597246686/supporters/ThornEngineering_rfghad.png
+    url: https://creatomus.com
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1597311431/supporters/THORN_ENGINEERING_fkvmi6.png
 core_team:
   - name: Renee Puusepp
     responsibility: Lead architect
@@ -101,9 +101,10 @@ contributors:
   - name: Inke Brett Eek
     responsibility: Architect
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
-  - name: Ilya Vasiliev
-    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
+  - name: Ilya Vasilyev
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597311729/contributors/IV_jtt9e7.jpg
     responsibility: Web designer
+    url: https://ilya.aivi.dev/
   - name: Vello Laanemaa
     responsibility: Designer
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
