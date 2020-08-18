@@ -82,6 +82,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: '_data/settings/workshop-settings.yml',
+        typeName: 'WorkshopSettings',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: '_data/settings/navigation.yml',
         typeName: 'Navigation',
       },

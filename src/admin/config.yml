@@ -114,7 +114,7 @@ collections:
     files:
 
       - name: 'discover-settings'
-        label: 'Discover settings'
+        label: 'Discover settings (RED)'
         file: '_data/settings/discover-settings.yml'
         description: 'Setup fields for home page'
         fields:
@@ -172,14 +172,14 @@ collections:
           - { label: 'License URL', name: 'license_url', widget: 'string' }
 
       - name: 'learn-settings'
-        label: 'Learn settings'
+        label: 'Learn settings (GREEN)'
         file: '_data/settings/learn-settings.yml'
         description: 'Setup fields for docs'
         fields:
           - {label: "Intro for docs", name: "intro_docs", widget: "markdown"}
           
       - name: 'engage-settings'
-        label: 'Engage settings'
+        label: 'Engage settings (BLUE)'
         file: '_data/settings/engage-settings.yml'
         description: 'Setup fields for engage section'
         fields:
@@ -187,6 +187,13 @@ collections:
           - {label: "Intro for Become a contributor", name: "intro_contributor", widget: "markdown"}
           - {label: "Intro for Contact the team", name: "intro_team", widget: "markdown"}
           - {label: "Intro for downloads", name: "intro_downloads", widget: "markdown"}
+          
+      - name: 'workshop-settings'
+        label: 'Workshop settings'
+        file: '_data/settings/workshop-settings.yml'
+        description: 'All infromation related to the workshop'
+        fields:
+          - {label: "Content", name: "content", widget: "markdown"}
           
       - name: 'navigation'
         label: 'Navigation'
@@ -200,7 +207,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'url', name: 'url', widget: 'string' }
-              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline ] }
+              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline, mdiTools ] }
               - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
           
           - name: learn
@@ -210,7 +217,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'url', name: 'url', widget: 'string' }
-              - { label: 'icon', name: 'icon', widget: 'string', hint: 'name of the MDI icon in camel case, for example mdiInformationOutline, you can find all available icons here: https://iconify.design/icon-sets/mdi/' }
+              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline, mdiTools ] }
               - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
           
           - name: engage
@@ -220,7 +227,7 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'url', name: 'url', widget: 'string' }
-              - { label: 'icon', name: 'icon', widget: 'string', hint: 'name of the MDI icon in camel case, for example mdiInformationOutline, you can find all available icons here: https://iconify.design/icon-sets/mdi/' }
+              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline, mdiTools ] }
               - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
 
   # ============================================================================

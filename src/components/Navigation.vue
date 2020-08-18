@@ -52,32 +52,32 @@
 </template>
 
 <static-query>
-  query {
-    navigation: allNavigation {
-      edges {
-        node {
-          discover {
-            title
-            url
-            icon
-            hidden
-          }
-          learn {
-            title
-            url
-            icon
-            hidden
-          }
-          engage {
-            title
-            url
-            icon
-            hidden
-          }
+query {
+  navigation: allNavigation {
+    edges {
+      node {
+        discover {
+          title
+          url
+          icon
+          hidden
+        }
+        learn {
+          title
+          url
+          icon
+          hidden
+        }
+        engage {
+          title
+          url
+          icon
+          hidden
         }
       }
     }
   }
+}
 </static-query>
 
 <script>
@@ -97,6 +97,7 @@ import {
   mdiAccountPlusOutline,
   mdiEmailOutline,
   mdiDownloadOutline,
+  mdiTools,
 } from '@mdi/js';
 
 const iconList = {
@@ -114,6 +115,7 @@ const iconList = {
   mdiAccountPlusOutline,
   mdiEmailOutline,
   mdiDownloadOutline,
+  mdiTools,
 };
 
 export default {

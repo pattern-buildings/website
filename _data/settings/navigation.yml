@@ -36,6 +36,10 @@ learn:
     title: FAQ
     url: /docs/faq/
     icon: mdiCommentQuestionOutline
+  - hidden: true
+    title: Workshop
+    url: /workshop
+    icon: mdiTools
 engage:
   - hidden: false
     title: Become a supporter
