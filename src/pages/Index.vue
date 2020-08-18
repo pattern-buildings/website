@@ -20,7 +20,7 @@
         </div>
       </div>
       <g-image
-        alt="Pattern Buildings logo"
+        alt="369 Pattern Buildings logo"
         src="~/assets/images/pattern-buildings-features.jpg"
         immediate="true"
         width="600"
@@ -50,7 +50,7 @@
             allow="autoplay; fullscreen"
             allowfullscreen
             class="xs:rounded-lg xs:shadow-lg absolute w-full h-full"
-            title="Video about Pattern Buildings"
+            title="Video about 369 Pattern Buildings"
           ></iframe>
         </div>
 
@@ -117,7 +117,7 @@
           >
             <g-image
               :src="loaded ? supporter.logo : ''"
-              alt="Pattern Buildings supporter"
+              alt="369 Pattern Buildings supporter"
               class="w-full my-auto"
             />
           </g-link>
@@ -148,7 +148,7 @@
             "
           >
             <g-image
-              :alt="`${teamMember.name} - Pattern Buildings team member`"
+              :alt="`${teamMember.name} - 369 Pattern Buildings team member`"
               :src="loaded ? teamMember.avatar : ''"
               class="w-20 h-20 rounded-full bg-gray-300 object-cover"
             />
@@ -170,7 +170,7 @@
             "
           >
             <g-image
-              :alt="`${contributor.name} - Pattern Buildings contributor`"
+              :alt="`${contributor.name} - 369 Pattern Buildings contributor`"
               :src="loaded ? contributor.avatar : ''"
               class="w-20 h-20 rounded-full bg-gray-300 object-cover"
             />
@@ -205,67 +205,67 @@
 </template>
 
 <static-query>
-  query {
-    metadata {
-      siteName
-      siteDescription
-    }
+query {
+  metadata {
+    siteName
+    siteDescription
   }
+}
 </static-query>
 
 <page-query>
-  query {
-    settings: allDiscoverSettings {
-      edges {
-        node {
-          idea
-          facts {
-            key
-            value
-          }
-          features {
-            name
-            description
-          }
-          supporters {
-            logo
-            url
-          }
-          core_team {
-            name
-            avatar
-            responsibility
-            url
-          }
-          contributors {
-            name
-            avatar
-            responsibility
-            url
-          }
-          license_description
-          license_url
+query {
+  settings: allDiscoverSettings {
+    edges {
+      node {
+        idea
+        facts {
+          key
+          value
         }
+        features {
+          name
+          description
+        }
+        supporters {
+          logo
+          url
+        }
+        core_team {
+          name
+          avatar
+          responsibility
+          url
+        }
+        contributors {
+          name
+          avatar
+          responsibility
+          url
+        }
+        license_description
+        license_url
       }
     }
-    projects: allProjects(
-      filter: { featured: { eq: true } }
-      sortBy: "order"
-      order: ASC
-    ) {
-      edges {
-        node {
-          title
-          subtitle
-          cover
-          featured
-          fileInfo {
-            name
-          }
+  }
+  projects: allProjects(
+    filter: { featured: { eq: true } }
+    sortBy: "order"
+    order: ASC
+  ) {
+    edges {
+      node {
+        title
+        subtitle
+        cover
+        featured
+        fileInfo {
+          name
         }
       }
     }
   }
+}
 </page-query>
 
 <script>

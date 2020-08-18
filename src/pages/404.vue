@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <g-image
-      alt="Pattern Buildings logo"
+      alt="369 Pattern Buildings logo"
       src="~/assets/images/pattern-buildings-features.jpg"
       class="w-full sm:w-1/2 max-w-xs mx-auto mb-8"
     />
@@ -14,7 +14,7 @@
 <script>
 export default {
   metaInfo: {
-    title: '404 | Pattern Buildings',
+    title: '404 | 369 Pattern Buildings',
     meta: [
       {
         key: 'description',

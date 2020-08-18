@@ -2,7 +2,7 @@
   <Layout>
     <small class="text-green-600 text-center mb-4 text-sm">
       <g-link to="/" class="underline hover:no-underline">
-        Pattern Buildings
+        369 Pattern Buildings
       </g-link>
     </small>
     <h1 class="text-center">User manual</h1>
@@ -32,27 +32,27 @@
 </template>
 
 <page-query>
-  query {
-    docs: allDocs(sortBy: "order", order: ASC) {
-      edges {
-        node {
-          id
-          title
-          is_subcarticle
-          fileInfo {
-            name
-          }
-        }
-      }
-    }
-    settings: allLearnSettings {
-      edges {
-        node {
-          intro_docs
+query {
+  docs: allDocs(sortBy: "order", order: ASC) {
+    edges {
+      node {
+        id
+        title
+        is_subcarticle
+        fileInfo {
+          name
         }
       }
     }
   }
+  settings: allLearnSettings {
+    edges {
+      node {
+        intro_docs
+      }
+    }
+  }
+}
 </page-query>
 
 <script>
@@ -62,7 +62,7 @@ export default {
   components: { Markdown },
   metaInfo() {
     return {
-      title: 'Documentation | Pattern Buildings',
+      title: 'Documentation | 369 Pattern Buildings',
       meta: [
         {
           key: 'description',
@@ -71,7 +71,7 @@ export default {
             this.$page.settings.edges[0].node.intro_docs
               .substring(0, 150)
               .concat('...') ||
-            'Documentation for Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
+            'Documentation for 369 Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
         },
       ],
     };

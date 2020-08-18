@@ -29,19 +29,19 @@ facts:
     value: Offsite modular
 features:
   - name: Informative
-    description: The Pattern Building architecture must be informative. Its
+    description: The 369 Pattern Building architecture must be informative. Its
       constructive and technical structure must be easily readable by the
       builder, the user and the maintainer of the building.
   - name: Universal
-    description: The Pattern Building must be simple enough for it to be produced at
+    description: The 369 Pattern Building must be simple enough for it to be produced at
       different factories and assembled by different builders. The transport of
       modules must be legally and technically possible without special permits
       or escort to all regions of Europe by road, rail and water.
   - name: Environment friendly
-    description: The Pattern Building needs a minimal amount of energy for
+    description: The 369 Pattern Building needs a minimal amount of energy for
       production, transport and operation.
   - name: Re-configurable
-    description: The components of Pattern Building are easily accessible for
+    description: The components of 369 Pattern Building are easily accessible for
       disassembling and upgrading.
   - name: Durable
     description: Given the growth cycle of wood used in construction, the main
@@ -51,13 +51,13 @@ features:
       adapted to different typologies, providing only the technical means for
       achieving the design goals.
   - name: Open
-    description: The Pattern Building concept remains available without restrictions
+    description: The 369 Pattern Building concept remains available without restrictions
       (see License) to anyone who wishes to develop it further.
   - name: Autonomous
     description: Functional units of the building (for example, apartments in the
       case of an apartment building) should be independent of each other both in
       terms of access and in terms of utility systems.
-intro_projects: "List of projects that use **Pattern Buildings** open-source
+intro_projects: "List of projects that use **369 Pattern Buildings** open-source
   system. A Pattern building can be a house, office, school, kindergarten,
   hospital etc. Every Pattern Building is: mass-customisable; environmentally
   friendly; made primarily of wood; modular and prefabricated; ready to be
@@ -118,7 +118,7 @@ contributors:
   - name: Julia Pupsheva
     responsibility: Structural engineer
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
-license_description: Pattern Buildings by Renee Puusepp, Egle Vogt, Lauri
+license_description: 369 Pattern Buildings by Renee Puusepp, Egle Vogt, Lauri
   Läänelaid, Marianna Zvereva, Eero Tuhkanen, Kristo Kalbe is licensed under
   **CC BY 4.0**
 license_url: https://creativecommons.org/licenses/by/4.0/

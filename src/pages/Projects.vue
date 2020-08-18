@@ -2,7 +2,7 @@
   <Layout>
     <small class="text-red-600 text-center mb-4 text-sm">
       <g-link to="/" class="underline hover:no-underline">
-        Pattern Buildings
+        369 Pattern Buildings
       </g-link>
     </small>
     <h1 class="text-center">Projects</h1>
@@ -29,28 +29,28 @@
 </template>
 
 <page-query>
-  query {
-    projects: allProjects(sortBy: "order", order: ASC) {
-      edges {
-        node {
-          id
-          title
-          subtitle
-          cover
-          fileInfo {
-            name
-          }
-        }
-      }
-    }
-    settings: allDiscoverSettings {
-      edges {
-        node {
-          intro_projects
+query {
+  projects: allProjects(sortBy: "order", order: ASC) {
+    edges {
+      node {
+        id
+        title
+        subtitle
+        cover
+        fileInfo {
+          name
         }
       }
     }
   }
+  settings: allDiscoverSettings {
+    edges {
+      node {
+        intro_projects
+      }
+    }
+  }
+}
 </page-query>
 
 <script>
@@ -66,7 +66,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: 'Projects | Pattern Buildings',
+      title: 'Projects | 369 Pattern Buildings',
       meta: [
         {
           key: 'description',
@@ -74,7 +74,7 @@ export default {
           content:
             this?.$page?.settings?.edges[0]?.node?.intro_projects
               .substring(0, 150)
-              .concat('...') || 'List of Pattern Buildings projects',
+              .concat('...') || 'List of 369 Pattern Buildings projects',
         },
       ],
     };

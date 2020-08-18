@@ -11,7 +11,7 @@ The body of the building is covered with facade and roof elements, here referred
 
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1595346715/docs/PatternBuildings_Grid_lvvrhs.jpg)
 
-Since the actual size of the modules is unyieldingly accurate in terms of designing volumes, a planar grid with dimensions of 3m by 3m should be used. When placing modules in the building’s skeleton, the general rule is that all modules follow the layout grid.
+Since the actual size of the modules is unyieldingly accurate in terms of designing volumes, a planar grid with dimensions of 3m by 3m should be used. When placing modules in the building's skeleton, the general rule is that all modules follow the layout grid.
 
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1595346753/docs/PatternBuildings_tolerance_zhjuq7.jpg)
 

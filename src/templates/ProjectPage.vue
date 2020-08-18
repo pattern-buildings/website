@@ -2,7 +2,7 @@
   <Layout>
     <small class="text-red-600 text-center mb-4 text-sm">
       <g-link to="/" class="underline hover:no-underline">
-        Pattern Buildings
+        369 Pattern Buildings
       </g-link>
       <span class="mx-2">/</span>
       <g-link to="/projects/" class="underline hover:no-underline">
@@ -60,14 +60,14 @@ export default {
   },
   metaInfo() {
     return {
-      title: `${this.$context.title} | Pattern Buildings`,
+      title: `${this.$context.title} | 369 Pattern Buildings`,
       meta: [
         {
           key: 'description',
           name: 'description',
           content:
             this.$context.excerpt ||
-            `${this.$context.title} - a Pattern Buildings project`,
+            `${this.$context.title} - a 369 Pattern Buildings project`,
         },
       ],
     };

@@ -2,7 +2,7 @@
   <Layout>
     <small class="text-green-600 text-center mb-4 text-sm">
       <g-link to="/" class="underline hover:no-underline">
-        Pattern Buildings
+        369 Pattern Buildings
       </g-link>
       <span class="mx-2">/</span>
       <g-link to="/docs/" class="underline hover:no-underline">
@@ -39,17 +39,17 @@
 </template>
 
 <page-query>
-  query {
-    docs: allDocs(sortBy: "order", order: ASC) {
-      edges {
-        node {
-          fileInfo {
-            name
-          }
+query {
+  docs: allDocs(sortBy: "order", order: ASC) {
+    edges {
+      node {
+        fileInfo {
+          name
         }
       }
     }
   }
+}
 </page-query>
 
 <script>
@@ -61,13 +61,13 @@ export default {
   components: { ContentBlock, Icon },
   metaInfo() {
     return {
-      title: `${this.$context.title} | Pattern Buildings`,
+      title: `${this.$context.title} | 369 Pattern Buildings`,
       meta: [
         {
           key: 'description',
           name: 'description',
           content:
-            'Documentation for Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
+            'Documentation for 369 Pattern Buildings - an open-source industrial building system for mass-customizable buildings',
         },
       ],
     };

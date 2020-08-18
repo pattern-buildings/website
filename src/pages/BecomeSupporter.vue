@@ -2,7 +2,7 @@
   <Layout>
     <small class="text-blue-600 text-center mb-4 text-sm">
       <g-link to="/" class="underline hover:no-underline">
-        Pattern Buildings
+        369 Pattern Buildings
       </g-link>
     </small>
     <h1 class="text-center">Become a supporter</h1>
@@ -56,15 +56,15 @@
 </template>
 
 <page-query>
-  query {
-    settings: allEngageSettings {
-      edges {
-        node {
-          intro_supporter
-        }
+query {
+  settings: allEngageSettings {
+    edges {
+      node {
+        intro_supporter
       }
     }
   }
+}
 </page-query>
 
 <script>
@@ -76,7 +76,7 @@ export default {
   },
 
   metaInfo: {
-    title: 'Become a supporter | Pattern Buildings',
+    title: 'Become a supporter | 369 Pattern Buildings',
     meta: [
       {
         key: 'description',

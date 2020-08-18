@@ -7,7 +7,7 @@
     <footer class="mt-auto w-full">
       <Navigation />
       <p class="text-sm text-center text-gray-600">
-        © Pattern Buildings 2020
+        © 369 Pattern Buildings 2020
       </p>
     </footer>
   </div>

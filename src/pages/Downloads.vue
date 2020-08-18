@@ -2,7 +2,7 @@
   <Layout>
     <small class="text-blue-600 text-center mb-4 text-sm">
       <g-link to="/" class="underline hover:no-underline">
-        Pattern Buildings
+        369 Pattern Buildings
       </g-link>
     </small>
     <h1 class="text-center">Downloads</h1>
@@ -20,26 +20,26 @@
 </template>
 
 <page-query>
-  query {
-    downloads: allDownloads(sortBy: "order", order: ASC) {
-      edges {
-        node {
-          id
-          title
-          type
-          file
-          url
-        }
-      }
-    }
-    settings: allEngageSettings {
-      edges {
-        node {
-          intro_downloads
-        }
+query {
+  downloads: allDownloads(sortBy: "order", order: ASC) {
+    edges {
+      node {
+        id
+        title
+        type
+        file
+        url
       }
     }
   }
+  settings: allEngageSettings {
+    edges {
+      node {
+        intro_downloads
+      }
+    }
+  }
+}
 </page-query>
 
 <script>
@@ -53,7 +53,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: 'Downloads | Pattern Buildings',
+      title: 'Downloads | 369 Pattern Buildings',
       meta: [
         {
           key: 'description',
@@ -62,7 +62,7 @@ export default {
             this.$page.settings.edges[0].node.intro_downloads
               .substring(0, 150)
               .concat('...') ||
-            'List of files to download from Pattern Buildings',
+            'List of files to download from 369 Pattern Buildings',
         },
       ],
     };

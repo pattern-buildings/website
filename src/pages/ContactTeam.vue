@@ -2,7 +2,7 @@
   <Layout>
     <small class="text-blue-600 text-center mb-4 text-sm">
       <g-link to="/" class="underline hover:no-underline">
-        Pattern Buildings
+        369 Pattern Buildings
       </g-link>
     </small>
     <h1 class="text-center">Contact the team</h1>
@@ -56,15 +56,15 @@
 </template>
 
 <page-query>
-  query {
-    settings: allEngageSettings {
-      edges {
-        node {
-          intro_team
-        }
+query {
+  settings: allEngageSettings {
+    edges {
+      node {
+        intro_team
       }
     }
   }
+}
 </page-query>
 
 <script>
@@ -75,12 +75,12 @@ export default {
     Markdown,
   },
   metaInfo: {
-    title: 'Contact the team | Pattern Buildings',
+    title: 'Contact the team | 369 Pattern Buildings',
     meta: [
       {
         key: 'description',
         name: 'description',
-        content: 'Contact Pattern Buildings team form',
+        content: 'Contact 369 Pattern Buildings team form',
       },
     ],
   },

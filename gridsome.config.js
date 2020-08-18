@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Pattern Buildings',
+  siteName: '369 Pattern Buildings',
   siteDescription:
     'An open-source industrial building system for mass-customizable wooden buildings',
   siteUrl: 'https://patternbuildings.com',
@@ -123,8 +123,8 @@ module.exports = {
       options: {
         background_color: '#000000',
         icon_path: './src/favicon.png',
-        name: 'Pattern Building',
-        short_name: 'Pattern Building',
+        name: '369 Pattern Building',
+        short_name: '369 Pattern Building',
         theme_color: '#FFFFFF',
         lang: 'en',
       },
