@@ -9,6 +9,8 @@ The indoor climate quality of the building is achieved with an energy efficient 
 
 In order to reduce the pressure loss in the pipes and the resulting additional energy consumption, the layout of the rooms should favour the use of relatively short and straight pipes. In the case of apartments, the minimum diameter of the pipes under the ceiling of the room module would be 125 mm (with a silencer 160 mm), in public buildings up to 600 mm.
 
+Make a list of links to subcategories here....
+
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1595350584/docs/PatternBuildings_Utilities_mn5nrl.jpg)
 
 All utility systems can be connected vertically in the cavity between the modules.
