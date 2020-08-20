@@ -33,10 +33,11 @@ features:
       constructive and technical structure must be easily readable by the
       builder, the user and the maintainer of the building.
   - name: Universal
-    description: The 369 Pattern Building must be simple enough for it to be produced at
-      different factories and assembled by different builders. The transport of
-      modules must be legally and technically possible without special permits
-      or escort to all regions of Europe by road, rail and water.
+    description: The 369 Pattern Building must be simple enough for it to be
+      produced at different factories and assembled by different builders. The
+      transport of modules must be legally and technically possible without
+      special permits or escort to all regions of Europe by road, rail and
+      water.
   - name: Environment friendly
     description: The 369 Pattern Building needs a minimal amount of energy for
       production, transport and operation.
@@ -51,8 +52,8 @@ features:
       adapted to different typologies, providing only the technical means for
       achieving the design goals.
   - name: Open
-    description: The 369 Pattern Building concept remains available without restrictions
-      (see License) to anyone who wishes to develop it further.
+    description: The 369 Pattern Building concept remains available without
+      restrictions (see License) to anyone who wishes to develop it further.
   - name: Autonomous
     description: Functional units of the building (for example, apartments in the
       case of an apartment building) should be independent of each other both in
@@ -90,6 +91,9 @@ core_team:
   - name: Marianna Zvereva
     responsibility: Architect
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
+  - name: Vitali Valtanen
+    responsibility: BIM manager and designer
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597938593/core%20team/Vitali_Valtanen_2_duwadt.jpg
 contributors:
   - name: Johannes Madis Aasmäe
     responsibility: Architect
@@ -112,9 +116,6 @@ contributors:
     responsibility: Architects
     url: nomadarchitects.lv
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597248703/core%20team/Screen_Shot_2020-08-12_at_19.09.57_vn6zcv.png
-  - name: Vitali Valtanen
-    responsibility: BIM designer
-    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
   - name: Julia Pupsheva
     responsibility: Structural engineer
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
