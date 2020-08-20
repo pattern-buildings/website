@@ -1,6 +1,6 @@
 ---
-title: "Autodesk Revit 2019 template "
+title: Autodesk Revit templates
 order: 1
 type: cad
-url: https://drive.google.com/file/d/1oVA4hthnoBlcTvuYhcCoy4RTQ9aZqsr_/view?usp=sharing
+url: https://drive.google.com/drive/folders/1YXZslkrS8QNkCyIWV0n2fIZR-xamCL4p?usp=sharing
 ---
