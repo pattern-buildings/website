@@ -3,12 +3,12 @@
 </template>
 
 <static-query>
-  query {
-    metadata {
-      siteName
-      siteDescription
-    }
+query {
+  metadata {
+    siteName
+    siteDescription
   }
+}
 </static-query>
 
 <script>
@@ -87,6 +87,11 @@ article ul {
   list-style: initial;
 }
 
+article ol {
+  @apply my-4 ml-8;
+  list-style: decimal;
+}
+
 article li {
   @apply my-2;
 }
@@ -100,6 +105,9 @@ article a {
 }
 article a:hover {
   @apply no-underline;
+}
+.green-links a {
+  @apply text-green-600;
 }
 
 .layout {

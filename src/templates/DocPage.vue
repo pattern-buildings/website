@@ -10,7 +10,7 @@
       </g-link>
     </small>
     <h1 class="text-center">{{ $context.title }}</h1>
-    <ContentBlock :content="$context.content" />
+    <ContentBlock :content="$context.content" class="green-links" />
     <hr class="mb-16" />
     <div class="flex justify-between sm:justify-center items-stretch">
       <g-link
