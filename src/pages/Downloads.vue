@@ -11,10 +11,7 @@
       class="content-block"
     />
 
-    <DownloadsBlock
-      :downloads="downloads"
-      class="flex flex-wrap justify-center my-16"
-    />
+    <DownloadsBlock :downloads="downloads" class="my-16" />
     <hr />
   </Layout>
 </template>

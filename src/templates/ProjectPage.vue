@@ -30,10 +30,7 @@
     <hr v-if="$context.downloads.length" />
     <section v-if="$context.downloads.length" class="my-16">
       <h2 class="text-center mb-8">Downloads</h2>
-      <DownloadsBlock
-        :downloads="$context.downloads"
-        class="flex flex-wrap justify-center"
-      />
+      <DownloadsBlock :downloads="$context.downloads" />
     </section>
     <hr class="my-16" />
     <div class="flex flex-wrap justify-center">

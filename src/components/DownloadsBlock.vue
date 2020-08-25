@@ -7,7 +7,8 @@
       class="flex items-center m-4 p-4 border-2 border-gray-300 border-dotted"
     >
       <Icon :path="detectIcon(item.type)" class="w-12 h-12 text-gray-600" />
-      <span class="ml-2">{{ item.title }}</span>
+      <span class="mx-4">{{ item.title }}</span>
+      <button class="btn-outline ml-auto text-gray-600">Download</button>
     </g-link>
   </div>
 </template>
