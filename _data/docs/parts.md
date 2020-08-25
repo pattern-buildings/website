@@ -5,18 +5,19 @@ is_subcarticle: false
 ---
 Pattern Building can be divided into following components:
 
-* room module
-* body made up from the modules
-* skeleton
-* skin
-* base
-* circulation
-* utility systems
+1. [Room module](/docs/room-module/)
+2. [Body](/docs/body/)
+3. [Skeleton](/docs/skeleton/)
+4. [Skin](/docs/skin/)
+5. [Base](/docs/base/)
+6. [Circulation](/docs/circulation/)
+7. [Utility systems](/docs/utility-systems/)
 
-  * Ventilation
-  * Heating and cooling
-  * Water and sewerage
-  * Electricity
-* (All should be links)
+   * [Ventilation](/docs/ventilation/)
+   * [Heating and cooling](/docs/heating-and-cooling/)
+   * [Water and sewerage](/docs/water-and-sewerage/)
+   * [Electricity](/docs/electricity/)
 
-![](https://res.cloudinary.com/patternbuildings/image/upload/v1595343141/docs/Parts-of-th-ebuilding_ltildl.jpg)
+
+
+![Pattern Building parts](https://res.cloudinary.com/patternbuildings/image/upload/v1598346516/docs/parts-of-pattern-buildings_xc5vho.jpg)

@@ -3,7 +3,7 @@ title: Heating and cooling
 order: 11
 is_subcarticle: true
 ---
-There are two basic options for heating the house: water heating and electric heating.
+There are two basic options for heating the house: **water heating** and **electric heating**.
 
 Water heating uses convectors on the walls or below the ceiling. The water heating is either part of the central heating or works on an autonomous boiler.
 
