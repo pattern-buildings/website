@@ -20,7 +20,8 @@ cta:
 downloads:
   - type: pdf
     url: https://drive.google.com/file/d/1ShkMCUPRQtX38DvV5cNJbRmvrMlHjlQQ/view?usp=sharing
-    title: A competition entry to Hybrid City (PDF / 34,4MB)
+    title: A competition entry to Hybrid City
+    description: PDF - 34,4MB
 ---
 The Turu 21 office building was originally designed by Kadarik Tüür Architects on Turu street 21 in Tartu Estonia.
 

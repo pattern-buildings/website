@@ -1,5 +1,6 @@
 ---
-title: User Manual / Pattern Buildings Beta (10,4 MB)
+title: User Manual / Pattern Buildings Beta
+description: PDF - 10,4 MB
 order: 0
 type: pdf
 file: ""

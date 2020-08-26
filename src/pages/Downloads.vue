@@ -23,6 +23,7 @@ query {
       node {
         id
         title
+        description
         type
         file
         url

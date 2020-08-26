@@ -14,6 +14,7 @@ cta:
   label: Configure Your Musterhaus
 downloads:
   - type: pdf
+    description: ''
     url: https://drive.google.com/file/d/1gNh3RRjSgXuPtBnu4fdkzSQt6TXcTNYm/view?usp=sharing
     title: Musterhaus study report by Nomad Architects
 ---

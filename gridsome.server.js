@@ -34,6 +34,7 @@ module.exports = function (api) {
               excerpt
               downloads {
                 title
+                description
                 type
                 file
                 url

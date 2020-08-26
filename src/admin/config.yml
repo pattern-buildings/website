@@ -56,7 +56,8 @@ collections:
         minimize_collapsed: false
         summary: '{{title}} - {{type}}'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', name: 'description', widget: 'string', required: false}
           - {label: "File", name: "file", widget: "file", required: false}
           - {label: "URL", name: "url", widget: "string", required: false}
           - label: "Type"
@@ -96,6 +97,7 @@ collections:
       preview: false
     fields:
       - {label: "Title", name: "title", widget: "string", hint: "Also used as a slug"}
+      - {label: 'Description', name: 'description', widget: 'string', required: false}
       - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
       - label: "Type"
         name: "type"
