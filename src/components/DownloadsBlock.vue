@@ -10,7 +10,7 @@
         :path="detectIcon(item.type)"
         class="w-12 h-12 text-gray-600 flex-shrink-0"
       />
-      <div class="flex flex-col items-center md:items-start text-center">
+      <div class="flex flex-col items-center sm:items-start text-center">
         <span class="mx-4">{{ item.title }}</span>
         <span class="mx-4 text-gray-600 text-sm">{{ item.description }}</span>
       </div>
