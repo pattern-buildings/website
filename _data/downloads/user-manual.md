@@ -1,6 +1,6 @@
 ---
-title: User Manual / Pattern Buildings Beta
-description: PDF - 10,4 MB
+title: User Manual
+description: Beta version 12_06_2020
 order: 0
 type: pdf
 file: ""
