@@ -1,5 +1,5 @@
 ---
-title: AutoCAD blocks - M369 modules
+title: AutoCAD blocks
 description: 2D plans, sections and elevations for M3, M6 and M9 modules
 order: 4
 type: cad
