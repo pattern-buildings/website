@@ -14,7 +14,7 @@
     <p>
       <iframe
         id="configurator"
-        src="https://nuliving.rossi.creatomus.com/project/avenue"
+        src="https://configurator.rossi.creatomus.com/project/tallinnamaja"
         frameborder="0"
         data-pathname="/project/avenue"
         class="w-full"
