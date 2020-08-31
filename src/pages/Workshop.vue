@@ -10,6 +10,17 @@
       :raw="$page.settings.edges[0].node.content"
       class="content-block"
     />
+    <p>test</p>
+    <p>
+      <iframe
+        id="configurator"
+        src="https://nuliving.creatomus.com/project/avenue"
+        frameborder="0"
+        data-pathname="/project/avenue"
+        class="w-full"
+        style="height: 75vh;"
+      ></iframe>
+    </p>
     <hr />
   </Layout>
 </template>
