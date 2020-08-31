@@ -14,7 +14,7 @@
     <p>
       <iframe
         id="configurator"
-        src="https://nuliving.creatomus.com/project/avenue"
+        src="https://nuliving.rossi.creatomus.com/project/avenue"
         frameborder="0"
         data-pathname="/project/avenue"
         class="w-full"
