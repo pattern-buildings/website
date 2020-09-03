@@ -22,6 +22,32 @@ export default {
           name: 'description',
           content: this.$static.metadata.siteDescription,
         },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: this.$static.metadata.siteName },
+        {
+          name: 'twitter:description',
+          content: this.$static.metadata.siteDescription,
+        },
+        {
+          name: 'twitter:image',
+          content:
+            'https://patternbuildings.com/assets/static/pattern-buildings-features.9dcfaf0.0e7c5732b6131f664cc16be44165b704.jpg',
+        },
+        { property: 'og:title', content: this.$static.metadata.siteName },
+        {
+          property: 'og:site_name',
+          content: this.$static.metadata.siteName,
+        },
+        { property: 'og:type', content: 'website' },
+        {
+          property: 'og:image',
+          content:
+            'https://patternbuildings.com/assets/static/pattern-buildings-features.9dcfaf0.0e7c5732b6131f664cc16be44165b704.jpg',
+        },
+        {
+          property: 'og:description',
+          content: this.$static.metadata.siteDescription,
+        },
       ],
     };
   },
