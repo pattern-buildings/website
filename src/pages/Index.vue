@@ -29,9 +29,34 @@
       />
     </header>
 
-    <!-- <Navigation /> -->
+    <div
+      v-if="!$page.banner.hide"
+      class="my-8 border-gray-300 border-2 border-dashed p-8 flex justify-around items-center flex-wrap relative"
+    >
+      <div class="my-4 text-center">
+        <h3>
+          {{ $page.banner.title }}
+        </h3>
+        <p class="my-2 text-gray-600">
+          {{ $page.banner.subtitle }}
+        </p>
+        <a :href="$page.banner.url">
+          <button class="btn-outline text-blue-600 my-4">
+            {{ $page.banner.cta }}
+          </button>
+        </a>
+      </div>
+      <g-image :src="$page.banner.image" class="h-32 object-contain" />
+      <span
+        class="absolute bottom-0 right-0 -mb-8 text-gray-600 text-sm cursor-pointer"
+        @click="$page.banner.hide = !$page.banner.hide"
+      >
+        close
+      </span>
+    </div>
 
-    <hr />
+    <hr v-else />
+
     <main>
       <section id="idea" class="py-16">
         <div class="mb-8">
@@ -264,6 +289,14 @@ query {
         }
       }
     }
+  }
+  banner: bannerSettings(path: "/data/settings/banner-settings/") {
+    title
+    subtitle
+    cta
+    url
+    hide
+    image
   }
 }
 </page-query>
