@@ -9,7 +9,7 @@ site_url: https://patternbuildings.com
 display_url: patternbuildings.com
 show_preview_links: false
 
-media_folder: "_data/uploads"
+media_folder: '_data/uploads'
 media_library:
   name: cloudinary
   config:
@@ -17,37 +17,57 @@ media_library:
     api_key: 146329144562262
 
 collections:
-
-  - name: "projects"
-    label: "Projects"
+  - name: 'projects'
+    label: 'Projects'
     label_singular: 'Project'
-    folder: "_data/projects"
+    folder: '_data/projects'
     create: true
-    slug: "{{title}}"
+    slug: '{{title}}'
     summary: '#{{order}} - {{title}}'
     sortableFields: ['title', 'order']
     editor:
       preview: false
     fields:
-      - {label: "Cover image", name: "cover", widget: "image"}
-      - {label: "Title", name: "title", widget: "string", hint: "Also used as a slug"}
-      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-      - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
-      - {label: "Featured on home page", name: "featured", widget: "boolean", default: false}
+      - { label: 'Cover image', name: 'cover', widget: 'image' }
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          hint: 'Also used as a slug',
+        }
+      - {
+          label: 'Subtitle',
+          name: 'subtitle',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Order',
+          name: 'order',
+          widget: 'number',
+          default: 0,
+          valueType: 'int',
+        }
+      - {
+          label: 'Featured on home page',
+          name: 'featured',
+          widget: 'boolean',
+          default: false,
+        }
       - name: facts
         label: Facts
         label_singular: item
         widget: list
         fields:
-          - {label: Key, name: key, widget: string}
-          - {label: Value, name: value, widget: string}
-      - label: "CTA"
-        name: "cta"
-        widget: "object"
-        fields: 
-          - {label: URL, name: url, widget: string, required: false}
-          - {label: Label, name: label, widget: string, required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+          - { label: Key, name: key, widget: string }
+          - { label: Value, name: value, widget: string }
+      - label: 'CTA'
+        name: 'cta'
+        widget: 'object'
+        fields:
+          - { label: URL, name: url, widget: string, required: false }
+          - { label: Label, name: label, widget: string, required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
       - name: downloads
         label: Downloads
         label_singular: 'Download'
@@ -56,55 +76,92 @@ collections:
         minimize_collapsed: false
         summary: '{{title}} - {{type}}'
         fields:
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Description', name: 'description', widget: 'string', required: false}
-          - {label: "File", name: "file", widget: "file", required: false}
-          - {label: "URL", name: "url", widget: "string", required: false}
-          - label: "Type"
-            name: "type"
-            widget: "select"
-            options: ["pdf", "cad", 'other']
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - {
+              label: 'Description',
+              name: 'description',
+              widget: 'string',
+              required: false,
+            }
+          - { label: 'File', name: 'file', widget: 'file', required: false }
+          - { label: 'URL', name: 'url', widget: 'string', required: false }
+          - label: 'Type'
+            name: 'type'
+            widget: 'select'
+            options: ['pdf', 'cad', 'other']
 
   # ============================================================================
 
-  - name: "docs"
-    label: "Docs"
+  - name: 'docs'
+    label: 'Docs'
     label_singular: 'Doc'
-    folder: "_data/docs"
+    folder: '_data/docs'
     create: true
-    slug: "{{title}}"
+    slug: '{{title}}'
     summary: '#{{order}} - {{title}}'
     sortableFields: ['title', 'order']
     editor:
       preview: false
     fields:
-      - {label: "Title", name: "title", widget: "string", hint: "Also used as a slug"}
-      - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
-      - {label: "Is subarticle?", name: "is_subcarticle", widget: "boolean", default: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          hint: 'Also used as a slug',
+        }
+      - {
+          label: 'Order',
+          name: 'order',
+          widget: 'number',
+          default: 0,
+          valueType: 'int',
+        }
+      - {
+          label: 'Is subarticle?',
+          name: 'is_subcarticle',
+          widget: 'boolean',
+          default: false,
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
   # ============================================================================
 
-  - name: "downloads"
-    label: "Downloads"
+  - name: 'downloads'
+    label: 'Downloads'
     label_singular: 'Download'
-    folder: "_data/downloads"
+    folder: '_data/downloads'
     create: true
-    slug: "{{title}}"
+    slug: '{{title}}'
     summary: '#{{order}} - {{title}}'
     sortableFields: ['title', 'order']
     editor:
       preview: false
     fields:
-      - {label: "Title", name: "title", widget: "string", hint: "Also used as a slug"}
-      - {label: 'Description', name: 'description', widget: 'string', required: false}
-      - {label: "Order", name: "order", widget: "number", default: 0, valueType: "int"}
-      - label: "Type"
-        name: "type"
-        widget: "select"
-        options: ["pdf", "cad", 'other']
-      - {label: "File", name: "file", widget: "file", required: false}
-      - {label: "URL", name: "url", widget: "string", required: false}
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          hint: 'Also used as a slug',
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Order',
+          name: 'order',
+          widget: 'number',
+          default: 0,
+          valueType: 'int',
+        }
+      - label: 'Type'
+        name: 'type'
+        widget: 'select'
+        options: ['pdf', 'cad', 'other']
+      - { label: 'File', name: 'file', widget: 'file', required: false }
+      - { label: 'URL', name: 'url', widget: 'string', required: false }
 
   # ============================================================================
 
@@ -114,20 +171,19 @@ collections:
     editor:
       preview: false
     files:
-
       - name: 'discover-settings'
         label: 'Discover settings (RED)'
         file: '_data/settings/discover-settings.yml'
         description: 'Setup fields for home page'
         fields:
-          - {label: "Idea", name: "idea", widget: "markdown"}
+          - { label: 'Idea', name: 'idea', widget: 'markdown' }
           - name: facts
             label: Facts
             label_singular: item
             widget: list
             fields:
-              - {label: Key, name: key, widget: string}
-              - {label: Value, name: value, widget: string}
+              - { label: Key, name: key, widget: string }
+              - { label: Value, name: value, widget: string }
           - name: features
             label: Features
             label_singular: 'Feature'
@@ -137,8 +193,19 @@ collections:
             summary: '{{fields.name}} - {{fields.description}}'
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Description', name: 'description', widget: 'markdown', minimal: true, buttons: [], editorComponents: [] }
-          - {label: "Intro for projects", name: "intro_projects", widget: "markdown"}
+              - {
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'markdown',
+                  minimal: true,
+                  buttons: [],
+                  editorComponents: [],
+                }
+          - {
+              label: 'Intro for projects',
+              name: 'intro_projects',
+              widget: 'markdown',
+            }
           - name: supporters
             label: Supporters
             label_singular: 'Supporter'
@@ -146,7 +213,7 @@ collections:
             collapsed: true
             minimize_collapsed: false
             fields:
-              - {label: "Logo", name: "logo", widget: "file"}
+              - { label: 'Logo', name: 'logo', widget: 'file' }
               - { label: 'URL', name: 'url', widget: 'string', required: false }
           - name: core_team
             label: Core team
@@ -156,8 +223,12 @@ collections:
             minimize_collapsed: false
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Responsibility', name: 'responsibility', widget: 'string' }
-              - { label: "Avatar", name: "avatar", widget: "file" }
+              - {
+                  label: 'Responsibility',
+                  name: 'responsibility',
+                  widget: 'string',
+                }
+              - { label: 'Avatar', name: 'avatar', widget: 'file' }
               - { label: 'URL', name: 'url', widget: 'string', required: false }
           - name: contributors
             label: Contributors
@@ -167,10 +238,18 @@ collections:
             minimize_collapsed: false
             fields:
               - { label: 'Name', name: 'name', widget: 'string' }
-              - { label: 'Responsibility', name: 'responsibility', widget: 'string' }
-              - { label: "Avatar", name: "avatar", widget: "file" }
+              - {
+                  label: 'Responsibility',
+                  name: 'responsibility',
+                  widget: 'string',
+                }
+              - { label: 'Avatar', name: 'avatar', widget: 'file' }
               - { label: 'URL', name: 'url', widget: 'string', required: false }
-          - { label: "License desctiption", name: "license_description", widget: "markdown"}
+          - {
+              label: 'License desctiption',
+              name: 'license_description',
+              widget: 'markdown',
+            }
           - { label: 'License URL', name: 'license_url', widget: 'string' }
 
       - name: 'learn-settings'
@@ -178,25 +257,53 @@ collections:
         file: '_data/settings/learn-settings.yml'
         description: 'Setup fields for docs'
         fields:
-          - {label: "Intro for docs", name: "intro_docs", widget: "markdown"}
-          
+          - { label: 'Intro for docs', name: 'intro_docs', widget: 'markdown' }
+
       - name: 'engage-settings'
         label: 'Engage settings (BLUE)'
         file: '_data/settings/engage-settings.yml'
         description: 'Setup fields for engage section'
         fields:
-          - {label: "Intro for Become a supporter", name: "intro_supporter", widget: "markdown"}
-          - {label: "Intro for Become a contributor", name: "intro_contributor", widget: "markdown"}
-          - {label: "Intro for Contact the team", name: "intro_team", widget: "markdown"}
-          - {label: "Intro for downloads", name: "intro_downloads", widget: "markdown"}
-          
+          - {
+              label: 'Intro for Become a supporter',
+              name: 'intro_supporter',
+              widget: 'markdown',
+            }
+          - {
+              label: 'Intro for Become a contributor',
+              name: 'intro_contributor',
+              widget: 'markdown',
+            }
+          - {
+              label: 'Intro for Contact the team',
+              name: 'intro_team',
+              widget: 'markdown',
+            }
+          - {
+              label: 'Intro for downloads',
+              name: 'intro_downloads',
+              widget: 'markdown',
+            }
+
       - name: 'workshop-settings'
         label: 'Workshop settings'
         file: '_data/settings/workshop-settings.yml'
         description: 'All infromation related to the workshop'
         fields:
-          - {label: "Content", name: "content", widget: "markdown"}
-          
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+
+      - name: 'banner-settings'
+        label: 'Banner settings'
+        file: '_data/settings/banner-settings.yml'
+        description: 'Configure banner on the main page'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+          - { label: 'CTA', name: 'cta', widget: 'string' }
+          - { label: 'URL', name: 'url', widget: 'string' }
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Hide banner', name: 'hide', widget: 'boolean' }
+
       - name: 'navigation'
         label: 'Navigation'
         file: '_data/settings/navigation.yml'
@@ -209,9 +316,37 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'url', name: 'url', widget: 'string' }
-              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline, mdiTools ] }
-              - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
-          
+              - {
+                  label: 'icon',
+                  name: 'icon',
+                  widget: 'select',
+                  hint: 'ask Ilya to if you need more icons ;D',
+                  options:
+                    [
+                      mdiHomeOutline,
+                      mdiInformationOutline,
+                      mdiCardsVariant,
+                      mdiHeartOutline,
+                      mdiAccountMultipleOutline,
+                      mdiLicense,
+                      mdiFileDocumentOutline,
+                      mdiCubeOutline,
+                      mdiDrawing,
+                      mdiCommentQuestionOutline,
+                      mdiHeartPlusOutline,
+                      mdiAccountPlusOutline,
+                      mdiEmailOutline,
+                      mdiDownloadOutline,
+                      mdiTools,
+                    ],
+                }
+              - {
+                  label: 'Hidden',
+                  name: 'hidden',
+                  widget: 'boolean',
+                  default: false,
+                }
+
           - name: learn
             label: Learn
             label_singular: 'item'
@@ -219,9 +354,37 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'url', name: 'url', widget: 'string' }
-              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline, mdiTools ] }
-              - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
-          
+              - {
+                  label: 'icon',
+                  name: 'icon',
+                  widget: 'select',
+                  hint: 'ask Ilya to if you need more icons ;D',
+                  options:
+                    [
+                      mdiHomeOutline,
+                      mdiInformationOutline,
+                      mdiCardsVariant,
+                      mdiHeartOutline,
+                      mdiAccountMultipleOutline,
+                      mdiLicense,
+                      mdiFileDocumentOutline,
+                      mdiCubeOutline,
+                      mdiDrawing,
+                      mdiCommentQuestionOutline,
+                      mdiHeartPlusOutline,
+                      mdiAccountPlusOutline,
+                      mdiEmailOutline,
+                      mdiDownloadOutline,
+                      mdiTools,
+                    ],
+                }
+              - {
+                  label: 'Hidden',
+                  name: 'hidden',
+                  widget: 'boolean',
+                  default: false,
+                }
+
           - name: engage
             label: Engage
             label_singular: 'item'
@@ -229,7 +392,34 @@ collections:
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: 'url', name: 'url', widget: 'string' }
-              - { label: 'icon', name: 'icon', widget: 'select', hint: 'ask Ilya to if you need more icons ;D', options: [  mdiHomeOutline, mdiInformationOutline, mdiCardsVariant, mdiHeartOutline, mdiAccountMultipleOutline, mdiLicense, mdiFileDocumentOutline, mdiCubeOutline, mdiDrawing, mdiCommentQuestionOutline, mdiHeartPlusOutline, mdiAccountPlusOutline, mdiEmailOutline, mdiDownloadOutline, mdiTools ] }
-              - { label: 'Hidden', name: 'hidden', widget: 'boolean', default: false }
-
+              - {
+                  label: 'icon',
+                  name: 'icon',
+                  widget: 'select',
+                  hint: 'ask Ilya to if you need more icons ;D',
+                  options:
+                    [
+                      mdiHomeOutline,
+                      mdiInformationOutline,
+                      mdiCardsVariant,
+                      mdiHeartOutline,
+                      mdiAccountMultipleOutline,
+                      mdiLicense,
+                      mdiFileDocumentOutline,
+                      mdiCubeOutline,
+                      mdiDrawing,
+                      mdiCommentQuestionOutline,
+                      mdiHeartPlusOutline,
+                      mdiAccountPlusOutline,
+                      mdiEmailOutline,
+                      mdiDownloadOutline,
+                      mdiTools,
+                    ],
+                }
+              - {
+                  label: 'Hidden',
+                  name: 'hidden',
+                  widget: 'boolean',
+                  default: false,
+                }
   # ============================================================================

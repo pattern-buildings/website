@@ -89,6 +89,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: '_data/settings/banner-settings.yml',
+        typeName: 'BannerSettings',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: '_data/settings/navigation.yml',
         typeName: 'Navigation',
       },
