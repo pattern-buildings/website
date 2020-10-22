@@ -33,7 +33,7 @@
       v-if="!$page.banner.hide"
       class="my-8 border-gray-300 border-2 border-dashed p-8 flex justify-around items-center flex-wrap relative"
     >
-      <div class="my-4 text-center">
+      <div class="my-4 text-center max-w-xs">
         <h3>
           {{ $page.banner.title }}
         </h3>
