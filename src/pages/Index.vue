@@ -40,7 +40,7 @@
         <p class="my-2 text-gray-600">
           {{ $page.banner.subtitle }}
         </p>
-        <a :href="$page.banner.url">
+        <a :href="$page.banner.url" target="_blank">
           <button class="btn-outline text-blue-600 my-4">
             {{ $page.banner.cta }}
           </button>
