@@ -1,6 +1,7 @@
 ---
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1607094931/projects/prototype_01/PB_module_07_weyofz.jpg
 title: M6 prototype
+subtitle: Construction and testing of full scale module frames
 order: 0
 featured: true
 ---
