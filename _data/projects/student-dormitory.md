@@ -30,7 +30,7 @@ cta:
 <body>
   <iframe id="configurator" src="" allowfullscreen frameborder="0" height="100%" width="100%" data-pathname="" onLoad="onLoadIframe()"></iframe>
   <script type="text/javascript">
-    var INITIAL = "/project/harrison" /* This is the default link to point the user to, when no hash is specified */
+    var INITIAL = "/project/369-dorm" /* This is the default link to point the user to, when no hash is specified */
     var DOMAIN = "https://configurator.creatomus.com";
     var USER_TOKEN = '';
      
