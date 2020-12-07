@@ -19,4 +19,6 @@ cta:
   allowfullscreen
 ></iframe>
 
-The 369 Dormitory was created using Python scripting on Rhinoceros 3D. The dormitory configurator is designed to work as an automated client service provided by offsite house manufacturers for planners and developers. It helps planners to visualise the building mass and developers to find the right mix of dorms.
+The 369 dormitory configurator is designed to work as an automated client service to planners and developers provided by offsite house manufacturers. It helps planners to visualise the building mass and developers to find the right mix of dorms.
+
+The solution was created on Creatomus house configurator technology using Python scripting on Rhinoceros 3D.
