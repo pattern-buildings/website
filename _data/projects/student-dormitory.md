@@ -8,7 +8,7 @@ cta:
   label: Configure your own dormitory
 ---
 <iframe
-  src="https://configurator.creatomus.com/project/dacha?ui=minimal_fullscreen_only"
-  style="width: 100%; height: 300px; border: 4px solid #36b025"
+  src="https://configurator.creatomus.com/project/369-dorm?ui=minimal_fullscreen_only"
+  style="width: 100%; height: 500px; border: 4px solid #36b025"
   allowfullscreen
 ></iframe>
