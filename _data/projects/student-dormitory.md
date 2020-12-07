@@ -1,13 +1,14 @@
 ---
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1607360139/projects/dormitory/Dormitory_juuhe0.jpg
 title: "Student dormitory "
+subtitle: A Web-based configurator of modular dormitory
 order: 1
-featured: false
+featured: true
 cta:
   url: https://configurator.creatomus.com/project/369-dorm
   label: Configure your own dormitory
 ---
-Architecture and technical implementation by Johannes Madis Aasmäe
+Architecture and technical implementation by Johannes Aasmäe
 
 <iframe
   src="https://configurator.creatomus.com/project/369-dorm?ui=minimal_fullscreen_only"
