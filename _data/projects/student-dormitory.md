@@ -12,3 +12,5 @@ cta:
   style="width: 100%; height: 500px; border: 4px solid #36b025"
   allowfullscreen
 ></iframe>
+
+Architecture and technical implementation by Johannes Madis Aasmäe
