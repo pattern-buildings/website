@@ -1,6 +1,7 @@
 ---
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1607360139/projects/dormitory/Dormitory_juuhe0.jpg
 title: "Student dormitory "
+subtitle: A Web-based configurator of modular dormitory
 order: 1
 featured: true
 cta:
