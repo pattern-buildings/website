@@ -3,6 +3,9 @@ cover: https://res.cloudinary.com/patternbuildings/image/upload/v1607360139/proj
 title: "Student dormitory "
 order: 0
 featured: false
+cta:
+  url: Configure your own dormitory
+  label: https://configurator.creatomus.com/project/369-dorm
 ---
 
 
