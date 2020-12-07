@@ -1,7 +1,7 @@
 ---
 cover: https://res.cloudinary.com/patternbuildings/image/upload/v1607360139/projects/dormitory/Dormitory_juuhe0.jpg
 title: "Student dormitory "
-order: 4
+order: 1
 featured: false
 cta:
   url: https://configurator.creatomus.com/project/369-dorm
