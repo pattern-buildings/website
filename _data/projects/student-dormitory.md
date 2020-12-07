@@ -4,15 +4,10 @@ title: "Student dormitory "
 order: 0
 featured: false
 cta:
-  url: Configure your own dormitory
-  label: https://configurator.creatomus.com/project/369-dorm
+  url: https://configurator.creatomus.com/project/369-dorm
+  label: Configure your own dormitory
 ---
-
-
 ```
-<!DOCTYPE html>
-<html lang="en">
- 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -124,8 +119,4 @@ cta:
         iframe.contentWindow.postMessage(data, DOMAIN);
       }, 2000);
     }
-  </script>
-</body>
- 
-</html>
 ```
