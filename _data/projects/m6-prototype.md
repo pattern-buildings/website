@@ -4,8 +4,15 @@ title: M6 prototype
 subtitle: Construction and testing of full scale module frames
 order: 0
 featured: true
+facts:
+  - key: Year
+    value: "2020"
+  - key: Build
+    value: Harmet
+  - key: Material provider
+    value: Metsä Wood
 ---
-Harmet has produced the first two M6 modules out of Kerto LVL. The modules have been assembled in their Kumna factory and transported to the Estonian University of Life Sciences in Tartu, where a glass facade system was installed on one of the modules. 
+The first two M6 modules have been assembled in Harmet's Kumna factory and transported to the Estonian University of Life Sciences in Tartu, where a glass facade system was installed on one of the modules. 
 
 The modules will go through structural testing in the university's lab.
 
