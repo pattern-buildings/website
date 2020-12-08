@@ -21,4 +21,6 @@ cta:
 
 The 369 dormitory configurator is designed to work as an automated client service to planners and developers provided by offsite house manufacturers. It helps planners to visualise the building mass and developers to find the right mix of dorms.
 
+The building is made of M6 modules aligned along the central corridor and 3 stair cores. Depending on the site parameters and location, student dorms can be on one or both side of the corridor. Some dormitory layouts allow a balcony to be included.
+
 The solution was created on Creatomus house configurator technology using Python scripting on Rhinoceros 3D.
