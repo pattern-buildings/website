@@ -2,8 +2,8 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue';
-require('typeface-quantico');
-require('typeface-open-sans');
+require('@fontsource/quantico');
+require('@fontsource/open-sans');
 
 // eslint-disable-next-line no-unused-vars
 export default function (Vue, { router, head, isClient }) {
