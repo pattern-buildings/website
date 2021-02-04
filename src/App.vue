@@ -68,10 +68,7 @@ h3 {
   font-family: Quantico;
 }
 h1 {
-  @apply text-3xl;
-  @screen sm {
-    @apply text-5xl;
-  }
+  @apply text-3xl sm:text-5xl;
 }
 h2 {
   @apply text-3xl;
@@ -82,10 +79,6 @@ h3 {
 
 a {
   @apply no-underline;
-}
-a:hover,
-a:focus {
-  /* @apply underline font-bold outline-none; */
 }
 
 input,
@@ -137,32 +130,38 @@ article a:hover {
 }
 
 .layout {
-  @apply max-w-4xl min-h-screen flex flex-col justify-start items-stretch mx-auto p-4 pt-24;
-  @screen sm {
-    @apply px-8;
-  }
+  @apply max-w-4xl min-h-screen flex flex-col justify-start items-stretch mx-auto p-4 pt-24 sm:px-8;
 }
 
 .embedded-video {
   width: 100%;
   height: 244px;
-  @screen xs {
+}
+@media (min-width: 479px) {
+  .embedded-video {
     width: 400px;
     height: 226px;
   }
-  @screen sm {
+}
+@media (min-width: 640px) {
+  .embedded-video {
     width: 560px;
     height: 316px;
   }
-  @screen md {
+}
+@media (min-width: 768px) {
+  .embedded-video {
     width: 690px;
     height: 389px;
   }
-  @screen lg {
+}
+@media (min-width: 1024px) {
+  .embedded-video {
     width: 820px;
     height: 462px;
   }
 }
+
 .embedded-video iframe {
   top: 50%;
   left: 50%;

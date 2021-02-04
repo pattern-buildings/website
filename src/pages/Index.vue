@@ -7,13 +7,13 @@
         <div class="my-8 flex flex-wrap justify-center">
           <g-link
             to="/docs/"
-            class="btn-fill bg-green-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-no-wrap"
+            class="btn-fill bg-green-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-nowrap"
           >
             User Manual
           </g-link>
           <g-link
             to="/projects/"
-            class="btn-outline text-red-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-no-wrap"
+            class="btn-outline text-red-600 m-2 flex-grow flex-shrink-0 flex-1 whitespace-nowrap"
           >
             Projects
           </g-link>
@@ -151,8 +151,9 @@
           <g-link
             to="/become-supporter"
             class="text-blue-600 underline font-bold"
-            >Fill this form if you want to support the project</g-link
           >
+            Fill this form if you want to support the project
+          </g-link>
         </div>
       </section>
 

@@ -24,7 +24,7 @@
           <input type="text" name="name" placeholder="Your name" required />
         </label>
       </p>
-      <p>
+      <p class="mt-4">
         <label>
           Email
           <input
@@ -35,7 +35,7 @@
           />
         </label>
       </p>
-      <p class="">
+      <p class="mt-4">
         <label for="textarea">Message (optional)</label>
         <textarea
           id="message"

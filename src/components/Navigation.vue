@@ -10,7 +10,7 @@
         v-for="(item, i) in discover"
         :key="i"
         class="nav-item"
-        :class="item.url === $route.fullPath ? 'text-red-300' : 'text-red-600'"
+        :class="item.url === $route.fullPath ? 'text-red-400' : 'text-red-600'"
       >
         <Icon :path="item.icon" />
         <g-link :to="item.url" @click.native="$emit('change')">
@@ -26,7 +26,7 @@
         :key="i"
         class="nav-item"
         :class="
-          item.url === $route.fullPath ? 'text-green-300' : 'text-green-600'
+          item.url === $route.fullPath ? 'text-green-400' : 'text-green-600'
         "
       >
         <Icon :path="item.icon" />
@@ -41,7 +41,7 @@
         :key="i"
         class="nav-item"
         :class="
-          item.url === $route.fullPath ? 'text-blue-300' : 'text-blue-600'
+          item.url === $route.fullPath ? 'text-blue-400' : 'text-blue-600'
         "
       >
         <Icon :path="item.icon" />
@@ -164,16 +164,10 @@ export default {
 
 <style>
 .nav-container {
-  @apply flex flex-col justify-center items-stretch my-16;
-  @screen sm {
-    @apply flex-row;
-  }
+  @apply flex flex-col sm:flex-row justify-center items-stretch my-16;
 }
 .nav-column {
-  @apply w-full my-6;
-  @screen sm {
-    @apply mx-6 my-0;
-  }
+  @apply w-full my-6 sm:mx-6 sm:my-0;
 }
 .nav-column:focus {
   @apply shadow-lg;
@@ -182,10 +176,7 @@ export default {
   @apply border-b-4 border-current text-3xl mb-2 pb-2;
 }
 .nav-item {
-  @apply flex my-3;
-  @screen sm {
-    @apply my-4;
-  }
+  @apply flex my-3 sm:my-4;
 }
 .nav-item .icon {
   @apply mr-4 w-6 h-6 inline-block flex-shrink-0;
