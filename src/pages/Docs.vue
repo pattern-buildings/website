@@ -6,6 +6,16 @@
       </g-link>
     </small>
     <h1 class="text-center">User manual</h1>
+    <div class="mx-auto mt-16 relative embedded-video">
+      <iframe
+        src="https://player.vimeo.com/video/508350698?color=38a169"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+        class="xs:rounded-lg xs:shadow-lg absolute w-full h-full"
+        title="369 Pattern Building prototypes"
+      ></iframe>
+    </div>
     <div class="flex flex-col md:flex-row-reverse items-stretch mt-16">
       <div>
         <div class="sticky mb-8 md:ml-8" style="top: 24px;">

@@ -133,7 +133,7 @@
             v-for="(supporter, i) in settings.supporters"
             :key="i"
             :to="supporter.url"
-            class="w-full block flex flex-col sm:w-1/3 md:w-1/4 max-w-xs p-2 my-8"
+            class="w-full flex flex-col sm:w-1/3 md:w-1/4 max-w-xs p-2 my-8"
             :class="
               supporter.url
                 ? 'hover:bg-gray-300'
