@@ -12,9 +12,11 @@ facts:
   - key: Type
     value: apartment house (3 - 5 floors)
 ---
+The design concept "Spring" was submitted to a public architectural competition organised by an Estonian construction group Nordecon. The competitoon was set out to find the best architectural look for the Seiler Quarter (Seiler kvartal) in the center of Parnu city. The aim of the devloper is to develop the area with 10 residential buildings with a total of 133 apartments. The development is planned in several stages. The detailed plan requires the design to take into account the surrounding environment. For example, the design of the buildings facing the river must follow the natural line of the river bank.
+
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1612438423/projects/Seiler%20Quarter/Seiler_04_vorivh.png)
 
-The design concept "Spring" was submitted to a public architectural competition organised by an Estonian construction group Nordecon. The competitoon was set out to find the best architectural look for the Seiler Quarter (Seiler kvartal) in the center of Parnu city. The aim of the devloper is to develop the area with 10 residential buildings with a total of 133 apartments. The development is planned in several stages. The detailed plan requires the design to take into account the surrounding environment. For example, the design of the buildings facing the river must follow the natural line of the river bank.
+
 
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1612443293/projects/Seiler%20Quarter/Seiler_06_bdh4lb.png)
 
