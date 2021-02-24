@@ -2,7 +2,7 @@
   <nav class="nav-container">
     <div class="nav-column text-red-500">
       <h3 class="nav-head">Discover</h3>
-      <div v-if="$route.fullPath !== '/'" class="nav-item text-red-600">
+      <div v-show="$route.fullPath !== '/'" class="nav-item text-red-600">
         <Icon :path="mdiHomeOutline" />
         <g-link to="/">Homepage</g-link>
       </div>
