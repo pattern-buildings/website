@@ -30,7 +30,7 @@
     </header>
 
     <div
-      v-if="!$page.banner.hide"
+      v-show="!$page.banner.hide"
       class="my-8 border-gray-300 border-2 border-dashed p-8 flex justify-around items-center flex-wrap relative"
     >
       <div class="my-4 text-center max-w-xs">
