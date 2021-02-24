@@ -22,7 +22,7 @@
       <g-image
         alt="369 Pattern Buildings logo"
         src="~/assets/images/pattern-buildings-features.jpg"
-        immediate="true"
+        :immediate="true"
         width="600"
         quality="40"
         class="w-full sm:w-1/2 max-w-xs"
