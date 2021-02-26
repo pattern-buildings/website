@@ -99,12 +99,6 @@ core_team:
   - name: Vitali Valtanen
     responsibility: BIM manager and designer
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597938593/core%20team/Vitali_Valtanen_2_duwadt.jpg
-  - name: Keiti Lige
-    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
-    responsibility: Architect
-  - name: Triin Valner
-    responsibility: Architect
-    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
   - name: Kiur Lootus
     responsibility: Architect and tutor
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1603745601/core%20team/KL_Portree_kodulehele_m6hfob.jpg
@@ -133,6 +127,12 @@ contributors:
   - name: Julia Pupsheva
     responsibility: Structural engineer
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
+  - name: Keiti Lige
+    responsibility: Architect
+    avatar: https://res.cloudinary.co…/Profile_temp_aag67g.png
+  - name: Triin Valner
+    responsibility: Architect
+    avatar: https://res.cloudinary.co…/Profile_temp_aag67g.png
 license_description: 369 Pattern Buildings by Renee Puusepp, Egle Vogt, Lauri
   Läänelaid, Marianna Zvereva, Eero Tuhkanen, Kristo Kalbe is licensed under
   **CC BY 4.0**
