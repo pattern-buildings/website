@@ -46,7 +46,7 @@
           </button>
         </a>
       </div>
-      <g-image :src="$page.banner.image" class="h-32 object-contain" />
+      <g-image :src="$page.banner.image" class="w-48 object-contain" />
       <span
         class="absolute bottom-0 right-0 -mb-8 text-gray-600 text-sm cursor-pointer"
         @click="$page.banner.hide = !$page.banner.hide"

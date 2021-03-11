@@ -8,7 +8,7 @@
     <h1 class="text-center">User manual</h1>
     <div class="mx-auto mt-16 relative embedded-video">
       <iframe
-        src="https://player.vimeo.com/video/508350698?color=38a169"
+        src="https://player.vimeo.com/video/508350698?color=38a169&byline=0&portrait=0"
         frameborder="0"
         allow="autoplay; fullscreen"
         allowfullscreen
@@ -24,10 +24,17 @@
             class="green-links"
           />
           <g-link
-            to="/docs/design/"
-            class="btn btn-fill bg-green-600 mx-auto my-8 block text-center"
+            to="/docs/tutorials/"
+            class="btn btn-fill bg-green-600 mx-auto mt-8 block text-center"
           >
-            Start reading the manual
+            See tutorials
+            <span class="inline-block bg-gray-800 text-gray-300 text-xs align-middle ml-2 px-1.5 py-0.5 rounded-full">NEW</span>
+          </g-link>
+          <g-link
+            to="/docs/design/"
+            class="btn btn-outline text-green-600 mx-auto mt-4 block text-center"
+          >
+            Read the manual
           </g-link>
         </div>
       </div>

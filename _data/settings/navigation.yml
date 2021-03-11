@@ -25,9 +25,13 @@ learn:
     url: /docs/
     icon: mdiFileDocumentOutline
   - hidden: false
+    title: Tutorials
+    url: /docs/tutorials/
+    icon: mdiClipboardPlayOutline
+  - hidden: false
     title: Design
     url: /docs/design/
-    icon: mdiDrawing
+    icon: mdiShapeOutline
   - hidden: false
     title: Parts
     url: /docs/parts/
