@@ -129,6 +129,14 @@ article a:hover {
   @apply text-green-600;
 }
 
+article figure {
+  @apply my-8 md:my-16;
+}
+
+article figure figcaption {
+  @apply block w-full max-w-xl mx-auto text-right text-sm text-gray-600 italic pb-2;
+}
+
 .layout {
   @apply max-w-4xl min-h-screen flex flex-col justify-start items-stretch mx-auto p-4 pt-24 sm:px-8;
 }
