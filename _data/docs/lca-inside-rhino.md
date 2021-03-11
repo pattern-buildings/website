@@ -4,7 +4,7 @@ order: 0.2
 is_subcarticle: true
 ---
 
-In our second tutorial we will have a look on how we can show in real-time carbon footprint estimation in **Rhino 3D**, which helps to optimise or compare building or component designs quickly.
+In our second tutorial we will have a look on how we can show in **real-time carbon footprint estimation** in **Rhino 3D**, which helps to optimise or compare building or component designs quickly.
 
 <div class="mx-auto mb-16 relative embedded-video"><iframe src="https://player.vimeo.com/video/521934161?color=059669&title=1&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="allowfullscreen" title="Life cycle analysis of Rhinoceros 3D model" class="xs:rounded-lg xs:shadow-lg absolute w-full h-full"></iframe></div>
 
