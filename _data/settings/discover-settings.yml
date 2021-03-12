@@ -43,27 +43,30 @@ features:
     description: The 369 Pattern Building needs a minimal amount of energy for
       production, transport and operation.
   - name: Re-configurable
-    description: The components of 369 Pattern Building are easily accessible for
+    description:
+      The components of 369 Pattern Building are easily accessible for
       disassembling and upgrading.
   - name: Durable
     description: Given the growth cycle of wood used in construction, the main
       structures of the building must last for at least 100 years.
   - name: Adaptable
-    description: The modular system should not constrain design freedom and can be
+    description:
+      The modular system should not constrain design freedom and can be
       adapted to different typologies, providing only the technical means for
       achieving the design goals.
   - name: Open
     description: The 369 Pattern Building concept remains available without
       restrictions (see License) to anyone who wishes to develop it further.
   - name: Autonomous
-    description: Functional units of the building (for example, apartments in the
+    description:
+      Functional units of the building (for example, apartments in the
       case of an apartment building) should be independent of each other both in
       terms of access and in terms of utility systems.
-intro_projects: "List of projects that use **369 Pattern Buildings** open-source
+intro_projects: 'List of projects that use **369 Pattern Buildings** open-source
   system. A Pattern building can be a house, office, school, kindergarten,
   hospital etc. Every Pattern Building is: mass-customisable; environmentally
   friendly; made primarily of wood; modular and prefabricated; ready to be
-  produced, assembled, and transported in most European countries."
+  produced, assembled, and transported in most European countries.'
 supporters:
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1594733185/supporters/estonian-academy-arts-logo_c0a1f5b2_x2ppju.svg
     url: https://www.artun.ee/en/home/
@@ -75,7 +78,7 @@ supporters:
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1612105790/supporters/logonordplus-1_kwczun.jpg
     url: https://www.nordplusonline.org
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1613925193/supporters/Metsa_Kerto_LVL_built_with_RGB__office_wh16yg.jpg
-    url: "https://www.metsawood.com "
+    url: 'https://www.metsawood.com '
 core_team:
   - name: Renee Puusepp
     responsibility: Lead architect
@@ -106,7 +109,7 @@ contributors:
   - name: Johannes Madis Aasmäe
     responsibility: Architect
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247796/core%20team/Johannes_Aasma%CC%88e_exuzwz.png
-    url: ""
+    url: ''
   - name: Taavi Lõoke
     responsibility: Architect
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597248171/core%20team/Taavi_Lo%CC%83oke_zgqnbi.jpg
@@ -129,10 +132,10 @@ contributors:
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
   - name: Keiti Lige
     responsibility: Architect
-    avatar: https://res.cloudinary.co…/Profile_temp_aag67g.png
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
   - name: Triin Valner
     responsibility: Architect
-    avatar: https://res.cloudinary.co…/Profile_temp_aag67g.png
+    avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
 license_description: 369 Pattern Buildings by Renee Puusepp, Egle Vogt, Lauri
   Läänelaid, Marianna Zvereva, Eero Tuhkanen, Kristo Kalbe is licensed under
   **CC BY 4.0**
