@@ -3,8 +3,7 @@ title: LCA inside Rhino
 order: 0.2
 is_subcarticle: true
 ---
-
-In our second tutorial we will have a look on how we can show in **real-time carbon footprint estimation** in **Rhino 3D**, which helps to optimise or compare building or component designs quickly.
+In this tutorial we will have a look on how we can show in **real-time embodied carbon footprint estimation** in **Rhino 3D**, which helps to optimise or compare building or component designs quickly.
 
 <div class="mx-auto mb-16 relative embedded-video"><iframe src="https://player.vimeo.com/video/521934161?color=059669&title=1&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="allowfullscreen" title="Life cycle analysis of Rhinoceros 3D model" class="xs:rounded-lg xs:shadow-lg absolute w-full h-full"></iframe></div>
 
@@ -14,9 +13,9 @@ In our second tutorial we will have a look on how we can show in **real-time car
 
 <a rel="noopener" target="_blank" href="https://drive.google.com/file/d/1W8XvCjr2R0YCDSQiygPYAd2g5rA89Cxz/view?usp=sharing"><button class="btn btn-outline text-blue-600 mb-8">Download example files (ZIP, 61.4MB)</button></a>
 
----
+- - -
 
-The bespoke component library can be used to fastly assess building designs in regards to greenhouse gas emissions with the help of a second GH file which shows simplified LCA results in the Rhino viewport. This GH-tool consists of three main parts: base components for inserting material and building component information, a processing component which sorts and displays the information on the Rhino viewport and a component to customize preview settings.
+The bespoke component library can be used to rapidly assess building designs in regards to greenhouse gas emissions with the help of a second GH file which shows simplified LCA results in the Rhino viewport. This GH-tool consists of three main parts: base components for inserting material and building component information, a processing component which sorts and displays the information on the Rhino viewport and a component to customize preview settings.
 
 <figure>
 <figcaption>Workflow to estimate building carbon footprint in the early design phase</figcaption>
@@ -52,7 +51,7 @@ In order to add a building component to the carbon footprint estimation in Rhino
 <img src="https://res.cloudinary.com/patternbuildings/image/upload/v1615531432/tutorials/fig12_yfz8bf.png" alt="Preview of emissions in Rhino 3D interface">
 </figure>
 
----
+- - -
 
 ### Learn more
 
