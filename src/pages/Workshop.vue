@@ -10,16 +10,6 @@
       :raw="$page.settings.edges[0].node.content"
       class="content-block"
     />
-    <p>test</p>
-    <p>
-      <iframe
-        id="configurator"
-        src="https://configurator.rossi.creatomus.com/project/tallinnamaja"
-        frameborder="0"
-        class="w-full"
-        style="height: 75vh;"
-      ></iframe>
-    </p>
     <hr />
   </Layout>
 </template>
