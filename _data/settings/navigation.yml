@@ -7,7 +7,7 @@ discover:
     url: /projects/
     icon: mdiCardsVariant
     hidden: false
-  - title: Supproters
+  - title: Supporters
     url: /#supporters
     icon: mdiHeartOutline
     hidden: false
