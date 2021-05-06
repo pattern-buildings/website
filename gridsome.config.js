@@ -126,12 +126,12 @@ module.exports = {
         ],
       },
     },
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-172767146-1',
-      },
-    },
+    // {
+    //   use: '@gridsome/plugin-google-analytics',
+    //   options: {
+    //     id: 'UA-172767146-1',
+    //   },
+    // },
     {
       use: 'gridsome-plugin-ackee',
       options: {
