@@ -133,6 +133,13 @@ module.exports = {
       },
     },
     {
+      use: 'gridsome-plugin-ackee',
+      options: {
+        domain: 'https://ackee-pattern-buildings.netlify.app',
+        domainId: 'b5fc76bc-8f31-415a-afd9-7f10340d1e5a'
+      }
+    },
+    {
       use: 'gridsome-plugin-manifest',
       options: {
         background_color: '#000000',
