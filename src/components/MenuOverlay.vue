@@ -33,6 +33,11 @@ export default {
       mdiClose,
     };
   },
+  watch: {
+    '$route.path'() {
+      this.visible = false;
+    }
+  }
 };
 </script>
 
