@@ -135,8 +135,8 @@ module.exports = {
     {
       use: 'gridsome-plugin-ackee',
       options: {
-        domain: 'https://ackee-pattern-buildings.netlify.app',
-        domainId: 'b5fc76bc-8f31-415a-afd9-7f10340d1e5a'
+        domain: 'https://analytics.creatomus.com',
+        domainId: '6e99a9c8-7bc3-40a2-bbb1-a6d0512511ea'
       }
     },
     {
