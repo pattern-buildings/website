@@ -1,9 +1,9 @@
 ---
-cover: https://drive.google.com/file/d/1LgVaqqgXuIsoCh9hciphsw8z9M7Aczwo/view?usp=sharing
+cover: https://res.cloudinary.com/patternbuildings/image/upload/v1630959456/Saue_v3_Lugemiskuup_2_guffym.jpg
 title: Cuboids
 subtitle: Outdoor pavilions for seniors
 order: 0
-featured: false
+featured: true
 facts:
   - key: Year
     value: "2021"
@@ -17,4 +17,10 @@ The cuboids will be installed close to the municipal centre in Saue. The cuboids
 
 The external dimensions of the cube are 3X3X3.2 (h) meters. The facade of the cube is covered with a transparent polycarbonate plastic. Wood parts that are more exposed to the weather are impregnated with a wood preservative or made of heat-treated profiles. Cuboids are illuminated from the inside and draw their energy from the solar panels installed on the roof.
 
-![](https://drive.google.com/file/d/1IJ5hm4BOHySbZgZEUNIkn0vxl2n9PG19/view?usp=sharing)
+![Saue cuboid fpr Baltsenior2.0 project](https://res.cloudinary.com/patternbuildings/image/upload/v1630959507/Saue_Aktiivsuskuup_3_2_jghtrf.jpg "Activity cuboid")
+
+![](https://res.cloudinary.com/patternbuildings/image/upload/v1630959672/16_twligl.png)
+
+![Saue kuup - Saie seenioritele](https://res.cloudinary.com/patternbuildings/image/upload/v1630959456/Saue_v3_Lugemiskuup_2_guffym.jpg "Reading Cuboid")
+
+![](https://res.cloudinary.com/patternbuildings/image/upload/v1630959723/15_pl8x6t.png)
