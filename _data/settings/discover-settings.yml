@@ -76,6 +76,8 @@ supporters:
     url: https://www.nordplusonline.org
   - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1613925193/supporters/Metsa_Kerto_LVL_built_with_RGB__office_wh16yg.jpg
     url: "https://www.metsawood.com "
+  - logo: https://res.cloudinary.com/patternbuildings/image/upload/v1631265599/supporters/AruCADSysteemid_logo_2020_1_evigiq.png
+    url: http://www.arucad.ee
 core_team:
   - name: Renee Puusepp
     responsibility: Lead architect
