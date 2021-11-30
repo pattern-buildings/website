@@ -7,12 +7,8 @@ featured: true
 facts:
   - key: Year
     value: "2021"
-  - key: Design
-    value: Joon & Loon
-  - key: Type
-    value: Microhome
 ---
-Olela is a concept building developed together with Harmet modular factory. It is based on M6 module that is modified to feature a cathedral ceiling in order to maximise the interior space. 
+Olela is a concept building based on M6 module with a cathedral ceiling. The first Olela is situated at the foothill of Suur Munamägi and will be open for visits in spring 2022.
 
 ![M6 microhome](https://res.cloudinary.com/patternbuildings/image/upload/v1637485483/projects/Olela/Olela1-4_tu1ylt.jpg)
 
@@ -24,10 +20,10 @@ Olela is a concept building developed together with Harmet modular factory. It i
 
 The concept house is designed to blend into different natural surroundings. It’s straightforward design offers comfort to its inhabitants and simplicity in use and maintenance. Olela can be completely self-sufficient without connection to water mains and sewage. It can be powered by PV panels and hydrogen fuel cells.
 
-![Microhome production at Harmet factory](https://res.cloudinary.com/patternbuildings/image/upload/v1637485483/projects/Olela/Olela1-7_mdkpfu.jpg)
+![]()
 
-![Microhome production at Harmet factory](https://res.cloudinary.com/patternbuildings/image/upload/v1637485484/projects/Olela/Olela1-8_lvoe4r.jpg)
+![]()
 
-![Microhome production at Harmet factory](https://res.cloudinary.com/patternbuildings/image/upload/v1637485483/projects/Olela/Olela1-6_keafm2.jpg)
+![]()
 
-![Microhome production at Harmet factory](https://res.cloudinary.com/patternbuildings/image/upload/v1637485484/projects/Olela/Olela1-9_ftkk5l.jpg)
+![]()
