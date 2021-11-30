@@ -7,6 +7,10 @@ featured: true
 facts:
   - key: Year
     value: "2021"
+  - key: Type
+    value: Microhome
+  - key: "Size:"
+    value: 20 sqm
 ---
 Olela is a concept building based on M6 module with a cathedral ceiling. The first Olela is situated at the foothill of Suur Munamägi and will be open for visits in spring 2022.
 
