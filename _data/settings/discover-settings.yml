@@ -104,7 +104,7 @@ core_team:
   - name: Nomad architects
     responsibility: Architects
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597248703/core%20team/Screen_Shot_2020-08-12_at_19.09.57_vn6zcv.png
-    url: nomadarchitects.lv
+    url: https://nomadarchitects.lv
 contributors:
   - name: Johannes Madis Aasmäe
     responsibility: Architect
@@ -125,7 +125,7 @@ contributors:
     avatar: https://res.cloudinary.com/patternbuildings/image/upload/v1597247801/core%20team/Profile_temp_aag67g.png
   - name: Hyperfractal
     responsibility: Architects
-    url: https://nomadarchitects.lv
+    url: ""
     avatar: https://1155750765.rsc.cdn77.org/images/HF_logo_lightback_gradient.svg?projectId=6024d95f742fe85441fe137c
   - name: Julia Pupsheva
     responsibility: Structural engineer
