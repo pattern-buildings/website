@@ -21,4 +21,4 @@ Juhend ja BIM failid ArchiCAD-is projekteeriimiseks (lisatakse 28.02.2022)
 
 Tööriistakasti on Accelerate Estonia projekti raames ette valimistanud Creatomus Solutions
 
-![]()
+![](https://res.cloudinary.com/patternbuildings/image/upload/v1644697644/Screenshot_2022-02-12_at_22.27.14_tpr2go.png)
