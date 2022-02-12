@@ -20,3 +20,5 @@ Juhend ja BIM failid ArchiCAD-is projekteeriimiseks (lisatakse 28.02.2022)
 [Süsiniku jalajälje kalkulaator](https://drive.google.com/drive/folders/1-1ZgkeSIHTss55Qdwj0zHTdBrgzsr07H?usp=sharing)
 
 Tööriistakasti on Accelerate Estonia projekti raames ette valimistanud Creatomus Solutions
+
+![]()
