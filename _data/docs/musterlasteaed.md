@@ -3,15 +3,11 @@ title: Competition of modular kindergartens
 order: 0.3
 is_subcarticle: true
 ---
-# Musterlasteadade projekteerimise tööriistakast
+### Musterlasteadade projekteerimise tööriistakastis on:
 
-Tööriistakastis on
-
-1. **Digitaalne komponentide kataloog**
-
-   **Süsiniku jalajälje kalkulaator**
-
-   **Juhend musterlasteaia projekteerimiseks ja süsiniku jalajälje arvutusteks** 
+* **Digitaalne komponentide kataloog**
+* **Süsiniku jalajälje kalkulaator**
+* **Juhend musterlasteaia projekteerimiseks ja süsiniku jalajälje arvutusteks** 
 
 [Juhend ja CAD failid](https://drive.google.com/drive/folders/1OtoFFgw0guAImgHsiG6ZzH2_vM0iQSI9?usp=sharing)  Rhinoceros 3D-s projekteerimiseks
 
@@ -20,5 +16,7 @@ Juhend ja BIM failid ArchiCAD-is projekteeriimiseks (lisatakse 28.02.2022)
 [Süsiniku jalajälje kalkulaator](https://drive.google.com/drive/folders/1-1ZgkeSIHTss55Qdwj0zHTdBrgzsr07H?usp=sharing)
 
 Tööriistakasti on Accelerate Estonia projekti raames ette valimistanud Creatomus Solutions
+
+Kõik dokumendid on litsenseeritud [Creative Commons 4.0 litsentsi](https://creativecommons.org/licenses/by/4.0/) alusel
 
 ![](https://res.cloudinary.com/patternbuildings/image/upload/v1644697644/Screenshot_2022-02-12_at_22.27.14_tpr2go.png)
