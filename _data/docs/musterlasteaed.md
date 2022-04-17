@@ -11,7 +11,7 @@ is_subcarticle: true
 
 [Juhend ja CAD failid](https://drive.google.com/drive/folders/1OtoFFgw0guAImgHsiG6ZzH2_vM0iQSI9?usp=sharing)  Rhinoceros 3D-s projekteerimiseks
 
-Juhend ja BIM failid ArchiCAD-is projekteeriimiseks (lisatakse 28.02.2022)
+[Juhend ja BIM failid](https://drive.google.com/drive/folders/11T0KTWY9_3yqlR5ImgRrmiy7H87CHLf4?usp=sharing) ArchiCAD-is projekteeriimiseks
 
 [Süsiniku jalajälje kalkulaator](https://drive.google.com/drive/folders/1-1ZgkeSIHTss55Qdwj0zHTdBrgzsr07H?usp=sharing)
 
