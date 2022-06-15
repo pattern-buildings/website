@@ -12,7 +12,7 @@ facts:
   - key: Size
     value: 20 sqm
 ---
-Olela is a concept building based on M6 module with a cathedral ceiling. The first Olela is situated at the foothill of Suur Munamägi and will be open for visits in spring 2022.
+Olela is a concept building based on M6 module with a cathedral ceiling. The first Olela is situated at the foothill of Suur Munamägi and was opened for visits in spring 2022.
 
 ![M6 microhome](https://res.cloudinary.com/patternbuildings/image/upload/v1637485483/projects/Olela/Olela1-4_tu1ylt.jpg)
 
