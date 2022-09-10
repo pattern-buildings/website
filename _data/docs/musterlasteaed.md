@@ -13,6 +13,10 @@ is_subcarticle: true
 
 [Juhend ja BIM failid](https://drive.google.com/drive/folders/11T0KTWY9_3yqlR5ImgRrmiy7H87CHLf4?usp=sharing) ArchiCAD-is projekteeriimiseks
 
+[BIM failid]
+(https://drive.google.com/drive/folders/1i2zSUDYEHWEMBG-3UK7pH9g3ueF4N_xi?usp=sharing) IFC formaadis
+
+
 [Süsiniku jalajälje kalkulaator](https://drive.google.com/drive/folders/1-1ZgkeSIHTss55Qdwj0zHTdBrgzsr07H?usp=sharing)
 
 Tööriistakasti on Accelerate Estonia projekti raames ette valimistanud Creatomus Solutions
