@@ -9,7 +9,7 @@ is_subcarticle: true
 * **Süsiniku jalajälje kalkulaator**
 * **Juhend musterlasteaia projekteerimiseks ja süsiniku jalajälje arvutusteks** 
 
-[Juhend ja CAD failid](https://drive.google.com/drive/folders/1OtoFFgw0guAImgHsiG6ZzH2_vM0iQSI9?usp=sharing)  Rhinoceros 3D-s projekteerimiseks
+[Juhend ja CAD failid](https://drive.google.com/drive/folders/16EVeGqRytUTVJvDLYXRoALhAtO_O_DA0?usp=sharing)  Rhinoceros 3D-s projekteerimiseks
 
 [Juhend ja BIM failid](https://drive.google.com/drive/folders/11T0KTWY9_3yqlR5ImgRrmiy7H87CHLf4?usp=sharing) ArchiCAD-is projekteeriimiseks
 
