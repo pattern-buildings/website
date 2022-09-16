@@ -16,8 +16,12 @@ is_subcarticle: true
 [BIM failid]
 (https://drive.google.com/drive/folders/1i2zSUDYEHWEMBG-3UK7pH9g3ueF4N_xi?usp=sharing) IFC formaadis
 
+[BIM failid]
+(https://drive.google.com/drive/folders/1pvPE9unxoU_aU1-Kh1iU93np3EdeToRN?usp=sharing) RVT formaadis
 
 [Süsiniku jalajälje kalkulaator](https://drive.google.com/drive/folders/1-1ZgkeSIHTss55Qdwj0zHTdBrgzsr07H?usp=sharing)
+
+[Alternatiivne süsiniku kalkulaator] (https://eehitus.ee/timeline-post/uuring-ehituse-susiniku-jalajalg/)
 
 Tööriistakasti on Accelerate Estonia projekti raames ette valimistanud Creatomus Solutions
 
